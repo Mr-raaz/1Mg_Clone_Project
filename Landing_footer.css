@@ -1,0 +1,339 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.details{
+    padding: 30px;
+    font-family: sans-serif;
+}
+.container{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.details > h2 {
+    color:#1A1A1A;
+    font-size: 1.5vw;
+    line-height: 26px;
+    margin: 15px 0px;
+    font-weight: 600px;
+}
+.content> h3 {
+    color:#434446;
+    line-height: 23px;
+    margin: 16px 0px;
+    font-weight: 600;
+    font-size: 1.3vw;
+}
+.content > p {
+    color: #666666;
+    line-height: 22px;
+    margin: 16px 0px;
+    font-weight: 400px;
+    font-size: 1.2vw;
+}
+.second {
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    font-family: sans-serif;
+}
+.second > div:last-child{
+    margin: auto;
+    display: grid;
+    width: 80%;
+    grid-template-columns: repeat(3,1fr);
+    padding: 20px 50px;
+    grid-gap:50px;
+    justify-content: center;
+    justify-items: center;
+}
+
+.second  h2 {
+    text-align: center;
+    padding: 24px 0px;
+    font-weight: 400;
+    color: #1A1A1A;
+    line-height: 34px;
+}
+.second p {
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 1px;
+}
+
+.third{
+    font-family: sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    margin: auto;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid rgb(159, 157, 157);
+}
+.third > div > input{
+    width:25vw;
+    padding: 10px 16px;
+    margin-left: 50px;
+    margin-right: 6px;
+    background-color: RGB(241, 244, 246);
+    outline: none;
+    border: none;
+}
+.third > div > button , #signup{
+   color: white;
+   background-color: RGB(255, 111, 97);
+   font-size: 14px;
+   line-height: 20px;
+   padding: 9px 18px;
+   font-weight: 400;
+   border: none;
+   border-radius: 5px;
+
+   cursor: pointer;
+}
+.third > h2 {
+    font-weight: 400;
+    color: #1A1A1A;
+    line-height: 34px;
+    font-size: 22px;
+}
+.fourth{
+    font-family: sans-serif;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    padding: 44px 50px;
+    padding-top: 80px;
+    background-color: #fbf3e3;
+}
+.fourth  h4{
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+.fourth > div > p{
+    line-height: 20px;
+    font-weight: 400;
+}
+.fourth > div p a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #666666;
+}
+.fourth > div p a:hover{
+    color: RGB(255, 111, 97);
+}
+.logo{
+    width: 70%;
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+.logo  a{
+    color: white;
+    text-decoration: none;
+}
+.logo > div {
+    background-color: black;
+    height: 25px;
+    width: 25px;
+    border-radius: 3.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+.fourth > div:last-child  img{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.fourth > div:last-child div{
+    width: 60%;
+}
+
+
+.five{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:20px;
+    background-color: #fbf3e3;
+    border-top: 1px solid rgb(159, 157, 157);
+    padding: 40px 120px;
+    font-family: sans-serif;
+}
+.five > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.five > div > div:last-child >p{
+    margin-top: 10px;
+    color: RGB(118, 118, 118);
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.six{
+    margin: auto;
+    border-top: 0.1px solid grey;
+    border-bottom: 0.1px solid grey;
+    text-align: center;
+    padding: 30px 30px;
+    background-color: #fbf3e3;
+    font-family: sans-serif;
+}
+.six > h3{
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    
+}
+.six > img {
+    width: 80px;
+}
+.hr{
+    width: 80%;
+    margin: auto;
+    background-color: red;
+}
+.seven{
+    padding: 30px 30px;
+    background-color: #fbf3e3;
+    font-family: sans-serif;
+    display: flex;
+}
+.seven img {
+    width: 10%;
+}
+.seven > p {
+    text-align: center;
+    font-size: 14px;
+    color: #666666;
+    font-weight: 600;
+    padding: 10px 10px;
+    line-height: 20px;
+}
+
+
+/* Media query below */
+@media only screen and (max-width : 480px){
+    .details{
+        padding: 8px;
+    }
+    .details > h2 {
+        font-size: 4.5vw;
+    }
+    .content> h3 {
+        font-size: 4vw;
+    }
+    .content > p {
+        font-size: 3.5vw;
+    }
+    .second  h2 {
+        text-align: center;
+        font-size: 18px;
+    }
+    .second h1{
+        font-size: 20px;
+    }
+    .third{
+        padding: 30px;
+        display: block;
+    
+    }
+    .third > div{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .third > div > input{
+        width:50vw;
+        margin-left: -6px;
+    }
+    .third > div > button{
+       font-size: 14px;
+    }
+    .third > h2 {
+         padding-bottom: 10px;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .fourth{
+        padding: 44px 0px;
+    }
+    .fourth  h4{
+        font-size: 11px;
+    }
+    
+    .fourth > div p a {
+        font-size: 11px;
+    }
+    .fourth > div:last-child div{
+        width: 90%;
+    }
+
+    .five{
+        grid-template-columns: repeat(1,1fr);
+        grid-gap:0px;
+        padding: 40px 20px;
+    }
+    
+    .five > div > div:last-child >p{
+        margin-top: 10px;
+        color: RGB(118, 118, 118);
+        font-size: 12px;
+        line-height: 15px;
+    }
+}
+	
+@media only screen and (min-width: 481px) and (max-width: 768px){
+    .details{
+        padding: 12px;
+    }
+    .details > h2 {
+        font-size: 2vw;
+    }
+    .content> h3 {
+        font-size: 1.8vw;
+    }
+    .content > p {
+        font-size: 1.9vw;
+    }
+    .second  h2 {
+        text-align: center;
+        padding-bottom: 10px;
+        font-size: 18px;
+    }
+    .third{
+        padding: 30px;
+        display: block;
+    
+    }
+    .third > div{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .third > div > input{
+        width:50vw;
+        margin-left: -6px;
+    }
+    .third > div > button{
+       font-size: 14px;
+       margin-left: -50px;
+    }
+    .third > h2 {
+         padding-bottom: 10px;
+        font-size: 24px;
+        text-align: center;
+    }
+    .five{
+        grid-template-columns: repeat(2,1fr);
+        grid-gap:20px;
+        padding: 40px 10px;
+    }
+    
+    
+}
+
