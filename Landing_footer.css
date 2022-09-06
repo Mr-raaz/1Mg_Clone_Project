@@ -524,10 +524,14 @@
 .banner{
     /* border: 1px solid blue; */
     width: 35%;
-    background: url("img/fixed_banner.jpg");
-    background-position: center;
-    background-size: initial;
+    /* background: url("img/fixed_banner.jpg"); */
+    /* background-position: center; */
+    /* background-size: ; */
     border-left: 1px solid grey;
+}
+.banner > img {
+    width: 100%;
+    height: 100%;
 }
 
 .mainSlider > img {
