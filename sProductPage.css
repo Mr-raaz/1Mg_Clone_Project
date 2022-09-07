@@ -1,0 +1,237 @@
+
+/* ProductProductProductProductProductProductProductProductProductProductProductProductProductProductProductProductProductProductProductProduct  */
+
+
+.smaster{
+    width: 100%;
+}
+
+.smainbox{
+    display: grid;
+    grid-template-columns: 16.66666667% 80.33333333%;
+    font-family:"Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    gap:5px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #F6F6F6;
+    justify-content: space-between;
+    border: 4px dotted green;
+    
+}
+
+.sfilter{
+    width: 72%;
+    height: fit-content;
+    background-color: #FFFFFF;
+    border: 3px solid rgb(255, 0, 170);
+    overflow: hidden;
+    margin-left: 90px;
+    padding: 8px;
+
+}
+
+
+.scategory > :nth-child(1){
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #212121;
+}
+
+.scategory >:nth-child(2){
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+    color: #212121;
+
+}
+
+.scategory >:nth-child(3){
+    margin-left: 15px;
+}
+
+.scategory > :nth-child(3) > div{
+    display: inline;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+    color: #212121;
+}
+
+.scategory > :nth-child(3) > div:nth-child(2){
+    font-weight: 400;
+    font-size: 16px;
+    height: 23px;
+    color: #212121;
+}
+
+
+.scategory > :nth-child(3) > div a{
+    text-decoration: none;
+    color: #212121;
+    margin-top: 20px;
+}
+
+.scategory > :nth-child(4) {
+    margin-left: 28px;
+    line-height: 12;
+}
+
+.scategory >:nth-child(4) a{
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 25px;
+    color: #212121;
+    text-decoration: none;
+}
+
+.scategory div:nth-child(4) a:nth-child(1){
+    font-weight: 700;
+    color: #ff6f61;
+}
+
+
+/* filter */
+
+.sfilterProduct > div {
+    border-bottom: 1px solid #e4e4e4;
+}
+
+#stag1{
+    font-weight: 700;
+    font-size: 14px;
+    color: #212121;
+    line-height: 20px;
+    margin: 10px 0px;
+}
+
+#smyInput1,#smyInput2,#smyInput3{
+    border-radius: 4px;
+    height: 23px;
+    border: 1px solid #212121;
+    padding: 3px;
+    width: 90%;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+#sfilterProduct{
+    font-weight: 400;
+    font-size: 12px;
+    height: 25px;
+    color: #212121;
+}
+
+
+.sInput1Forcss {
+    width: 1.1em;
+    height: 1.1em;
+    font-size: 15px;
+    accent-color:#ff6f61;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.sLabel1Forcss{
+    color: #212121;
+    cursor: pointer;
+}
+
+
+
+
+#sNameNumber1, #sNameNumber2,#sNameNumberDiscount, #sNameNumber3{
+    max-height: 225px;
+    overflow-y: auto;
+    padding-bottom: 4px;
+    margin-bottom: 15px;
+}
+
+#sNameNumber1> div, #sNameNumber2> div,#sNameNumberDiscount > div, #sNameNumber3 > div{
+    display: flex;
+    justify-content: space-between;  
+    
+}
+
+
+
+
+
+.sitems{
+    background-color: #F6F6F6;
+    width: 89.8%;
+    border: 3px solid darkorange;
+    height: 1500px;
+    overflow: hidden;
+}
+
+.spathrefer{
+    margin-top: 10px;
+}
+
+.spathrefer a{
+    font-size: 12px;
+    font-weight: 400;
+    color: #ff6f61;
+    line-height: 17px;
+    text-decoration: none;
+}
+
+#sangle{
+    font-size: 10px;
+    margin: 0px 3px;
+    font-weight: 600;
+    color: #212121;
+}
+
+#slastrefer{
+    font-size: 12px;
+    font-weight: 400;;
+    line-height: 17px;
+    color: #212121;
+}
+
+
+/* ----cards main box------ */
+
+#srightTopFilter{
+    float: right;
+    font-size: 14px;
+    font-weight: 400;;
+    line-height: 20px;
+    color: #212121;
+}
+
+#srevelence{
+    background-color: white;
+    padding: 8px;
+    border-radius: 4px;
+    padding-right: 120px;
+    margin-left: 5px;
+}
+
+#scaretdown{
+    background-color: white;
+    padding: 8px;
+    color: #7d7d7d;
+    border-radius: 4px;
+    margin-left: -5px;
+}
+
+#sheadmiltivitamit{
+    font-size: 400;
+    font-size: 24px;
+    line-height: 34px;
+    color:#212121;
+    padding: 25px;
+}
+
+
+
+
+
+
+
+/* ProductProductProductProductProductProductProductProductProductProductProductProductProductProductProductProductProductProductProductProduct  */
