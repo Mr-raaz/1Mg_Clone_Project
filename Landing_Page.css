@@ -413,12 +413,12 @@
 
 /* Drop Down Section Starts From here */
 .dropdown{
-    padding: 5px 15px;
+    padding: 10px 15px;
     font-family: sans-serif;
 }
 .dropdown > ul {
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(140px,1fr));
+    grid-template-columns: repeat(auto-fill,minmax(160px,1fr));
 }
 
 .dropdown a{
@@ -432,7 +432,7 @@
 }
 .dropdown li {
     list-style: none;
-    font-size: 11px;
+    font-size: 14px;
     line-height: 25px;
 }
 
