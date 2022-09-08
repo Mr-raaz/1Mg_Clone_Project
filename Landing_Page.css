@@ -858,7 +858,7 @@
 }
 
 
-/* sliderSection.............. */
+/* slider-Section.............. */
 
 
   
@@ -901,6 +901,7 @@
   }
   .swiper-slide:hover{
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+    border-radius: 10px;
     
    
     
@@ -932,13 +933,14 @@
     cursor: pointer;
   }
  .swiper-button-next , .swiper-button-prev{
-    color:#ff6f61;
+    /* color:#22542f; */
     height:50px;
     width: 50px;
    
     background-color:white;
     border-radius: 20px;
-    border:0.5ch solid white
+    border:0.5ch solid white;
+    color : red;
   }
   .body{
     height: 70px;
@@ -958,4 +960,90 @@
     font-size: 15px;
     padding-bottom: 10px;
     padding-top: 10px;
+  }
+ .swiper-slide span{
+    font-size: 12px
+ }
+ .swiper-slide h5{
+    font-size: 15px;
+
+ }
+ .price>p>span:nth-child(2){
+    text-decoration: line-through;
+    
+ }
+ .price>p>span:nth-child(3){
+    color:green
+ }
+ .swiper-slide  p+span{
+ 
+ margin-left: -40px;
+ }
+ .swiper-slide p{
+    text-align: start;
+    
+    }
+ 
+    
+   
+   .mgpic{
+    
+   display: flex;
+    width: 70px;
+    height: 50px;
+    justify-content:space-between;
+   }
+  .rat-pro{
+   padding: 5px;
+    background-color: #18d14a;
+    color: #fff
+  
+  
+  }
+  .txt-rat{
+   
+    margin-top:13px;
+   
+   
+    
+  }
+  .mglogo{
+    border:1px solid rgb(216, 212, 212);
+    margin-right: 30px;
+  }
+  .sicon> span span{
+   
+    display: inline-block;
+    background-color:#ffe3c2;
+   margin-left:10px
+
+  }
+  .price >p >span:first-child{
+   
+    font-size:15px;
+  }
+  .price >p >span:last-child{
+    
+    border:1px dashed rgb(36, 207, 53);
+    margin-left: 15px;
+    background-color:#ebf5ee
+   
+
+  }
+  .tests{
+    margin-right: 70px;
+   
+  
+   
+  }
+
+  .swiper-button-next , .swiper-button-prev{
+    /* color:#22542f; */
+    height:50px;
+    width: 50px;
+   
+    background-color:white;
+    border-radius: 20px;
+    border:0.5ch solid white;
+    color : RGB(255, 111, 97) !important;
   }
