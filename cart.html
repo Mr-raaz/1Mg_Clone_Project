@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #outer_for_color{
+            background-color: #f3f7f6;
+            width: 100%;
+            height: 1500px;
+            padding-top: 90px;
+        }
+        #inner_for_grid{
+            /* border: 2px solid red; */
+            margin-left: 13%;
+            margin-right: 13%;
+            /* height: 1500px; */
+            display: grid;
+            grid-template-columns: 3fr 2fr;
+        }
+        #down_footer{
+            /* border: 2px solid black; */
+            display: grid;
+            grid-template-columns: 3fr 2fr;
+            margin-left: 13%;
+            margin-right: 13%;
+        }
+        #down_footer p{
+            font-size: 11px;
+        }
+        #down_footer_first{
+            margin-right: 20px;
+            padding: 10px;
+        }
+        #down_footer_second{
+            padding: 10px;
+        }
+        #left_side {
+            margin-right: 20px;
+        }
+        #left_side > h2{
+            margin: 0;
+        }
+        #box_of_product{
+            background-color: white;
+            padding: 10px;
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        }
+        .to_apart_on_corner{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        #linetroughonmrp{
+            text-decoration: line-through;
+        }
+        #right_side_first{
+            background-color: white;
+        }
+        #button_div button{
+            width: 40%;
+            margin-left: 25px;
+            height: 30px;
+        }
+        #right_side_first_second{
+            display: flex;
+            justify-content: space-between;
+        }
+        #know_more{
+            border-color: RGB(255, 111, 97);
+            background-color: white;
+            color: RGB(255, 111, 97);
+            border-radius: 4px;
+        }
+        #add_to_cart{
+            background-color: RGB(255, 111, 97);
+            color: white;
+            border-color: RGB(255, 111, 97);
+            border-radius: 4px;
+        }
+        #right_side_first_first{
+            padding: 5px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        #right_side_first_first_h1{
+            font-size: 17px;
+            color: white;
+            width: 95px;
+            background-color: brown;
+        }
+        #right_side_first_first_h2{
+            font-size: 17px;
+            color: rgb(45, 146, 146);
+        }
+        #right_side_first_first_p1{
+            font-size: 14px;
+            color: gray;
+        }
+        #right_side_first_first_p2{
+            font-size: 14px;
+        }
+        #right_side_first_second_second{
+            margin-right: 10px;
+            width: 20px;
+            border-radius: 50%;
+            background-color: rgb(238, 231, 231);
+            /* margin-top: 10px; */
+            height: 30px;
+        }
+        #right_side_first_second_first > h3{
+            margin: 2px;
+            font-size: 16px;
+            margin-left: 10px;
+            margin-bottom: 15px;
+        }
+        #right_side_first_second_second > p{
+            margin-top: 5px;
+            margin-left: 5px;
+        }
+        #light_green{
+            color: rgb(59, 247, 59);
+        }
+        #right_side_second{
+            background-color: white;
+            margin-top: 10px;
+        }
+        #right_side_second_first{
+            background-color: rgb(250, 246, 242);
+            margin-top: 15px;
+            align-items: center;
+            height: 40px;
+        }
+        .right_side_fourth_child{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        #right_side_fourth{
+            background-color: white;
+            padding-left: 13px;
+            padding-right: 13px;
+        }
+        .right_side_fourth_child > div{
+            font-size: 12px;
+        }
+        #right_side_fourth p{
+            font-size: 12px;
+        }
+        #right_side_fourth_fourth > div, #right_side_fourth_fourth p{
+            font-size: 20px;
+            color: gray;
+        }
+        #right_side_fourth_fifth{
+            background-color: rgb(231, 229, 229);
+            padding-left: 10px;
+            height: 45px;
+            padding-right: 10px;
+            width: 100%;
+            margin-left: -3%;
+        }
+        #right_side_fifth_first{
+            display: flex;
+            justify-content: space-between;
+            font-size: 15px;
+        }
+        #right_side_fifth{
+            padding-left: 10px;
+            margin-top: 20px;
+            padding-right: 10px;
+            background-color: white;
+            padding-bottom: 15px;
+        }
+        #right_side_fifth > button{
+            width: 100%;
+            height: 45px;
+            background-color: RGB(255, 111, 97);
+            color: white;
+            border: 0;
+        }
+        #right_side_fifth_first_second > p{
+            color: RGB(255, 111, 97);
+        }
+        #right_side_fourth_fifth p{
+            color: green;
+            font-size: 16px;
+            font-weight: 1000;
+        }
+        #right_side_third_first_first_first{
+            display: flex;
+        }
+        #right_side_third_first_first{
+            display: flex;
+            align-items: center;
+            margin-bottom: -5px;
+            justify-content: space-between;
+        }
+        #right_side_third{
+            background-color: white;
+            margin-top: 15px;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+        #right_side_third_first_first_second p{
+            font-size: 12px;
+            font-weight: 100;
+        }
+        #right_side_third_second_p1{
+            font-size: 12px;
+        }
+        #right_side_third_second_p2{
+            font-size: 12px;
+            /* background-color: RGB(255, 111, 97); */
+            margin-right: 8px;
+        }
+        #right_side_third_second_div_p2{
+            font-size: 12px;
+        }
+        #right_side_third_second_span1{
+            font-size: 18px;
+            font-weight: 800;
+        }
+        #right_side_third_second_span2{
+            font-size: 18px;
+        }
+        #right_side_third_second_div{
+            display: flex;
+        }
+        #right_side_third_second_div_first{
+            background-color: RGB(255, 111, 97);
+            height: 35px;
+        }
+        #right_side_third_second_div_p2{
+            margin-left: 12px;
+        }
+        #right_side_third_second_p2_span{
+            margin-right: 10px;
+        }
+        #right_side_third_second_p3{
+            color: RGB(255, 111, 97);
+            font-weight: 800;
+        }
+        #right_side_second_first_first{
+            display: flex;
+            padding-left: 10px;
+            padding-right: 10px;
+            align-items: center;
+            justify-content: space-between;
+        }
+        #right_side_second_second{
+            padding: 10px;
+        }
+        #right_side_second_second_second p{
+            font-size: 12px;
+            margin-left: 22px;
+            margin-bottom: 0px;
+            margin-top: 9px;
+        }
+        #di3_1{
+            display: flex;
+            margin-left: -7px;
+        }
+        #di3_1 > div{
+            margin-left: 10px;
+        }
+        #box_of_product p{
+            font-size: 12px;
+        }
+        #di3_2{
+            display: flex;
+            margin-right: -7px;
+        }
+        #di3_2 p{
+            margin-top: 2px;
+            margin-left: 1px;
+        }
+        #di3_2 > div{
+            margin-right: 5px;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+        }
+        #plusbutton{
+            background-color: RGB(255, 111, 97);
+        }
+        #plusbutton > p{
+            color: white;
+        }
+        #minusbutton{
+            /* border-color: RGB(255, 111, 97); */
+            border: 1px solid RGB(255, 111, 97);
+        }
+        #minusbutton > p{
+            color: RGB(255, 111, 97);
+        }
+        #headingname{
+            width: 60px;
+        }
+        /* .to_apart_on_corner_left{
+            width: 50%;
+        } */
+    </style>
+</head>
+<body>
+    <div id="outer_for_color">
+        <div id="inner_for_grid">
+            <div id="left_side">
+                <h2>Items NOT Requiring Prescription(<span id="item_num"></span>)</h2>
+            </div>
+            <div id="right_side">
+                <div id="right_side_first">
+                    <div id="right_side_first_first">
+                        <h1 id="right_side_first_first_h1">Care Plan</h1>
+                        <h2 id="right_side_first_first_h2">You can save extra ₹34 on this order</h2>
+                        <p id="right_side_first_first_p1">Become a member</p>
+                        <p id="right_side_first_first_p2">Care plan membership ₹165 <span id="linetroughonmrp">₹549</span> / 3 months</p>
+                        <div id="button_div">
+                            <button id="know_more">Know More</button>
+                            <button id="add_to_cart">Add To Cart</button>
+                        </div>
+                    </div>
+                    <hr>
+                    <div id="right_side_first_second">
+                        <div id="right_side_first_second_first">
+                            <h3><span></span> Apply Coupon</h3>
+                        </div>
+                        <div id="right_side_first_second_second">
+                            <p><i class="fa-solid fa-angle-right"></i></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="right_side_second">
+                    <div id="right_side_second_first">
+                        <div id="right_side_second_first_first">
+                           <div><p>Check the health of your vital organs</p></div>
+                           <div><p><i class="fa-solid fa-exclamation"></i></p></div>
+                        </div>
+                    </div>
+                    <div id="right_side_second_second">
+                        <div id="right_side_second_second_first">
+                            <input type="checkbox" id="right_side_second_second_checkbox" onclick="clicked()" name="C" value="right_side_second_second_checkbox_checked"/>    
+                             <label>Book Good Health Silver Package for just ₹649</label>
+                        </div>
+                        <div id="right_side_second_second_second">
+                            <p id="right_side_second_second_second_p1">Get the tests done easily from your home. This</p>
+                            <p id="right_side_second_second_second_p2">package will help you in identifying potential</p>
+                            <p id="right_side_second_second_second_p3">disorders and deficiencies at an early stage.</p>
+                            <p id="light_green">Pay later on home sample collection</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="right_side_third">
+                    <div id="right_side_third_first">
+                        <div id="right_side_third_first_first">
+                            <div id="right_side_third_first_first_first">
+                               <div><img src="https://res.cloudinary.com/du8msdgbj/image/upload/v1645088829/210921_TataNeu_appicon_light_24px_circle_3_1x_vxwibw.png"></div>
+                               <div><p>My Neucoins</p></div>
+                            </div>
+                            <div id="right_side_third_first_first_second">
+                                <p>Balance: 0 NeuCoin</p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div id="right_side_third_second">
+                        <p id="right_side_third_second_p1"><span id="right_side_third_second_span1">0.89 </span><span id="right_side_third_second_span2">NeuCoin</span> to be earned on this order*</p>
+                        <div id="right_side_third_second_div">
+                           <div id="right_side_third_second_div_first"><p id="right_side_third_second_p2"><span id="right_side_third_second_p2_span"><i class="fa-solid fa-lock"></i></span>Extra 4.45 NeuCoins for care Plan members</p></div>
+                           <div><p id="right_side_third_second_div_p2"><i class="fa-solid fa-exclamation"></i></p></div>
+                        </div>
+                        <p id="right_side_third_second_p3">Add care plan to cart</p>
+                    </div>
+                </div>
+                <div id="right_side_fourth">
+                    <div class="right_side_fourth_child">
+                        <div><p>Item Total(MRP)</p></div>
+                        <div><p id="total_mrp"> 0</p></div>
+                    </div>
+                    <div class="right_side_fourth_child">
+                        <div>Price Discount</div>
+                        <div><p id="total_discount">0</p></div>
+                    </div>
+                    <hr>
+                    <div class="right_side_fourth_child">
+                        <div>Shipping Fees</div>
+                        <div>₹0</div>
+                    </div>
+                    <hr>
+                    <div class="right_side_fourth_child" id="right_side_fourth_fourth">
+                        <div>To be paid</div>
+                        <div><p id="total_price">0</p></div>
+                    </div>
+                    <div class="right_side_fourth_child" id="right_side_fourth_fifth">
+                        <div>Total Savings</div>
+                        <div><p id="total_discount1">0</p></div>
+                    </div>
+                </div>
+                <div id="right_side_fifth">
+                    <div id="right_side_fifth_first">
+                        <div>
+                            <p>Your delivery location</p>
+                        </div>
+                        <div id="right_side_fifth_first_second">
+                            <p>New Delhi</p>
+                        </div>
+                    </div>
+                    <button>CHECKOUT</button>
+                </div>
+            </div>
+        </div>
+        <div id="down_footer">
+            <div id="down_footer_first">
+                <hr>
+                <p>
+                    Tata 1mg is a technology platform to facilitate transaction of business. The products and services are offered for sale by the sellers. The user authorizes the delivery personel to be his agent for delivery of the goods. For details read terms and conditions.
+                </p>
+            </div>
+            <div id="down_footer_second">
+                <hr>
+                <p>*NeuCoins will be credited 7 days after your complete order is delivered in case of Products and in case of Lab Services NeuCoins will be credited within 24 hours from the time of generation of test report. NeuCoins will not be credited in case a return request is initiated for the order.</p>
+                <p>**Coupon Discount value may change if the total order value changes.</p>
+                <p>***Items in your cart will always reflect the most recent price as compared to the prices in their product detail page.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    var item_number = 0;
+    var tota_discount = 0;
+    var tota_mrp = 0;
+    var tota_price = 0;
+    var crt = JSON.parse(localStorage.getItem("ItemInCart")) || [];
+    dispaythe();
+    function dispaythe(){
+        crt.map(function(elem){
+        item_number += 1;
+        tota_mrp += parseInt(elem.mrp) ;
+        tota_price += parseInt(elem.price) ;
+        var name = document.createElement("p");
+        name = elem.name;
+        // name.setAttribute("id","headingname");
+        var price = document.createElement("p");
+        price = elem.price;
+        var nam = document.createElement("div");
+        nam.append(name);
+        nam.setAttribute("class","to_apart_on_corner_left");
+        var pri = document.createElement("div");
+        pri.append(price);
+        pri.setAttribute("class","to_apart_on_corner_left");
+        var quantity = document.createElement("p");
+        quantity = elem.quantity_of_single;
+        var quant = document.createElement("div");
+        quant.append(quantity);
+        var mrp = document.createElement("p");
+        mrp.innerHTML = `MRP `+`<span id="linetroughonmrp">${elem.mrp}</span>`;
+        var mr = document.createElement("div");
+        mr.append(mrp);
+        var di1 = document.createElement("div");
+        di1.append(nam,pri);
+        di1.setAttribute("class","to_apart_on_corner");
+        var di2 = document.createElement("div");
+        di2.append(quant,mr);
+        di2.setAttribute("class","to_apart_on_corner");
+        var di3 = document.createElement("div");
+        var di3_1 = document.createElement("div");
+        var di3_1_le = document.createElement("div");
+        var di3_1_lel = document.createElement("div");
+        var di3_1_le_le = document.createElement("p");
+        var di3_1_lel_le = document.createElement("p");
+        di3_1_le_le.innerHTML = `<p><i class="fa-regular fa-trash-can"></i></p>`;
+        di3_1_lel_le.innerHTML= `<p>Remove</p>`;
+        di3_1_le.append(di3_1_le_le);
+        di3_1_lel.append(di3_1_lel_le);
+        di3_1.append(di3_1_le,di3_1_lel);
+        var di3_2 = document.createElement("div");
+        var di3_2_1 = document.createElement("div");
+        di3_2_1.setAttribute("id","minusbutton");
+        // di3_2_1.addEventListener("click",reducingvalueofdi3_2_2());
+        var di3_2_2 = document.createElement("div");
+        var di3_2_3 = document.createElement("div");
+        // di3_2_3.addEventListener("click",addingvalueofdi3_2_2);
+        di3_2_3.setAttribute("id","plusbutton");
+        var di3_2_1_p = document.createElement("p");
+        var di3_2_2_p = document.createElement("p");
+        var di3_2_3_p = document.createElement("p");
+        di3_2_1_p.innerHTML = `<p><i class="fa-solid fa-minus"></i></p>`;
+        di3_2_2_p.innerHTML = `<p>1</p>`;
+        di3_2_2_p.setAttribute("id","plusminusbutton");
+        di3_2_3_p.innerHTML = `<p><i class="fa-solid fa-plus"></i></p>`;
+        di3_2_1.append(di3_2_1_p);
+        di3_2_2.append(di3_2_2_p);
+        di3_2_3.append(di3_2_3_p);
+        di3_2.append(di3_2_1,di3_2_2,di3_2_3);
+        di3_1.setAttribute("id","di3_1");
+        di3_2.setAttribute("id","di3_2");
+        di3.append(di3_1,di3_2);
+        di3.setAttribute("class","to_apart_on_corner");
+        var div = document.createElement("div");
+        div.append(di1,di2,di3);
+        div.setAttribute("id","box_of_product");
+        document.getElementById("left_side").append(div);
+        // var tota_mrp1 = tota_mrp + parseInt(document.getElementById("total_mrp").innerText);
+        // var tota_price1 = tota_price + parseInt(document.getElementById("total_price").innerText);
+        // document.getElementById("total_mrp").innerHTML =`₹ `+`${tota_mrp1}`;
+        // document.getElementById("total_price").innerHTML = `₹ `+`${tota_price}`;
+        // document.getElementById("total_discount").innerHTML = `-₹ `+`${Math.abs(tota_mrp - tota_price)}`;
+        // document.getElementById("total_discount1").innerHTML = `₹ `+`${Math.abs(tota_mrp - tota_price)}`;
+        // document.getElementById("item_num").innerText = item_number;
+    })
+    }
+    tota_discount = tota_mrp - tota_discount;
+    document.getElementById("total_mrp").innerHTML =`₹ `+`${tota_mrp}`;
+    document.getElementById("total_price").innerHTML = `₹ `+`${tota_price}`;
+    document.getElementById("total_discount").innerHTML = `-₹ `+`${Math.abs(tota_mrp - tota_price)}`;
+    document.getElementById("total_discount1").innerHTML = `₹ `+`${Math.abs(tota_mrp - tota_price)}`;
+    document.getElementById("item_num").innerText = item_number;
+    // var chcekbox = document.getElementById("right_side_second_second_checkbox").checked;
+    function clicked(){
+        var d = document.getElementById("right_side_second_second_checkbox");
+        if (d.checked==true){
+            document.getElementById("right_side_second_second_second_p1").innerText = "Our team will call you to book a slot as per your";
+        document.getElementById("right_side_second_second_second_p2").innerText = "convienence.";
+        document.getElementById("right_side_second_second_second_p3").innerText = "";
+        }
+        else {
+            document.getElementById("right_side_second_second_second_p1").innerText = "Get the tests done easily from your home. This";
+            document.getElementById("right_side_second_second_second_p2").innerText = "package will help you in identifying potential";
+        document.getElementById("right_side_second_second_second_p3").innerText = "disorders and deficiencies at an early stage.";
+        }
+    }
+    // if ( chcekbox == true){
+    //     document.getElementById("right_side_second_second_second_p1").innerText = "Our team will call you to book a slot as per your";
+    //     document.getElementById("right_side_second_second_second_p2").innerText = "convenience.";
+    //     document.getElementById("right_side_second_second_second_p3").innerText = "";
+    // }
+    document.getElementById("minusbutton").addEventListener("click",reducingvalueofdi3_2_2);
+    document.getElementById("plusbutton").addEventListener("click",addingvalueofdi3_2_2);
+    function reducingvalueofdi3_2_2(){
+        var nu = parseInt(document.getElementById("plusminusbutton").innerText);
+        var nun = (nu)-1;
+        document.getElementById("plusminusbutton").innerHTML = nun;
+        document.getElementById("total_mrp").innerHTML =`₹ `+`${tota_mrp*nun}`;
+        document.getElementById("total_price").innerHTML = `₹ `+`${tota_price*nun}`;
+        document.getElementById("total_discount").innerHTML = `-₹ `+`${Math.abs(tota_mrp*nun - tota_price*nun)}`;
+        document.getElementById("total_discount1").innerHTML = `₹ `+`${Math.abs(tota_mrp*nun - tota_price*nun)}`;
+    }
+    function addingvalueofdi3_2_2(){
+        var nu = parseInt(document.getElementById("plusminusbutton").innerText);
+        var nun = (nu)+1;
+        document.getElementById("plusminusbutton").innerHTML = nun;
+        document.getElementById("total_mrp").innerHTML =`₹ `+`${tota_mrp*nun}`;
+        document.getElementById("total_price").innerHTML = `₹ `+`${tota_price*nun}`;
+        document.getElementById("total_discount").innerHTML = `-₹ `+`${Math.abs(tota_mrp*nun - tota_price*nun)}`;
+        document.getElementById("total_discount1").innerHTML = `₹ `+`${Math.abs(tota_mrp*nun - tota_price*nun)}`;
+    }
+</script>
+<script src="https://kit.fontawesome.com/e68ecfb53d.js" crossorigin="anonymous"></script>
