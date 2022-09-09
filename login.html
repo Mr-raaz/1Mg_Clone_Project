@@ -16,7 +16,7 @@
     #closeButton {
       font-size: 35px;
       height: 40px;
-      position: absolute ;
+      position: absolute;
       cursor: pointer;
       margin-top: -10px;
       margin-left: 20%;
@@ -244,52 +244,58 @@
     #email_new {
       outline: none;
     }
+
     .col {
       color: gray;
     }
-    .popup{
-    width: 400px;
-    background: #fff;
-    border-radius: 6px;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0.1);
-    text-align: center;
-    padding: 0 30px 30px;
-    color: #333;
-    visibility: hidden;
-    transition: transform 0.4s, top 0.4s;
-  }
-  .open-popup{
-    visibility: visible;
-    top: 50%;
-    transform: translate(-50%, -50%) scale(1);
-  }
-  .popup img{
-    width: 100px;
-    margin-top: -50px;
-    border-radius: 50%;
-    box-shadow: 0 2px 5px  rgba(0, 0, 0, 0.2);
-  }
-  .popup h2{
-    font-size: 40px;
-    font-weight: 500;
-    margin: 30px 0 10px;
-  }
-  .popup button{
-    width: 100%;
-    margin-top: 50px;
-    padding: 10px 0;
-    background: #6fd649;
-    color: #fff;
-    border: 0;
-    outline: none;
-    font-size: 18px;
-    border-radius: 4px;
-    cursor: pointer;
-    box-shadow: 0 2px 5px  rgba(0, 0, 0, 0.2);
-  }
+
+    .popup {
+      width: 400px;
+      background: #fff;
+      border-radius: 6px;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0.1);
+      text-align: center;
+      padding: 0 30px 30px;
+      color: #333;
+      visibility: hidden;
+      transition: transform 0.4s, top 0.4s;
+    }
+
+    .open-popup {
+      visibility: visible;
+      top: 50%;
+      transform: translate(-50%, -50%) scale(1);
+    }
+
+    .popup img {
+      width: 100px;
+      margin-top: -50px;
+      border-radius: 50%;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .popup h2 {
+      font-size: 40px;
+      font-weight: 500;
+      margin: 30px 0 10px;
+    }
+
+    .popup button {
+      width: 100%;
+      margin-top: 50px;
+      padding: 10px 0;
+      background: #6fd649;
+      color: #fff;
+      border: 0;
+      outline: none;
+      font-size: 18px;
+      border-radius: 4px;
+      cursor: pointer;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
   </style>
 </head>
 
@@ -307,58 +313,6 @@
             </p>
           </div>
         </div>
-        <!-- <div class="mySlides">
-            <img
-              src="https://www.1mg.com/images/login-signup/Know-Your-Medicines.png"
-              alt="img2"
-            />
-            <div class="text">
-              <h2>Know Your Medicines</h2>
-              <p style="font-size: 12.5px;">
-                View medicine information like usage, side effects and <br />
-                cheaper substitutes before you take them.
-              </p>
-            </div>
-          </div>
-          <div class="mySlides">
-            <img
-              src="https://www.1mg.com/images/login-signup/Home-Delivery-of-Medicines.png"
-              alt="img3"
-            />
-            <div class="text">
-              <h2>Medicines, Home Delivered</h2>
-              <p style="font-size: 12.5px;">
-                Order any medicine or health product and we'll deliver <br />
-                it for free. Enjoy discounts on everything.
-              </p>
-            </div>
-          </div>
-          <div class="mySlides">
-            <img
-              src="https://www.1mg.com/images/login-signup/Lab-Tests-at-Home.png"
-              alt="img4"
-            />
-            <div class="text">
-              <h2>Lab Tests at Home</h2>
-              <p style="font-size: 12.5px;">
-                Book any test from any lab. We'll collect the sample <br />and
-                send the reports. Save up to 80% every time.
-              </p>
-            </div>
-          </div>
-          <div class="mySlides">
-            <img
-              src="https://www.1mg.com/images/login-signup/Health-Related-Queries.png"
-              alt="img5"
-            />
-            <div class="text">
-              <h2>Health Related Queries?</h2>
-              <p style="font-size: 12.5px;">
-                Consult our certified doctors from anywhere, anytime,<br />and
-                for free. We guarantee your privacy.
-              </p>
-            </div>
-          </div> -->
         <div class="dot_container">
           <span class="dot" onclick="currentSlide()"></span>
           <span class="dot" onclick="currentSlide()"></span>
@@ -376,7 +330,7 @@
         <p style="color: gray;">Get access to your orders, lab tests & doctor consultations</p>
         <form>
           <input type="number" style="font-size: 16px;" style="z-index: 10;" style="pointer-events: none;"
-            placeholder="Enter Email ID or Mobile Number" id="login_mobile_number"
+            placeholder="Enter Mobile Number" id="login_mobile_number"
             oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
             maxlength="10" />
         </form>
@@ -384,7 +338,7 @@
           Entered mobile number is not valid. Please enter a valid 10 digit
           mobile number.
         </p>
-        <button id="login_button-1">LOGIN</button>
+        <a href="./otp2.html"><button id="login_button-1">LOGIN</button></a> 
         <div>
           <p>
             New on 1mg?
@@ -400,65 +354,13 @@
           </p>
         </div>
       </div>
-      <div id="verify_otp">
-        <h1>
-          Verify OTP
-        </h1>
-        <p>
-          Provide OTP sent to <span id="user_mobile"></span>
-          <span class="a_orange" id="edit_button">Edit</span>
-        </p>
-        <form>
-          <input type="password" placeholder="One Time Password" id="one_time_p" minlength="8" maxlength="12" />
-        </form>
-        <p id="wrong_otp">Please enter a valid OTP.</p>
-        <p id="error">
-          <span class="a_orange" id="otp_sms">Get OTP on SMS</span> |
-          <span class="a_orange" id="otp_call">Get OTP on Call</span>
-        </p>
-        <button id="done" onclick="openpopup()">DONE</button>
-        <div class="popup" id="popup">
-          <img src="tick.png" alt="logo">
-          <h2>Login Successfully!</h2>
-          <button type="button" onclick="closepopup()">OK</button>
-        </div>
-        <div>
-          <p>
-            <a href="" class="a_orange">Need help? Get In Touch</a>
-          </p>
-        </div>
-      </div>
-      <div id="email_id_new">
-        <h1>
-          Enter your email id
-        </h1>
-        <p>
-          We are almost ready! just need your email id to keep your account
-          extra safe
-        </p>
-        <form>
-          <input type="email" placeholder="Enter Email ID" id="email_new" />
-        </form>
-        <p id="invalid_email">Please enter a valid email ID.</p>
-        <button id="email_continue" onclick="login(event)">CONTINUE</button>
-        <div>
-          <p id="terms">
-            By logging up, you agree to our <br>
-            <a class="col" href="">Terms and Conditions</a> &
-            <a class="col" href="">Privacy Policy</a>
-          </p>
-          <p>
-            <a href="" class="a_orange">Need help? Get In Touch</a>
-          </p>
-        </div>
-      </div>
     </div>
   </div>
 </body>
 
 </html>
 <script>
-  
+
   document.getElementById("signup_span").addEventListener("click", function () {
     window.location.href = "signup.html";
   });
@@ -466,169 +368,4 @@
     event.preventDefault();
     document.getElementById("error").textContent = "Invalid email address.";
   });
-  let popup=document.getElementById("popup");
-function openpopup(){
-  popup.classLlist.add("open-popup");
-}
-function closepopup(){
-  popup.classList.remove("open-popup");
-}
-var otp = 123456;
-document.getElementById("login_span").addEventListener("click", function () {
-  let a = document.getElementById("account_1");
-  let b = document.getElementById("account_2");
-  let c = document.getElementById("verify_otp");
-  let d = document.getElementById("email_id_new");
-  a.style.display = "none";
-  c.style.display = "none";
-  d.style.display = "none";
-  b.style.display = "block";
-});
-
-document.getElementById("signup_span").addEventListener("click", function () {
-  let a = document.getElementById("account_2");
-  let b = document.getElementById("account_1");
-  let c = document.getElementById("verify_otp");
-  let d = document.getElementById("email_id_new");
-  a.style.display = "none";
-  c.style.display = "none";
-  d.style.display = "none";
-  b.style.display = "block";
-});
-
-document.getElementById("edit_button").addEventListener("click", function () {
-  let a = document.getElementById("account_2");
-  let b = document.getElementById("account_1");
-  let c = document.getElementById("verify_otp");
-  let d = document.getElementById("email_id_new");
-  a.style.display = "none";
-  b.style.display = "block";
-  d.style.display = "none";
-  c.style.display = "none";
-});
-
-document
-  .getElementById("account_continue")
-  .addEventListener("click", function () {
-    let number = document.getElementById("mobile_number").value;
-    let string = number.toString();
-    // console.log(string.length);
-    if (string.length != 10) {
-      document.getElementById("account_invalid_num").style.display = "block";
-      document.getElementById("account_continue").style.marginTop = "20px";
-    } else {
-     // localStorage.setItem("mobile_number", JSON.stringify(number));
-      document.getElementById("user_mobile").textContent = number;
-      let a = document.getElementById("account_2");
-      let b = document.getElementById("account_1");
-      let c = document.getElementById("verify_otp");
-      let d = document.getElementById("email_id_new");
-      a.style.display = "none";
-      b.style.display = "none";
-      c.style.display = "block";
-      d.style.display = "none";
-      document.getElementById("account_invalid_num").style.display = "none";
-      document.getElementById("account_continue").style.marginTop = "70px";
-    }
-  });
-
-document
-  .getElementById("login_button-1")
-  .addEventListener("click", function () {
-    let number = document.getElementById("login_mobile_number").value;
-    let string = number.toString();
-    // console.log(string.length);
-    if (string.length != 10) {
-      document.getElementById("login_invalid_num").style.display = "block";
-      document.getElementById("login_button-1").style.marginTop = "20px";
-    } else {
-     // localStorage.setItem("mobile_number", JSON.stringify(number));
-      document.getElementById("user_mobile").textContent = number;
-      let a = document.getElementById("account_2");
-      let b = document.getElementById("account_1");
-      let c = document.getElementById("verify_otp");
-      let d = document.getElementById("email_id_new");
-      a.style.display = "none";
-      b.style.display = "none";
-      c.style.display = "block";
-      d.style.display = "none";
-      document.getElementById("login_invalid_num").style.display = "none";
-      document.getElementById("login_button-1").style.marginTop = "70px";
-    }
-  });
-
-document.getElementById("done").addEventListener("click", function () {
-    let a = document.getElementById("account_2");
-    let b = document.getElementById("account_1");
-    let c = document.getElementById("verify_otp");
-    let d = document.getElementById("email_id_new");
-    a.style.display = "none";
-    b.style.display = "none";
-    c.style.display = "none";
-    d.style.display = "block";
-    document.getElementById("wrong_otp").style.display = "none";
-});
-
-document
-  .getElementById("email_continue")
-  .addEventListener("click", function () {
-    if (document.getElementById("email_new").value.length == 0) {
-      document.getElementById("invalid_email").style.display = "block";
-      document.getElementById("email_continue").style.marginTop = "20px";
-    } else {
-      let f = document.getElementById("email_new").value;
-      document.getElementById("invalid_email").style.display = "none";
-      document.getElementById("email_continue").style.marginTop = "125px";
-    }
-  });
-  var user_login=JSON.parse(localStorage.getItem("user_login"))||"";
-  let login_data;
- async function login(event){
-      try{
-          event.preventDefault();
-       login_data={
-         mobile:document.querySelector("#login_mobile_number").value,
-         password:document.querySelector("#one_time_p").value,
-         email:document.querySelector("#email_new").value,
-       };
-       login_data=JSON.stringify(login_data);
-       //console.log("login_data:",login_data);
-       let response=await fetch(reg_api,{
-           method:'POST',
-           body:login_data,
-           headers:{
-               "Content-Type":'application/json',
-           },
-       })
-       let data=await response.json();
-       if(data==null){
-           alert('login failed,email or password or mobile is wrong')
-           loginpage();
-       }else{
-           alert('login Successful')
-           user_login=true;
-           localStorage.setItem("user_login",JSON.stringify(user_login));
-           home();
-       }
-      }catch(err){
-          console.log("err:",err);
-      }
-   }
-
-   function home(){
-    window.location.href="index.html";
-  }
-  function loginpage(){
-    window.location.href="login.html";
-  }
-document.getElementById("otp_sms").addEventListener("click", function () {
-  document.getElementById("error").innerHTML =
-    "You will soon receive an SMS with the OTP";
-  document.getElementById("error").style.color = "green";
-});
-document.getElementById("otp_call").addEventListener("click", function () {
-  document.getElementById("error").innerHTML =
-    "You will soon receive an call with the OTP";
-  document.getElementById("error").style.color = "green";
-});
 </script>
