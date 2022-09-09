@@ -555,6 +555,19 @@
 </html>
 
 <script>
+    var nod = {
+        disscount_percent: "60",
+        name : "Tata 1mg Women's Multivitamin, Zinc, Vitamin C, Calcium, Vitamin D, and Iron Immunity Booster Tablet",
+        image_url : "https://onemg.gumlet.io/images/q_auto,h_150,f_auto,c_fit,w_150/qh1au45w8u7cfvf3lg3i/tata-1mg-women-s-multivitamin-zinc-vitamin-c-calcium-vitamin-d-and-iron-immunity-booster-tablet.jpg",
+        number_rating : "667",
+        price : "995",
+        quantity : "bottle of 60 tables",
+        rating : "4.3",
+        strikedoffprice : "1170",
+     };
+     var li = [];
+     li.push(nod);
+    localStorage.setItem("productdetail", JSON.stringify(li));
     var crt = JSON.parse(localStorage.getItem("productdetail")) || [];
     crt.map(function(elem) {
             document.getElementById("p_rice").innerText = elem.price;

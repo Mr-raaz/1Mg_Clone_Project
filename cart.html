@@ -611,7 +611,8 @@
     document.getElementById("total_discount1").innerHTML = `₹ `+`${Math.abs(tota_mrp - tota_price)}`;
     document.getElementById("item_num").innerText = item_number;
     function checking(){
-        localStorage.setItem("to_be_paid",tota_price);
+        var tt = document.getElementById("total_price").innerText;
+        localStorage.setItem("to_be_paid",tt);
     }
     function clicked(){
         var d = document.getElementById("right_side_second_second_checkbox");
