@@ -298,9 +298,85 @@
         #headingname{
             width: 60px;
         }
-        /* .to_apart_on_corner_left{
-            width: 50%;
-        } */
+        @media only screen and (min-width: 481px) and (max-width: 768px){
+            #inner_for_grid{
+            /* border: 2px solid red; */
+            margin-left: 1%;
+            margin-right: 1%;
+            /* height: 1500px; */
+            display: block;
+            /* grid-template-columns: 3fr 2fr; */
+        }
+        #right_side{
+            margin-top: 15px;
+        }
+        #left_side {
+            margin-right: 0px;
+        }
+        #right_side_fourth_fifth{
+            background-color: rgb(231, 229, 229);
+            padding-left: 10px;
+            height: 45px;
+            padding-right: 10px;
+            width: 100%;
+            margin-left: -1.5%;
+        }
+        #down_footer_first{
+            display: none;
+        }
+        #down_footer_second{
+            display: none;
+        }
+        #outer_for_color{
+            padding-top: 10px;
+        }
+        #down_footer_third p{
+            width: 650px;
+            margin-left: -10%;
+        }
+        }
+        @media only screen and (min-width: 769px){
+            #down_footer_third{
+                display: none;
+            }
+        }
+        @media only screen and (max-width : 480px){
+            #inner_for_grid{
+            /* border: 2px solid red; */
+            margin-left: 1%;
+            margin-right: 1%;
+            /* height: 1500px; */
+            display: block;
+            /* grid-template-columns: 3fr 2fr; */
+        }
+        #right_side{
+            margin-top: 15px;
+        }
+        #left_side {
+            margin-right: 0px;
+        }
+        #right_side_fourth_fifth{
+            background-color: rgb(231, 229, 229);
+            padding-left: 10px;
+            height: 45px;
+            padding-right: 10px;
+            width: 100%;
+            margin-left: -1.5%;
+        }
+        #down_footer_first{
+            display: none;
+        }
+        #down_footer_second{
+            display: none;
+        }
+        #outer_for_color{
+            padding-top: 10px;
+        }
+        #down_footer_third p{
+            width: 400px;
+            margin-left: -10%;
+        }
+        }
     </style>
 </head>
 <body>
@@ -308,6 +384,9 @@
         <div id="inner_for_grid">
             <div id="left_side">
                 <h2>Items NOT Requiring Prescription(<span id="item_num"></span>)</h2>
+                <div id="left_side_side">
+
+                </div>
             </div>
             <div id="right_side">
                 <div id="right_side_first">
@@ -406,7 +485,7 @@
                             <p>New Delhi</p>
                         </div>
                     </div>
-                    <button>CHECKOUT</button>
+                    <button id="checking_out">CHECKOUT</button>
                 </div>
             </div>
         </div>
@@ -423,6 +502,14 @@
                 <p>**Coupon Discount value may change if the total order value changes.</p>
                 <p>***Items in your cart will always reflect the most recent price as compared to the prices in their product detail page.</p>
             </div>
+            <div id="down_footer_third">
+                <p>*NeuCoins will be credited 7 days after your complete order is delivered in case of Products and in case of Lab Services NeuCoins will be credited within 24 hours from the time of generation of test report. NeuCoins will not be credited in case a return request is initiated for the order.</p>
+                <p>**Coupon Discount value may change if the total order value changes.</p>
+                <p>***Items in your cart will always reflect the most recent price as compared to the prices in their product detail page.</p>
+                <p>
+                    Tata 1mg is a technology platform to facilitate transaction of business. The products and services are offered for sale by the sellers. The user authorizes the delivery personel to be his agent for delivery of the goods. For details read terms and conditions.
+                </p>
+            </div>
         </div>
     </div>
 </body>
@@ -434,9 +521,10 @@
     var tota_mrp = 0;
     var tota_price = 0;
     var crt = JSON.parse(localStorage.getItem("ItemInCart")) || [];
-    dispaythe();
-    function dispaythe(){
-        crt.map(function(elem){
+    dispaythe(crt);
+    function dispaythe(crt){
+        document.getElementById("left_side_side").innerText = " ";
+        crt.map(function(elem,index){
         item_number += 1;
         tota_mrp += parseInt(elem.mrp) ;
         tota_price += parseInt(elem.price) ;
@@ -471,7 +559,10 @@
         var di3_1_lel = document.createElement("div");
         var di3_1_le_le = document.createElement("p");
         var di3_1_lel_le = document.createElement("p");
-        di3_1_le_le.innerHTML = `<p><i class="fa-regular fa-trash-can"></i></p>`;
+        di3_1_le_le.innerHTML = `<p id = "remove"><i class="fa-regular fa-trash-can"></i></p>`;
+        di3_1_lel_le.addEventListener("click", function(){
+            removing(index);
+        });
         di3_1_lel_le.innerHTML= `<p>Remove</p>`;
         di3_1_le.append(di3_1_le_le);
         di3_1_lel.append(di3_1_lel_le);
@@ -502,7 +593,7 @@
         var div = document.createElement("div");
         div.append(di1,di2,di3);
         div.setAttribute("id","box_of_product");
-        document.getElementById("left_side").append(div);
+        document.getElementById("left_side_side").append(div);
         // var tota_mrp1 = tota_mrp + parseInt(document.getElementById("total_mrp").innerText);
         // var tota_price1 = tota_price + parseInt(document.getElementById("total_price").innerText);
         // document.getElementById("total_mrp").innerHTML =`₹ `+`${tota_mrp1}`;
@@ -514,11 +605,14 @@
     }
     tota_discount = tota_mrp - tota_discount;
     document.getElementById("total_mrp").innerHTML =`₹ `+`${tota_mrp}`;
+    document.getElementById("checking_out").addEventListener("click",checking);
     document.getElementById("total_price").innerHTML = `₹ `+`${tota_price}`;
     document.getElementById("total_discount").innerHTML = `-₹ `+`${Math.abs(tota_mrp - tota_price)}`;
     document.getElementById("total_discount1").innerHTML = `₹ `+`${Math.abs(tota_mrp - tota_price)}`;
     document.getElementById("item_num").innerText = item_number;
-    // var chcekbox = document.getElementById("right_side_second_second_checkbox").checked;
+    function checking(){
+        localStorage.setItem("to_be_paid",tota_price);
+    }
     function clicked(){
         var d = document.getElementById("right_side_second_second_checkbox");
         if (d.checked==true){
@@ -532,13 +626,8 @@
         document.getElementById("right_side_second_second_second_p3").innerText = "disorders and deficiencies at an early stage.";
         }
     }
-    // if ( chcekbox == true){
-    //     document.getElementById("right_side_second_second_second_p1").innerText = "Our team will call you to book a slot as per your";
-    //     document.getElementById("right_side_second_second_second_p2").innerText = "convenience.";
-    //     document.getElementById("right_side_second_second_second_p3").innerText = "";
-    // }
-    document.getElementById("minusbutton").addEventListener("click",reducingvalueofdi3_2_2);
-    document.getElementById("plusbutton").addEventListener("click",addingvalueofdi3_2_2);
+     document.getElementById("minusbutton").addEventListener("click",reducingvalueofdi3_2_2);
+     document.getElementById("plusbutton").addEventListener("click",addingvalueofdi3_2_2);
     function reducingvalueofdi3_2_2(){
         var nu = parseInt(document.getElementById("plusminusbutton").innerText);
         var nun = (nu)-1;
@@ -556,6 +645,13 @@
         document.getElementById("total_price").innerHTML = `₹ `+`${tota_price*nun}`;
         document.getElementById("total_discount").innerHTML = `-₹ `+`${Math.abs(tota_mrp*nun - tota_price*nun)}`;
         document.getElementById("total_discount1").innerHTML = `₹ `+`${Math.abs(tota_mrp*nun - tota_price*nun)}`;
+    }
+    function removing(index){
+        var cr = JSON.parse(localStorage.getItem("ItemInCart")) || [];
+        let temp = cr.splice(index,1);
+        localStorage.setItem("ItemInCart",JSON.stringify(cr));
+        dispaythe(cr);
+        // localStorage.setItem("ItemInCart",JSON.stringify(cr));
     }
 </script>
 <script src="https://kit.fontawesome.com/e68ecfb53d.js" crossorigin="anonymous"></script>
