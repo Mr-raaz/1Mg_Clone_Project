@@ -161,22 +161,22 @@
     let sdiscount = [
        {
          percent: "Less than 10%",
-         squantity2: 159
+         squantity2: 55
        },
    
        {
          percent: "10% and above",
-         squantity2: 345
+         squantity2: 35
        },
    
        {
          percent: "20% and above",
-         squantity2: 151
+         squantity2: 15
        },
    
        {
          percent: "30% and above",
-         squantity2: 102
+         squantity2: 24
        },
    
     ];
@@ -273,6 +273,7 @@
     function sNameNumberDiscount(array){
         array.map(function(obj, index, array){
             let div1 = document.createElement("div");
+            div1.setAttribute("id","indiose1");
             
             let div2 = document.createElement("div");
             let input1 = document.createElement("input");
@@ -2054,13 +2055,12 @@
     
     
     function scardDisplay1(array){
-    array.map(function(obj, index, array){
-    
+      array.map(function(obj, index, array){
+      
         let div1 = document.createElement("div");///
         div1.setAttribute("id", "sky1");
-    
-    
-    
+        
+        
         let div2 = document.createElement("div");//
         div2.setAttribute("id", "sky2");
         let img1 = document.createElement("img");
@@ -2068,25 +2068,25 @@
         img1.setAttribute("src", obj.image_url);
         img1.setAttribute("alt", "product image");
         div2.append(img1);
-    
-    
+        
+        
         let div3 = document.createElement("div");//
         let p1 = document.createElement("p");
         p1.setAttribute("id", "sky3");
         p1.innerText = obj.name;
         div3.append(p1);
-    
-    
+        
+        
         let div3i = document.createElement("div");//
         let p2 = document.createElement("p");
         p2.setAttribute("id", "sky4");
         p2.innerText = "bottle of "+obj.quantity+" tablets";
         div3i.append(p2);
-    
-    
+        
+        
         let div4 = document.createElement("div");//
         div4.setAttribute("id", "skym5iii");
-    
+        
         let span1 = document.createElement("span");
         span1.setAttribute("id", "skym5");
         let span2 = document.createElement("span");
@@ -2095,16 +2095,16 @@
         let i1 = document.createElement("i");
         i1.setAttribute("class","fa-solid fa-star")
         span1.append(span2, i1);
-    
+        
         let span3 = document.createElement("span");
         span3.setAttribute("id", "skym6");
         span3.innerText = obj.number_rating+" ratings";
-    
+        
         div4.append(span1, span3);
-    
-    
+        
+        
         let div5 = document.createElement("div");//
-    
+        
         let span5 = document.createElement("span");
         span5.setAttribute("id", "sky7");
         span5.innerText= "MRP";
@@ -2115,17 +2115,17 @@
         span6.setAttribute("id", "skym7");
         span6.innerText = obj.strikedoffprice;
         span5.append(i2, span6);
-    
+        
         let span7 = document.createElement("span");
         span7.setAttribute("id", "sky8i");
         span7.innerText = obj.disscount_percent +"% OFF";
-    
+        
         div5.append(span5, span7);
-    
-    
+        
+        
         let div6 = document.createElement("div");//
         div6.setAttribute("class", "sky9m");
-    
+        
         let p3 = document.createElement("p");
         let i3 = document.createElement("i");
         i3.setAttribute("class","fa-solid fa-indian-rupee-sign");
@@ -2133,29 +2133,30 @@
         span9.setAttribute("id", "sky9")
         span9.innerText = obj.price;
         p3.append(i3, span9);
-    
-    
+        
+        
         let p4 = document.createElement("p");
         p4.setAttribute("id", "sky10");
         p4.innerText = "ADD";
         div6.append(p3, p4);
-
+        
         //----------- for add to cart
         p4.addEventListener("click", function(){saddtocart1(obj, index, array)});
         //----------- for add to cart
-    
-    
+        
+        
         div1.append(div2, div3, div3i, div4, div5, div6);
-    
+        
         document.getElementById("sfinalcard1id").append(div1);
+        
+      });
+    }
     
-    });
-
-
-
-
+    
+    
+    
     let cartArrayS1 = JSON.parse(localStorage.getItem("cartArrayS1")) || [];
-
+    
     //-------------------add to cart function
     function saddtocart1(obj, index, array){
         let addedItemDetails = {
@@ -2173,8 +2174,8 @@
         localStorage.setItem("cartArrayS1", JSON.stringify(cartArrayS1));
         location.reload();
     }
-
-
+    
+    
 
     // function to pop the nubmer of items into the cart
     //# id = "cartItembox"  line 88
@@ -2188,203 +2189,280 @@
     
 
     //-------XXXXXXXXX------add to cart function
-
-
-
-
-
-    // close the box as we click
-    document.getElementById("sLater1").addEventListener("click", caretchange);
-
     
-    // SORT By rating
-    document.getElementById("srating").addEventListener("click", sortByRating);
-    function sortByRating(){
-            document.querySelector("#sfinalcard1id").innerText = "";
-            sallpdt1.sort(function(a,b){
-            if(Number(a.rating) <   Number(b.rating)){
-                return 1;
-            }
-            else if(Number(a.rating) > Number(b.rating)){
-                return -1;
-            }
-            return 0;
-        });
-        scardDisplay1(sallpdt1);
-    };
-
-
-
-    // SORT By LTH
-    document.getElementById("slth").addEventListener("click", priceSortlth);
-    function priceSortlth(){
-            document.querySelector("#sfinalcard1id").innerText = "";
-            sallpdt1.sort(function(a,b){
-            if(Number(a.price) > Number(b.price)){
-                return 1;
-            }
-            else if(Number(a.price) < Number(b.price)){
-                return -1;
-            }
-            return 0;
-        });
-        scardDisplay1(sallpdt1);
-    };
+    
+    
+    
+    
+      // close the box as we click
+      document.getElementById("sLater1").addEventListener("click", caretchange);
+  
+      
+      // SORT By rating
+      document.getElementById("srating").addEventListener("click", sortByRating);
+      function sortByRating(){
+              document.querySelector("#sfinalcard1id").innerText = "";
+              sallpdt1.sort(function(a,b){
+              if(Number(a.rating) <   Number(b.rating)){
+                  return 1;
+              }
+              else if(Number(a.rating) > Number(b.rating)){
+                  return -1;
+              }
+              return 0;
+          });
+          document.getElementById("srevelence").innerText = "Average Customer Rating";
+          document.getElementById("srevelence").style.paddingRight = "22px";
+          scardDisplay1(sallpdt1);
+      };
+    
+    
+    
+      // SORT By LTH
+      document.getElementById("slth").addEventListener("click", priceSortlth);
+      function priceSortlth(){
+              document.querySelector("#sfinalcard1id").innerText = "";
+              sallpdt1.sort(function(a,b){
+              if(Number(a.price) > Number(b.price)){
+                  return 1;
+              }
+              else if(Number(a.price) < Number(b.price)){
+                  return -1;
+              }
+              return 0;
+          });
+          document.getElementById("srevelence").innerText = "Price: Low to High";
+          scardDisplay1(sallpdt1);
+      };
+            
+    
+    
+      // SORT By HTL
+      document.getElementById("shtl").addEventListener("click", priceSorthtl);
+      function priceSorthtl(){
+              document.querySelector("#sfinalcard1id").innerText = "";
+              sallpdt1.sort(function(a,b){
+              if(Number(a.price) < Number(b.price)){
+                  return 1;
+              }
+              else if(Number(a.price) > Number(b.price)){
+                  return -1;
+              }
+              return 0;
+          });
+          document.getElementById("srevelence").innerText = "Price: High to Low";
+          scardDisplay1(sallpdt1);
+      };
+    
+    
+    
+      // SORT By discont
+      document.getElementById("sdiscount").addEventListener("click", sortByDiscount);
+      function sortByDiscount(){
+              document.querySelector("#sfinalcard1id").innerText = "";
+              sallpdt1.sort(function(a,b){
+              if(Number(a.disscount_percent) < Number(b.disscount_percent)){
+                  return 1;
+              }
+              else if(Number(a.disscount_percent) > Number(b.disscount_percent)){
+                  return -1;
+              }
+              return 0;
+          });
+          document.getElementById("srevelence").innerText = "Discount";
+          document.getElementById("srevelence").style.paddingRight = "110px";
+          scardDisplay1(sallpdt1);
+      };
+    
+    
+    
+      // sort by brand CHECKBOX
+  
+      // document.getElementById("Tata 1mg").addEventListener("click", soBybrant1);
+      const checkbox1 = document.getElementById("Tata 1mg");
+      checkbox1.addEventListener('change', (event) => {
+          document.querySelector("#sfinalcard1id").innerText = "";
+          if(event.currentTarget.checked) {
+              
+              scardDisplay1(tata1mg);
+          }
+          else {
+              scardDisplay1(sallpdt1);
+          }
+      });
         
-
-
-    // SORT By HTL
-    document.getElementById("shtl").addEventListener("click", priceSorthtl);
-    function priceSorthtl(){
-            document.querySelector("#sfinalcard1id").innerText = "";
-            sallpdt1.sort(function(a,b){
-            if(Number(a.price) < Number(b.price)){
-                return 1;
-            }
-            else if(Number(a.price) > Number(b.price)){
-                return -1;
-            }
-            return 0;
-        });
-        scardDisplay1(sallpdt1);
-    };
-
-
-
-    // SORT By discont
-    document.getElementById("sdiscount").addEventListener("click", sortByDiscount);
-    function sortByDiscount(){
-            document.querySelector("#sfinalcard1id").innerText = "";
-            sallpdt1.sort(function(a,b){
-            if(Number(a.disscount_percent) < Number(b.disscount_percent)){
-                return 1;
-            }
-            else if(Number(a.disscount_percent) > Number(b.disscount_percent)){
-                return -1;
-            }
-            return 0;
-        });
-        scardDisplay1(sallpdt1);
-    };
-
-
-
-    // sort by brand CHECKBOX
-
-    // document.getElementById("Tata 1mg").addEventListener("click", soBybrant1);
-    const checkbox1 = document.getElementById("Tata 1mg");
-    checkbox1.addEventListener('change', (event) => {
-        document.querySelector("#sfinalcard1id").innerText = "";
-        if(event.currentTarget.checked) {
-            
-            scardDisplay1(tata1mg);
-        }
-        else {
-            scardDisplay1(sallpdt1);
-        }
-    });
     
+      const checkbox2 = document.getElementById("Carbamide Forte");
+      checkbox2.addEventListener('change', (event) => {
+          document.querySelector("#sfinalcard1id").innerText = "";
+          if(event.currentTarget.checked) {
+              
+              scardDisplay1(carbamide);
+          }
+          else {
+              scardDisplay1(sallpdt1);
+          }
+      });
+    
+      const checkbox3 = document.getElementById("Zingavita");
+      checkbox3.addEventListener('change', (event) => {
+          document.querySelector("#sfinalcard1id").innerText = "";
+          if(event.currentTarget.checked) {
+              
+              scardDisplay1(zingavita);
+          }
+          else {
+              scardDisplay1(sallpdt1);
+          }
+      });
+    
+      const checkbox4 = document.getElementById("HealthVit");
+      checkbox4.addEventListener('change', (event) => {
+          document.querySelector("#sfinalcard1id").innerText = "";
+          if(event.currentTarget.checked) {
+              
+              scardDisplay1(healthvit);
+          }
+          else {
+              scardDisplay1(sallpdt1);
+          }
+      });
+    
+      const checkbox5 = document.getElementById("GNC");
+      checkbox5.addEventListener('change', (event) => {
+          document.querySelector("#sfinalcard1id").innerText = "";
+          if(event.currentTarget.checked) {
+              
+              scardDisplay1(gnc);
+          }
+          else {
+              scardDisplay1(sallpdt1);
+          }
+      });
+    
+      const checkbox6 = document.getElementById("HealthKart");
+      checkbox6.addEventListener('change', (event) => {
+          document.querySelector("#sfinalcard1id").innerText = "";
+          if(event.currentTarget.checked) {
+              
+              scardDisplay1(healthKart);
+          }
+          else {
+              scardDisplay1(sallpdt1);
+          }
+      });
+    
+      const checkbox7 = document.getElementById("Adorreal");
+      checkbox7.addEventListener('change', (event) => {
+          document.querySelector("#sfinalcard1id").innerText = "";
+          if(event.currentTarget.checked) {
+              
+              scardDisplay1(adorreal);
+          }
+          else {
+              scardDisplay1(sallpdt1);
+          }
+      });
+    
+      const checkbox8 = document.getElementById("Redivit");
+      checkbox8.addEventListener('change', (event) => {
+          document.querySelector("#sfinalcard1id").innerText = "";
+          if(event.currentTarget.checked) {
+              
+              scardDisplay1(redivit);
+          }
+          else{
+              scardDisplay1(sallpdt1);
+          }
+      });
 
-    const checkbox2 = document.getElementById("Carbamide Forte");
-    checkbox2.addEventListener('change', (event) => {
+
+
+      // Sort by discount percent like greater then 10% or 20%...
+      let whatdiscount = 0;
+
+      let checkboxdis1  = document.getElementById("Less than 10%");
+      checkboxdis1.addEventListener('change', (event) => {
         document.querySelector("#sfinalcard1id").innerText = "";
         if(event.currentTarget.checked) {
             
-            scardDisplay1(carbamide);
-        }
-        else {
-            scardDisplay1(sallpdt1);
-        }
-    });
-
-    const checkbox3 = document.getElementById("Zingavita");
-    checkbox3.addEventListener('change', (event) => {
-        document.querySelector("#sfinalcard1id").innerText = "";
-        if(event.currentTarget.checked) {
-            
-            scardDisplay1(zingavita);
-        }
-        else {
-            scardDisplay1(sallpdt1);
-        }
-    });
-
-    const checkbox4 = document.getElementById("HealthVit");
-    checkbox4.addEventListener('change', (event) => {
-        document.querySelector("#sfinalcard1id").innerText = "";
-        if(event.currentTarget.checked) {
-            
-            scardDisplay1(healthvit);
-        }
-        else {
-            scardDisplay1(sallpdt1);
-        }
-    });
-
-    const checkbox5 = document.getElementById("GNC");
-    checkbox5.addEventListener('change', (event) => {
-        document.querySelector("#sfinalcard1id").innerText = "";
-        if(event.currentTarget.checked) {
-            
-            scardDisplay1(gnc);
-        }
-        else {
-            scardDisplay1(sallpdt1);
-        }
-    });
-
-    const checkbox6 = document.getElementById("HealthKart");
-    checkbox6.addEventListener('change', (event) => {
-        document.querySelector("#sfinalcard1id").innerText = "";
-        if(event.currentTarget.checked) {
-            
-            scardDisplay1(healthKart);
-        }
-        else {
-            scardDisplay1(sallpdt1);
-        }
-    });
-
-    const checkbox7 = document.getElementById("Adorreal");
-    checkbox7.addEventListener('change', (event) => {
-        document.querySelector("#sfinalcard1id").innerText = "";
-        if(event.currentTarget.checked) {
-            
-            scardDisplay1(adorreal);
-        }
-        else {
-            scardDisplay1(sallpdt1);
-        }
-    });
-
-    const checkbox8 = document.getElementById("Redivit");
-    checkbox8.addEventListener('change', (event) => {
-        document.querySelector("#sfinalcard1id").innerText = "";
-        if(event.currentTarget.checked) {
-            
-            scardDisplay1(redivit);
+          sideFilterDiscount(9);
         }
         else{
             scardDisplay1(sallpdt1);
         }
-    });
+      });
+
+
+      let checkboxdis2  = document.getElementById("10% and above");
+      checkboxdis2.addEventListener('change', (event) => {
+        document.querySelector("#sfinalcard1id").innerText = "";
+        if(event.currentTarget.checked) {
+            
+          sideFilterDiscount(10);
+        }
+        else{
+            scardDisplay1(sallpdt1);
+        }
+      });
+
+
+      let checkboxdis3  = document.getElementById("20% and above");
+      checkboxdis3.addEventListener('change', (event) => {
+        document.querySelector("#sfinalcard1id").innerText = "";
+        if(event.currentTarget.checked) {
+            
+          sideFilterDiscount(20);
+        }
+        else{
+            scardDisplay1(sallpdt1);
+        }
+      });
+
+
+      let checkboxdis4  = document.getElementById("30% and above");
+      checkboxdis4.addEventListener('change', (event) => {
+        document.querySelector("#sfinalcard1id").innerText = "";
+        if(event.currentTarget.checked) {
+            
+          sideFilterDiscount(30);
+        }
+        else{
+            scardDisplay1(sallpdt1);
+        }
+      });
 
 
 
+      function sideFilterDiscount(whatdiscount){
+        document.querySelector("#sfinalcard1id").innerText = "";
+        let sallpdt2 = sallpdt1.filter(function(obj){
+          if(whatdiscount <= 9){
+            if(Number(obj.disscount_percent) < whatdiscount){
+              return 1;
+            }
+            else {
+              return 0;
+            }
+            return 0;
 
+          }
+          else{
+            if(Number(obj.disscount_percent) > whatdiscount){
+              return 1;
+            }
+            else {
+              return 0;
+            }
+            return 0;
 
+          }
+            
+        });
+        scardDisplay1(sallpdt2);
+      };
 
-
-    
-
-
-
-};
-
-
-
-
-
+      //------------------------------------------------------------------
 
 
 
