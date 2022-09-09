@@ -2058,6 +2058,13 @@
           
             let div1 = document.createElement("div");///
             div1.setAttribute("id", "sky1");
+
+            // let divlink = document.createElement("div");///
+            // divlink.style.backgroundColor = "green"
+
+            let a1 = document.createElement("a");
+            a1.setAttribute("href","productpage.html");
+            a1.style.textDecoration = "none";
             
             
             let div2 = document.createElement("div");//
@@ -2133,7 +2140,6 @@
             span9.innerText = obj.price;
             p3.append(i3, span9);
             
-            
             let p4 = document.createElement("p");
             p4.setAttribute("id", "sky10");
             p4.innerText = "ADD";
@@ -2143,8 +2149,13 @@
             p4.addEventListener("click", function(){saddtocart1(obj, index, array)});
             //----------- for add to cart
             
-            
-            div1.append(div2, div3, div3i, div4, div5, div6);
+            a1.append(div2, div3, div3i, div4, div5);
+            // divlink.append(div2, div3, div4, div5, div6 );
+            // a1.append(divlink);
+            // div1.append(a1);
+
+            div1.append(a1, div6);
+            // div1.append(div2, div3, div3i, div4, div5, div6);
             
             document.getElementById("sfinalcard1id").append(div1);
             
@@ -2159,14 +2170,12 @@
         //-------------------add to cart function
         function saddtocart1(obj, index, array){
             let addedItemDetails = {
-                image_url: obj.image_url,
                 name: obj.name,
-                quantity : obj.quantity,
+                quantity: "1",
+                quantity_of_single: obj.quantity,
                 rating : obj.rating,
-                number_rating : obj.number_rating,
-                strikedoffprice: obj.strikedoffprice,
-                disscount_percent : obj.disscount_percent,
-                price: obj.price,
+                price: obj.strikedoffprice,
+                mrp: obj.price,
             };
     
             cartArrayS1.push(addedItemDetails);
