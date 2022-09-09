@@ -361,8 +361,8 @@
     let tata1mg = [ 
         {
           image_url:
-            "https://onemg.gumlet.io/images/q_auto,h_150,f_auto,c_fit,w_150/qh1au45w8u7cfvf3lg3i/tata-1mg-women-s-multivitamin-zinc-vitamin-c-calcium-vitamin-d-and-iron-immunity-booster-tablet.jpg",
-            name: "Tata 1mg Women's Multivitamin, Zinc, Vitamin C, Calcium, Vitamin D, and Iron Immunity Booster Tablet",
+            "https://onemg.gumlet.io/images/c_fit,w_150,f_auto,q_auto,h_150/mv4twhhsnbrlhpsgjc0c/tata-1mg-cod-liver-oil-capsule.jpg",
+            name: "Tata 1mg Women's Vitamin D, and Iron Immunity Booster Tablet",
           quantity : 60,
           rating : 4.3,
           number_rating : 667,
@@ -372,7 +372,7 @@
         },
         {
           image_url:
-            "https://onemg.gumlet.io/images/q_auto,h_150,f_auto,c_fit,w_150/klpj2khvaphkvpqmchui/tata-1mg-senior-50-multivitamin-multimineral-immunity-booster-zinc-vitamin-c-calcium-and-vitamin-d-veg-tablet.jpg",
+            "https://onemg.gumlet.io/images/c_fit,w_150,f_auto,q_auto,h_150/xjqqvjpkg70zbcpibkyj/tata-1mg-milk-thistle-capsules-for-liver-detox-70-silymarin-with-dandelion-ginger.jpg",
           name: "Tata 1mg Senior 50+ Multivitamin & Multimineral Immunity Booster Zinc, Vitamin C, Calcium, and Vitamin D Veg Tablet",
           quantity : 60,
           rating : "4.3",
@@ -383,7 +383,7 @@
         },
         {
           image_url:
-            "https://onemg.gumlet.io/images/q_auto,h_150,f_auto,c_fit,w_150/iktvzbqwmj6xca8eitig/tata-1mg-myo-inositol-tablet.jpg",
+            "https://onemg.gumlet.io/images/c_fit,w_150,f_auto,q_auto,h_150/ktf4a4jed8pplljfncrj/nutrabay-pro-cla-capsule.jpg",
           name: "Tata 1mg Myo-Inositol Tablet",
           quantity : "30",
           rating : "4.2",
@@ -394,7 +394,7 @@
         },
         {
           image_url:
-            "https://onemg.gumlet.io/images/q_auto,h_150,f_auto,c_fit,w_150/gmkrpf1imjj9djwvq4gq/tata-1mg-multivitamin-supreme-zinc-calcium-and-vitamin-d-immunity-booster-capsule.jpg",
+            "https://onemg.gumlet.io/images/c_fit,w_150,f_auto,q_auto,h_150/tvuovptgm7qcl0lgb1dg/carbamide-forte-milk-thistle-extract-600mg-vegetarian-tablet.jpg",
           name: "Tata 1mg Multivitamin Supreme, Zinc, Calcium and Vitamin D Immunity Booster Capsule",
           quantity : "60",
           rating : "4.1",
@@ -405,7 +405,7 @@
         },
         {
           image_url:
-            "https://onemg.gumlet.io/images/q_auto,h_150,f_auto,c_fit,w_150/jv4fjubstbcvlqyimatv/tata-1mg-women-s-multivitamin-zinc-vitamin-c-calcium-vitamin-d-and-iron-immunity-booster-tablet.jpg",
+            "https://onemg.gumlet.io/images/c_fit,w_150,f_auto,q_auto,h_150/cropped/m7ywndnc6att5k6bc8cs/himalaya-liv.-52-ds-tablet.jpg",
           name: "Tata 1mg Women's Multivitamin, Zinc, Vitamin C, Calcium, Vitamin D, and Iron Immunity Booster Tablet",
           quantity : "30",
           rating : "4.3",
@@ -416,7 +416,7 @@
         },
         {
           image_url:
-            "https://onemg.gumlet.io/images/q_auto,h_150,f_auto,c_fit,w_150/sbafi3nw8ndlrnvaj0qm/tata-1mg-multivitamin-multimineral-supplement-tablet.jpg",
+            "https://onemg.gumlet.io/images/c_fit,w_150,f_auto,q_auto,h_150/m4pgzop080oaibzxwxtc/himalaya-liv.-52-tablet.jpg",
           name: "Tata 1mg Multivitamin & Multimineral Supplement Tablet",
           quantity : "15",
           rating : "4.3",
@@ -427,7 +427,7 @@
         },
         {
           image_url:
-            "https://onemg.gumlet.io/images/q_auto,h_150,f_auto,c_fit,w_150/olumjmbboursowikpgh9/tata-1mg-vitamin-b-complex-capsules.jpg",
+            "hhttps://onemg.gumlet.io/images/c_fit,w_150,f_auto,q_auto,h_150/m4pgzop080oaibzxwxtc/himalaya-liv.-52-tablet.jpg",
           name: "Tata 1mg Vitamin B Complex Capsules",
           quantity : "60",
           rating : "4.4",
@@ -438,7 +438,7 @@
         },
         {
           image_url:
-            "https://onemg.gumlet.io/images/q_auto,h_150,f_auto,c_fit,w_150/mhhdtmwpr4ige7yrjo1v/tata-1mg-calcium-vitamin-d-supplement-tablet.jpg",
+            "https://onemg.gumlet.io/images/c_fit,w_150,f_auto,q_auto,h_150/cropped/z4x6mnuiyhfdjhb0qf3w/himalaya-liv.52-syrup.jpg",
           name: "Tata 1mg Calcium & Vitamin D Supplement Tablet",
           quantity : "15",
           rating : "4.4",
@@ -449,7 +449,7 @@
         },
         {
           image_url:
-            "https://onemg.gumlet.io/images/q_auto,h_150,f_auto,c_fit,w_150/bd82ty04xq3dl3ajmgwh/tata-1mg-multivitamin-supreme-zinc-calcium-and-vitamin-d-immunity-booster-capsule.jpg",
+            "https://onemg.gumlet.io/images/c_fit,w_150,f_auto,q_auto,h_150/cropped/vyjaio6d8j0hkhhokbzl/himalaya-liv.52-ds-syrup.jpg",
           name: "Tata 1mg Multivitamin Supreme, Zinc, Calcium and Vitamin D Immunity Booster Capsule",
           quantity : "10",
           rating : "3.9",
@@ -460,7 +460,7 @@
         },
         {
           image_url:
-            "https://onemg.gumlet.io/images/q_auto,h_150,f_auto,c_fit,w_150/cropped/vjqcbttlwfq8np41ag3c/1mg-sports-multivitamin-energy-immunity-booster-zinc-vitamin-c-vitamin-d-calcium-and-iron-tablet.png",
+            "https://onemg.gumlet.io/images/c_fit,w_150,f_auto,q_auto,h_150/dpr2tomgk41bdt7wqysj/organic-india-lkc-liver-kidney-care-capsule.jpg",
           name: "1mg Sports Multivitamin Energy & Immunity Booster Zinc, Vitamin C, Vitamin D, Calcium and Iron Tablet",
           quantity : "60",
           rating : "4",
@@ -481,8 +481,9 @@
     // Accu-check.......
     let sallpdt1 = [
         {
+          // 1
             image_url:
-              "https://onemg.gumlet.io/images/h_150,w_150,q_auto,c_fit,f_auto/yiejpwgdjam6ldz7omd2/accu-chek-guide-combo-pack-of-wireless-blood-glucose-monitoring-system-10-test-strip-with-additional-10-test-strip-free.jpg",
+              "https://onemg.gumlet.io/images/h_150,q_auto,f_auto,w_150,c_fit/mv4twhhsnbrlhpsgjc0c/tata-1mg-cod-liver-oil-capsule.jpg",
               name: "Tata 1mg Women's Multivitamin, Zinc, Vitamin C, Calcium, Vitamin D, and Iron Immunity Booster Tablet",
             quantity : 60,
             rating : 4.3,
@@ -492,8 +493,9 @@
             price: 995,
           },
           {
+            // 2
             image_url:
-              "https://onemg.gumlet.io/images/h_150,w_150,q_auto,c_fit,f_auto/tlnln5nlw238f310zzrj/accu-chek-active-test-strip.jpg",
+            "https://onemg.gumlet.io/images/c_fit,w_150,f_auto,q_auto,h_150/xjqqvjpkg70zbcpibkyj/tata-1mg-milk-thistle-capsules-for-liver-detox-70-silymarin-with-dandelion-ginger.jpg",
             name: "Tata 1mg Senior 50+ Multivitamin & Multimineral Immunity Booster Zinc, Vitamin C, Calcium, and Vitamin D Veg Tablet",
             quantity : 60,
             rating : "4.3",
@@ -503,8 +505,9 @@
             price: "398",
           },
           {
+            // 3
             image_url:
-              "https://onemg.gumlet.io/images/h_150,w_150,q_auto,c_fit,f_auto/zbgqietrhnumgfp84vlt/accu-chek-instant-test-strip.jpg",
+            "https://onemg.gumlet.io/images/c_fit,w_150,f_auto,q_auto,h_150/ktf4a4jed8pplljfncrj/nutrabay-pro-cla-capsule.jpg",
             name: "Tata 1mg Myo-Inositol Tablet",
             quantity : "30",
             rating : "4.2",
@@ -514,8 +517,9 @@
             price: "298",
           },
           {
+            // 4
             image_url:
-              "https://onemg.gumlet.io/images/h_150,w_150,q_auto,c_fit,f_auto/0bede5b02bf743ddb910721e0ece0fc7/accu-chek-active-blood-glucometer-kit-box-of-10-test-strips-free.jpg",
+              "https://onemg.gumlet.io/images/h_150,q_auto,f_auto,w_150,c_fit/m4pgzop080oaibzxwxtc/himalaya-liv.-52-tablet.jpg",
             name: "Tata 1mg Multivitamin Supreme, Zinc, Calcium and Vitamin D Immunity Booster Capsule",
             quantity : "60",
             rating : "4.1",
@@ -525,8 +529,9 @@
             price: "498",
           },
           {
+            // 5
             image_url:
-              "https://onemg.gumlet.io/images/h_150,w_150,q_auto,c_fit,f_auto/do5jk8fgnv2lqcgdzqul/accu-chek-active-test-strip.jpg",
+            "https://onemg.gumlet.io/images/c_fit,w_150,f_auto,q_auto,h_150/tvuovptgm7qcl0lgb1dg/carbamide-forte-milk-thistle-extract-600mg-vegetarian-tablet.jpg",
             name: "Tata 1mg Women's Multivitamin, Zinc, Vitamin C, Calcium, Vitamin D, and Iron Immunity Booster Tablet",
             quantity : "30",
             rating : "4.3",
@@ -537,7 +542,7 @@
           },
           {
             image_url:
-              "https://onemg.gumlet.io/images/h_150,w_150,q_auto,c_fit,f_auto/cropped/dywg0u5bly2owevrd5my/accu-chek-softclix-lancets.jpg",
+              "https://onemg.gumlet.io/images/h_150,q_auto,f_auto,w_150,c_fit/cropped/z4x6mnuiyhfdjhb0qf3w/himalaya-liv.52-syrup.jpg",
             name: "Tata 1mg Multivitamin & Multimineral Supplement Tablet",
             quantity : "15",
             rating : "4.3",
@@ -548,7 +553,7 @@
           },
           {
             image_url:
-              "https://onemg.gumlet.io/images/h_150,w_150,q_auto,c_fit,f_auto/jv5ukwccdbxslhmkgsr9/accu-chek-guide-test-strip.jpg",
+              "https://onemg.gumlet.io/images/h_150,q_auto,f_auto,w_150,c_fit/cropped/vyjaio6d8j0hkhhokbzl/himalaya-liv.52-ds-syrup.jpg",
             name: "Tata 1mg Vitamin B Complex Capsules",
             quantity : "60",
             rating : "4.4",
@@ -559,7 +564,7 @@
           },
           {
             image_url:
-              "https://onemg.gumlet.io/images/h_150,w_150,q_auto,c_fit,f_auto/cropped/bnkef6rj5nsilur2csb6/accu-chek-active-test-strip.jpg",
+              "https://onemg.gumlet.io/images/h_150,q_auto,f_auto,w_150,c_fit/dpr2tomgk41bdt7wqysj/organic-india-lkc-liver-kidney-care-capsule.jpg",
             name: "Tata 1mg Calcium & Vitamin D Supplement Tablet",
             quantity : "15",
             rating : "4.4",
@@ -570,7 +575,7 @@
           },
           {
             image_url:
-              "https://onemg.gumlet.io/images/h_150,w_150,q_auto,c_fit,f_auto/rttfn46deoejckupa0h7/accu-chek-instant-wireless-blood-glucose-monitoring-system-10-test-strip-with-colgate-diabetics-toothpaste-30gm-free.jpg",
+              "https://onemg.gumlet.io/images/h_150,q_auto,f_auto,w_150,c_fit/cropped/ojyohfyqi9bd8hl72kod/dhootapapeshwar-arogyavardhini-bati.jpg",
             name: "Tata 1mg Multivitamin Supreme, Zinc, Calcium and Vitamin D Immunity Booster Capsule",
             quantity : "10",
             rating : "3.9",
@@ -581,7 +586,7 @@
           },
           {
             image_url:
-              "https://onemg.gumlet.io/images/h_150,w_150,q_auto,c_fit,f_auto/cropped/f4gr0qxuu6vfecw1yefq/accu-chek-guide-wireless-blood-glucose-monitoring-system-with-10-test-strips-free.jpg",
+              "https://onemg.gumlet.io/images/h_150,q_auto,f_auto,w_150,c_fit/cropped/z4x6mnuiyhfdjhb0qf3w/himalaya-liv.52-syrup.jpg",
             name: "1mg Sports Multivitamin Energy & Immunity Booster Zinc, Vitamin C, Vitamin D, Calcium and Iron Tablet",
             quantity : "60",
             rating : "4",
@@ -594,7 +599,7 @@
 
         {
             image_url:
-              "https://onemg.gumlet.io/images/h_150,w_150,q_auto,c_fit,f_auto/jufarkryi3vmrfsw91cv/accu-chek-instant-wireless-blood-glucose-monitoring-system-10-test-strip-with-sugar-free-natura-50gm-free.jpg",
+              "https://onemg.gumlet.io/images/h_150,q_auto,f_auto,w_150,c_fit/dpr2tomgk41bdt7wqysj/organic-india-lkc-liver-kidney-care-capsule.jpg",
               name: "Carbamide Forte Multivitamins with Probiotics for Women Vegetarian Tablet",
             quantity : "100",
             rating : "4.2",
@@ -605,7 +610,7 @@
           },
           {
             image_url:
-              "https://onemg.gumlet.io/images/h_150,w_150,q_auto,c_fit,f_auto/cropped/ju2md03ntljfxoctnt8h/accu-chek-softclix-lancing-device.jpg",
+              "https://onemg.gumlet.io/images/h_150,q_auto,f_auto,w_150,c_fit/zpu2vr9ujmngf1ztx0ge/sbl-carduus-marianus-mother-tincture-q.jpg",
               name: "Carbamide Forte Multivitamin Sports Vegetarian Tablet",
             quantity : "60",
             rating : "4.4",
@@ -616,7 +621,7 @@
           },
           {
             image_url:
-              "https://onemg.gumlet.io/images/h_150,w_150,q_auto,c_fit,f_auto/if0qou7t1ptcaaowcigp/accu-chek-active-combo-of-glucometer-with-10-test-strip-free-and-50-test-strips.jpg",
+              "https://onemg.gumlet.io/images/h_150,q_auto,f_auto,w_150,c_fit/tzspt28mdlta8bdsfgzw/dr.-reckeweg-cholesterinum-trituration-tablet-3x.jpg",
               name: "Carbamide Forte Multivitamins with Probiotics Vegetarian Tablet",
             quantity : "60",
             rating : "3.8",
@@ -627,7 +632,7 @@
           },
           {
             image_url:
-              "https://onemg.gumlet.io/images/h_150,f_auto,q_auto,c_fit,w_150/qdfevbbc3ltsho6ihrwa/carbamide-forte-multivitamins-with-probiotics-for-women-vegetarian-tablet.jpg",
+              "https://onemg.gumlet.io/images/h_150,q_auto,f_auto,w_150,c_fit/cropped/d0u0ejwgbfmrirokqec6/sbl-cholesterinum-trituration-tablet-3x.jpg",
               name: "Carbamide Forte Multivitamins with Probiotics for Women Vegetarian Tablet",
             quantity : "60",
             rating : "4.2",
@@ -636,6 +641,28 @@
             disscount_percent : "39",
             price: "349",
           },
+          {
+            image_url:
+              "https://onemg.gumlet.io/images/h_150,q_auto,f_auto,w_150,c_fit/55bcdac124db4082aa8d4b73a0919b75/pentasure-hepatic-powder-creamy-vanilla.jpg",
+              name: "Carbamide Forte Multivitamins with Probiotics for Women Vegetarian Tablet",
+            quantity : "60",
+            rating : "4.2",
+            number_rating : "42",
+            strikedoffprice: "575",
+            disscount_percent : "60",
+            price: "3490",
+          },
+          {
+            image_url:
+              "https://onemg.gumlet.io/images/c_fit,h_150,q_auto,f_auto,w_150/cropped/pd5fsotqvx0mjkkcim3b/sri-sri-tattva-liv-on-500mg-tablet.png",
+              name: "Carbamide Forte Multivitamins with Probiotics for Women Vegetarian Tablet",
+            quantity : "60",
+            rating : "4",
+            number_rating : "42",
+            strikedoffprice: "5705",
+            disscount_percent : "50",
+            price: "567",
+          }
          
     ];
     
