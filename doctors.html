@@ -29,9 +29,9 @@
                 </div>
                 <div class="inner2">
                     <div>
-                        <p>Login</p>
-                        <p>|</p>
-                        <p>Signup</p>
+                        <p id="login_text_js"><a href="" class="before_login_style">Login</a></p>
+                        <p id="login_text_js1">|</p>
+                        <p id="login_text_js2"><a href="signup.html" class="before_login_style">Signup</a></p>
                         <P></P>
                         <P></P>
                         <p>Offers</p>
@@ -243,24 +243,20 @@
 </html>
 
 <script>
-   var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 7,
-        spaceBetween: 0,
-       
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        breakpoints:{
-        0: {
-            slidesPerView: 1,
-        },
-        520: {
-            slidesPerView: 4,
-        },
-        950: {
-            slidesPerView: 7,
-        },
-    },
-      });
+   
+
+let val = localStorage.getItem("mobile_number");
+
+if(val.length >= 5){
+  document.getElementById("login_text_js").innerHTML = `<i class="fa-solid fa-user"></i>`;
+  document.getElementById("login_text_js1").innerText = "My Profile";
+  document.getElementById("login_text_js2").innerText = " ";
+  document.getElementById("signup").innerHTML = `<b>PROFILE</b>`;
+
+  document.getElementById("signup").addEventListener("click" , function(){
+    window.location.href = "index.html";
+  });
+
+  
+}
 </script>
