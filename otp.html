@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1MG | Verify Otp</title>
+    <link rel="shortcut icon" type="image/jpg" href="img/1mg_favicon.jpg"/>
+    <style>
+        body {
+            font-family: sans-serif;
+            /* display: inli */
+            display: flex;
+            justify-content: center;
+            /* justify-items: center; */
+        }
+
+        #container {
+            /* width: 52%; */
+            /* height: 0vh; */
+            width: 850px;
+            height: 450px;
+            display: flex;
+            /* border: 2px solid red; */
+            /* margin-top: 10%; */
+            /* margin-left: 22%; */
+            /* justify-content: center; */
+            /* border: 1px solid red; */
+            /* align-items: center; */
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            margin-top: 6%;
+            border-radius: 5px;
+        }
+
+        #container-1 {
+            width: 50%;
+            box-sizing: border-box;
+            /* border: cyan 2px solid; */
+            align-items: center;
+            text-align: center;
+            padding-bottom: 7%;
+            border-right: 1px solid rgb(196, 196, 196);
+        }
+
+        .mySlides {
+            /*display: none; */
+            /* height: 400px; */
+            /* border: solid 1px black; */
+            width: 100%;
+            box-sizing: border-box;
+            height: 90%;
+            /* min-height: 90%;
+    max-height: 90%; */
+        }
+
+        .mySlides>img {
+            margin-top: 14%;
+        }
+
+        .dot_container {
+            display: flex;
+            margin-top: -18%;
+            margin-left: 40%;
+        }
+
+        .dot {
+            cursor: pointer;
+            height: 8px;
+            width: 8px;
+            margin: 58px 5px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: flex;
+            transition: background-color 0.6s ease;
+            box-sizing: border-box;
+            transform: translate(-50%, -50%)
+        }
+
+        #closebtn {
+            font-size: 35px;
+            height: 40px;
+            position: absolute;
+            cursor: pointer;
+            margin-top: -30px;
+            margin-left: 27%;
+            background-color: white;
+            border: none;
+        }
+
+        .dot:hover {
+            background-color: #717171;
+        }
+
+        #container-2 {
+            margin-top: 40px;
+            margin-left: 40px;
+        }
+
+        #childcontainer {
+            /* border: 2px solid red; */
+            width: 120%;
+            height: 80%;
+        }
+
+        #edit_button {
+            color: red;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        #number {
+            font-size: 15px;
+        }
+
+        #one_time_p {
+            width: 100%;
+            box-sizing: border-box;
+            border: none;
+            border-bottom: 2px crimson solid;
+            font-size: 20px;
+            margin-top: 80px;
+            margin-bottom: -5px;
+            outline: none;
+        }
+
+        #done {
+            width: 100%;
+            background-color: #ff6f61;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            color: white;
+            padding: 10px;
+            margin-top: 70px;
+            background: #fc6456;
+            cursor: pointer;
+            margin-bottom: 60px;
+        }
+
+        #wrong_otp {
+            font-size: 12px;
+        }
+
+        .needhelp {
+            padding-left: 55px;
+            text-decoration: none;
+            color: #fc6456;
+            font-weight: bold;
+            /* margin-top: -50px; */
+            /* border: 1px solid red; */
+            margin-top: 100px;
+        }
+        .check{
+            /* border: 1px solid black; */
+            margin-top: -50px;
+            margin-left: 10px;
+        }
+        #done{
+            /* border: 5px solid blue; */
+            /* margin-top: -20px; */
+            margin-top: 40px;
+        }
+        #done:hover{
+            box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+
+        <div id="container-1">
+            <div class="mySlides">
+                <img src="https://www.1mg.com/images/login-signup/Your-Go-To-Health-App.png" alt="img1" />
+                <div class="text">
+                    <h2>Make Healthcare Simpler</h2>
+                    <p style="font-size: 12.5px; color: gray;">
+                        Get medicine information, order medicines, book lab<br />tests
+                        and consult doctors online from the comfort of<br />your home.
+                    </p>
+                </div>
+            </div>
+            <div class="dot_container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
+        </div>
+        <div id="container-2">
+            <span id="closebtn">&times;</span>
+            <div id="childcontainer">
+                <h1>
+                    Verify OTP
+                </h1>
+                <p id="number">
+                    Provide OTP sent to <b><span id="l_mob">800</span></b> <span id="user_mobile"></span>
+                    <span class="a_orange" id="edit_button">Edit</span>
+                </p>
+                <!-- <p class="one_time_pass">One Time Password has been send to your <br> mobile Number</p> -->
+                <input type="password" placeholder="One Time Password" id="one_time_p" minlength="8" maxlength="12" />
+                <p id="wrong_otp">Please enter a valid OTP.</p>
+               <a href="index.html"> <button id="done">DONE</button></a>
+                <!-- <div class="popup">
+                <h2>Login Successful!</h2>
+                <button type="button" onclick="closepopup()">OK</button>
+            </div> -->
+                <p class="check">
+                    <a href="" class="needhelp">Need help? Get In Touch</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    let popup = document.getElementById("popup");
+    function openpopup() {
+        popup.classLlist.add("open-popup");
+    }
+    function closepopup() {
+        popup.classList.remove("open-popup");
+    }
+
+    let val = document.getElementById("l_mob");
+
+    val.innerText = JSON.parse(localStorage.getItem("mobile_number"));
+</script>
+
+</html>
