@@ -20,15 +20,35 @@
     
 }
 
+/* cart count box css--------------------cart count box css */
+#cartItembox{
+    position:absolute;
+    top: 1px;
+    right: 20%;
+    /* display: none; */
+    font-size: 14px;
+    font-weight: 600;
+    background-color:RGB(255, 111, 97) ;
+    color: #FFFFFF;
+    line-height: 18px;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    padding: 1.5px;
+    border-radius: 4px;
+    
+}
+
 .sfilter{
-    width: 72%;
+    width: 85%;
     height: fit-content;
     background-color: #FFFFFF;
     /* border: 3px solid rgb(255, 0, 170); */
     overflow: hidden;
-    margin-left: 90px;
-    padding: 8px;
+    margin-left: 30%;
+    padding: 20px;
     margin-top: 20px;
+    box-sizing: border-box;
 
 }
 
@@ -187,7 +207,7 @@
 }
 
 .spathrefer a{
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 400;
     color: #ff6f61;
     line-height: 17px;
@@ -235,7 +255,7 @@
     color: #7d7d7d;
     border-radius: 4px;
     margin-left: -15px;
-    margin-right: 12px;
+    margin-right: 20px;
     cursor: pointer;
     height: 15px;
 }
@@ -283,9 +303,9 @@
 }
 
 .sfinalcard1cl{
-    width: 100%;
+width: 100%;
 display: grid;
-grid-template-columns: repeat(4,24.65%);
+grid-template-columns: repeat(4,22.65%);
 justify-content:space-around;
 gap: 20px 0px;
 overflow: hidden;
@@ -296,7 +316,7 @@ overflow: hidden;
 } 
 
 #sky1{
-    width: 220px;
+    /* width: 220px; */
     background-color: #FFFFFF;
     padding: 12px;
     height: fit-content;
@@ -420,9 +440,168 @@ margin-bottom: 2px;
     line-height: 20px;
 }
 
-#sky{
-    
+
+
+/* pagination */
+
+.spgtioncl{
+    width: 100%;
+    height: 20px;
+    background-color: #FFFFFF;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 18px;
+    font-size: 15px;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
 }
+
+.spgtioncl > span{
+margin-left: 7px;
+margin-right: 7px;
+cursor: pointer;
+}
+
+
+.spgtioncl > span:first-child{
+cursor:copy;
+}
+.spgtioncl > span:last-child{
+    color:#ff6f61;
+}
+
+#lastupdate1{
+    float: right;
+    font-size: 16px;
+    line-height: 23px;
+    font-weight: 400;
+    color: #212121;
+}
+
+
+
+
+/* responsive department */
+
+@media all and (min-width: 770px) and (max-width: 980px) {
+
+
+    .sfilter{
+        width: 100%;
+        /* border: 3px solid rgb(255, 0, 170); */
+        margin-left: 5%;
+        padding: 18px;
+        margin-top: 18px;
+        box-sizing: border-box;
+    }
+
+    .sitems{
+        background-color: #F6F6F6;
+        width: 99.5%;
+        /* border: 3px solid darkorange; */
+    }
+    
+    
+    .sfinalcard1cl{
+        grid-template-columns: repeat(3,30.3%);
+        gap: 20px 0px;
+    }
+
+}
+
+
+@media all and (min-width: 640px) and (max-width: 770px) {
+
+    .smainbox{
+        display: block;
+        /* border: 4px dotted green; */
+        
+    }
+
+    .sfilter{
+        width: 100%;
+        /* border: 3px solid rgb(255, 0, 170); */
+        margin-left: 0%;
+        padding: 18px;
+    }
+
+
+    .sitems{
+        background-color: #F6F6F6;
+        width: 100%;
+        /* border: 3px solid darkorange; */
+    }
+
+
+    .sfinalcard1cl{
+        grid-template-columns: repeat(3,32%);
+        gap: 20px 0px;
+    }
+
+}
+
+
+@media all and (min-width: 360px) and (max-width: 640px) {
+
+    .smainbox{
+        display: block;
+        /* border: 4px dotted green; */
+        
+    }
+
+    .sfilter{
+        width: 100%;
+        /* border: 3px solid rgb(255, 0, 170); */
+        margin-left: 0%;
+        padding: 18px;
+    }
+
+
+    .sitems{
+        background-color: #F6F6F6;
+        width: 100%;
+        /* border: 3px solid darkorange; */
+    }
+
+
+    .sfinalcard1cl{
+        grid-template-columns: repeat(2,49.5%);
+        gap: 2px 0px;
+    }
+
+}
+
+
+@media all and (max-width: 360px) {
+    .smainbox{
+        display: block;
+        /* border: 4px dotted green; */
+        
+    }
+
+    .sfilter{
+        width: 100%;
+        /* border: 3px solid rgb(255, 0, 170); */
+        margin-left: 0%;
+        padding: 18px;
+    }
+
+
+    .sitems{
+        background-color: #F6F6F6;
+        width: 100%;
+        /* border: 3px solid darkorange; */
+    }
+
+
+    .sfinalcard1cl{
+        grid-template-columns: repeat(1,100%);
+        gap: 2px 0px;
+    }
+
+
+}
+
 
 
 

@@ -158,8 +158,6 @@
         },
     ];
     
-    
-    
     let sdiscount = [
        {
          percent: "Less than 10%",
@@ -200,8 +198,9 @@
             }
         
         };
+
     
-    
+
     sdisplay1(sBrandAndQuantity);
     sdisplay2(sBrandAndQuantity);
     sNameNumberDiscount(sdiscount);
@@ -338,7 +337,6 @@
 
 
 
-    // sort by relevence
 
     // change caret on click
     document.getElementById("srevelence").addEventListener("click", caretchange);
@@ -358,7 +356,452 @@
     };
 
 
-    // final card div
+
+    let tata1mg = [ 
+        {
+          image_url:
+            "https://onemg.gumlet.io/images/q_auto,h_150,f_auto,c_fit,w_150/qh1au45w8u7cfvf3lg3i/tata-1mg-women-s-multivitamin-zinc-vitamin-c-calcium-vitamin-d-and-iron-immunity-booster-tablet.jpg",
+            name: "Tata 1mg Women's Multivitamin, Zinc, Vitamin C, Calcium, Vitamin D, and Iron Immunity Booster Tablet",
+          quantity : 60,
+          rating : 4.3,
+          number_rating : 667,
+          strikedoffprice: 1170,
+          disscount_percent : 60,
+          price: 995,
+        },
+        {
+          image_url:
+            "https://onemg.gumlet.io/images/q_auto,h_150,f_auto,c_fit,w_150/klpj2khvaphkvpqmchui/tata-1mg-senior-50-multivitamin-multimineral-immunity-booster-zinc-vitamin-c-calcium-and-vitamin-d-veg-tablet.jpg",
+          name: "Tata 1mg Senior 50+ Multivitamin & Multimineral Immunity Booster Zinc, Vitamin C, Calcium, and Vitamin D Veg Tablet",
+          quantity : 60,
+          rating : "4.3",
+          number_rating : "457",
+          strikedoffprice: "895",
+          disscount_percent: "55",
+          price: "398",
+        },
+        {
+          image_url:
+            "https://onemg.gumlet.io/images/q_auto,h_150,f_auto,c_fit,w_150/iktvzbqwmj6xca8eitig/tata-1mg-myo-inositol-tablet.jpg",
+          name: "Tata 1mg Myo-Inositol Tablet",
+          quantity : "30",
+          rating : "4.2",
+          number_rating : "102",
+          strikedoffprice: "595",
+          disscount_percent : "50",
+          price: "298",
+        },
+        {
+          image_url:
+            "https://onemg.gumlet.io/images/q_auto,h_150,f_auto,c_fit,w_150/gmkrpf1imjj9djwvq4gq/tata-1mg-multivitamin-supreme-zinc-calcium-and-vitamin-d-immunity-booster-capsule.jpg",
+          name: "Tata 1mg Multivitamin Supreme, Zinc, Calcium and Vitamin D Immunity Booster Capsule",
+          quantity : "60",
+          rating : "4.1",
+          number_rating : "972",
+          strikedoffprice: "995",
+          disscount_percent : "50",
+          price: "498",
+        },
+        {
+          image_url:
+            "https://onemg.gumlet.io/images/q_auto,h_150,f_auto,c_fit,w_150/jv4fjubstbcvlqyimatv/tata-1mg-women-s-multivitamin-zinc-vitamin-c-calcium-vitamin-d-and-iron-immunity-booster-tablet.jpg",
+          name: "Tata 1mg Women's Multivitamin, Zinc, Vitamin C, Calcium, Vitamin D, and Iron Immunity Booster Tablet",
+          quantity : "30",
+          rating : "4.3",
+          number_rating : "647",
+          strikedoffprice: "510",
+          disscount_percent : "56",
+          price: "225",
+        },
+        {
+          image_url:
+            "https://onemg.gumlet.io/images/q_auto,h_150,f_auto,c_fit,w_150/sbafi3nw8ndlrnvaj0qm/tata-1mg-multivitamin-multimineral-supplement-tablet.jpg",
+          name: "Tata 1mg Multivitamin & Multimineral Supplement Tablet",
+          quantity : "15",
+          rating : "4.3",
+          number_rating : "174",
+          strikedoffprice: "99",
+          disscount_percent : "9",
+          price: "90",
+        },
+        {
+          image_url:
+            "https://onemg.gumlet.io/images/q_auto,h_150,f_auto,c_fit,w_150/olumjmbboursowikpgh9/tata-1mg-vitamin-b-complex-capsules.jpg",
+          name: "Tata 1mg Vitamin B Complex Capsules",
+          quantity : "60",
+          rating : "4.4",
+          number_rating : "40",
+          strikedoffprice: "595",
+          disscount_percent : "24",
+          price: "448",
+        },
+        {
+          image_url:
+            "https://onemg.gumlet.io/images/q_auto,h_150,f_auto,c_fit,w_150/mhhdtmwpr4ige7yrjo1v/tata-1mg-calcium-vitamin-d-supplement-tablet.jpg",
+          name: "Tata 1mg Calcium & Vitamin D Supplement Tablet",
+          quantity : "15",
+          rating : "4.4",
+          number_rating : "95",
+          strikedoffprice: "99",
+          disscount_percent : "9",
+          price: "90",
+        },
+        {
+          image_url:
+            "https://onemg.gumlet.io/images/q_auto,h_150,f_auto,c_fit,w_150/bd82ty04xq3dl3ajmgwh/tata-1mg-multivitamin-supreme-zinc-calcium-and-vitamin-d-immunity-booster-capsule.jpg",
+          name: "Tata 1mg Multivitamin Supreme, Zinc, Calcium and Vitamin D Immunity Booster Capsule",
+          quantity : "10",
+          rating : "3.9",
+          number_rating : "36",
+          strikedoffprice: "175",
+          disscount_percent : "43",
+          price: "99",
+        },
+        {
+          image_url:
+            "https://onemg.gumlet.io/images/q_auto,h_150,f_auto,c_fit,w_150/cropped/vjqcbttlwfq8np41ag3c/1mg-sports-multivitamin-energy-immunity-booster-zinc-vitamin-c-vitamin-d-calcium-and-iron-tablet.png",
+          name: "1mg Sports Multivitamin Energy & Immunity Booster Zinc, Vitamin C, Vitamin D, Calcium and Iron Tablet",
+          quantity : "60",
+          rating : "4",
+          number_rating : "92",
+          strikedoffprice: "1195",
+          disscount_percent : "58",
+          price: "497",
+        },
+        ];
+    
+    
+    let carbamide = [ 
+        {
+          image_url:
+            "https://onemg.gumlet.io/images/h_150,f_auto,q_auto,c_fit,w_150/q58rjxdaynvly9s1xfj7/carbamide-forte-multivitamins-with-probiotics-for-women-vegetarian-tablet.jpg",
+            name: "Carbamide Forte Multivitamins with Probiotics for Women Vegetarian Tablet",
+          quantity : "100",
+          rating : "4.2",
+          number_rating : "42",
+          strikedoffprice: "795",
+          disscount_percent : "37",
+          price: "499",
+        },
+        {
+          image_url:
+            "https://onemg.gumlet.io/images/h_150,f_auto,q_auto,c_fit,w_150/xbhkkhnpj6gsv3xldvwq/carbamide-forte-multivitamin-sports-vegetarian-tablet.jpg",
+            name: "Carbamide Forte Multivitamin Sports Vegetarian Tablet",
+          quantity : "60",
+          rating : "4.4",
+          number_rating : "10",
+          strikedoffprice: "875",
+          disscount_percent : "43",
+          price: "499",
+        },
+        {
+          image_url:
+            "https://onemg.gumlet.io/images/h_150,f_auto,q_auto,c_fit,w_150/ic9bq5aiqabc0pooipek/carbamide-forte-multivitamins-with-probiotics-vegetarian-tablet.jpg",
+            name: "Carbamide Forte Multivitamins with Probiotics Vegetarian Tablet",
+          quantity : "60",
+          rating : "3.8",
+          number_rating : "72",
+          strikedoffprice: "375",
+          disscount_percent : "20",
+          price: "299",
+        },
+        {
+          image_url:
+            "https://onemg.gumlet.io/images/h_150,f_auto,q_auto,c_fit,w_150/qdfevbbc3ltsho6ihrwa/carbamide-forte-multivitamins-with-probiotics-for-women-vegetarian-tablet.jpg",
+            name: "Carbamide Forte Multivitamins with Probiotics for Women Vegetarian Tablet",
+          quantity : "60",
+          rating : "4.2",
+          number_rating : "42",
+          strikedoffprice: "575",
+          disscount_percent : "39",
+          price: "349",
+        },
+        {
+          image_url:
+            "https://onemg.gumlet.io/images/h_150,f_auto,q_auto,c_fit,w_150/advppsbemtgolsefnfu9/carbamide-forte-plant-based-multivitamin-with-superfoods-greens.jpg",
+            name: "Carbamide Forte Plant Based Multivitamin with Superfoods & Greens",
+          quantity : "60",
+          rating : "4.6",
+          number_rating : "8",
+          strikedoffprice: "675",
+          disscount_percent : "26",
+          price: "499",
+        },
+        {
+          image_url:
+            "https://onemg.gumlet.io/images/h_150,f_auto,q_auto,c_fit,w_150/omtavbrcwcbc38evubkt/carbamide-forte-multivitamin-for-men-vegetarian-tablet.jpg",
+            name: "Carbamide Forte Multivitamin for Men Vegetarian Tablet",
+          quantity : "60",
+          rating : "2.9",
+          number_rating : "112",
+          strikedoffprice: "675",
+          disscount_percent : "26",
+          price: "499",
+        },
+        {
+          image_url:
+            "https://onemg.gumlet.io/images/h_150,f_auto,q_auto,c_fit,w_150/ba72noylxk35qgj2eg5x/carbamide-forte-multivitamin-with-probiotics-ashwagandha-tablet.jpg",
+            name: "Carbamide Forte Multivitamin with Probiotics & Ashwagandha Tablet",
+          quantity : "180",
+          rating : "4.2",
+          number_rating : "19",
+          strikedoffprice: "850",
+          disscount_percent : "29",
+          price: "599",
+        },
+        {
+          image_url:
+            "https://onemg.gumlet.io/images/h_150,f_auto,q_auto,c_fit,w_150/atz76r3nf9j4e0903o3w/carbamide-forte-multivitamins-gummies-for-women-mixed-fruit.jpg",
+            name: "Carbamide Forte Multivitamins Gummies for Women Mixed Fruit",
+          quantity : "60",
+          rating : "4.8",
+          number_rating : "84",
+          strikedoffprice: "675",
+          disscount_percent : "19",
+          price: "543",
+        },
+        {
+          image_url:
+            "https://onemg.gumlet.io/images/h_150,f_auto,q_auto,c_fit,w_150/mugxvexo7ajq07inarbv/carbamide-forte-veg-prenatal-multivitamin-dha-300mg-l-methylfolate-calcium-iron-vegetarian-tablet.jpg",
+            name: "Carbamide Forte Veg Prenatal Multivitamin + DHA 300mg + L-Methylfolate + Calcium + Iron Vegetarian Tablet",
+          quantity : "60",
+          rating : "3.3",
+          number_rating : "127",
+          strikedoffprice: "995",
+          disscount_percent : "19",
+          price: "799",
+        },
+        {
+          image_url:
+            "https://onemg.gumlet.io/images/h_150,f_auto,q_auto,c_fit,w_150/gkjqjywuxgnurmx808l5/carbamide-forte-cf-kids-multivitamin-jellies-for-immunity-mixed-fruit.jpg",
+            name: "Carbamide Forte CF Kids Multivitamin Jellies for Immunity Mixed Fruit",
+          quantity : "60",
+          rating : "3.5",
+          number_rating : "18",
+          strikedoffprice: "1152",
+          disscount_percent : "53",
+          price: "550",
+        },
+        
+    ];
+    
+    let zingavita = [
+          {
+              image_url:
+                "https://onemg.gumlet.io/images/w_150,f_auto,c_fit,q_auto,h_150/mvisrgufol3alhhmvlmm/zingavita-strong-immunity-multivitamin-gummies-for-kids-with-blueberry-elderberry-tangy-mango.jpg",
+                name: "Zingavita Strong Immunity Multivitamin Gummies for kids (with Blueberry & Elderberry) Tangy Mango",
+              quantity : "30",
+              rating : "3.2",
+              number_rating : "13",
+              strikedoffprice: "399",
+              disscount_percent : "31",
+              price: "275",
+            },
+            {
+              image_url:
+                "https://onemg.gumlet.io/images/w_150,f_auto,c_fit,q_auto,h_150/lnp1of3i2xo1c8tmwfyk/zingavita-multi-vitamins-with-probiotics-prebiotics-tablet.jpg",
+                name: "Zingavita Multi Vitamins with Probiotics & Prebiotics Tablet",
+              quantity : "120",
+              rating : "4.3",
+              number_rating : "13",
+              strikedoffprice: "499",
+              disscount_percent : "28",
+              price: "360",
+            },
+            {
+              image_url:
+                "https://onemg.gumlet.io/images/w_150,f_auto,c_fit,q_auto,h_150/pyqirnkp3cli4d0paccs/zingavita-mighty-vitamins-gummies-for-kids-strawberry-and-lemon.jpg",
+                name: "Zingavita Mighty Vitamins Gummies for Kids Strawberry and Lemon",
+              quantity : "30",
+              rating : "4.3",
+              number_rating : "14",
+              strikedoffprice: "399",
+              disscount_percent : "31",
+              price: "276",
+            },
+            {
+              image_url:
+                "https://onemg.gumlet.io/images/w_150,f_auto,c_fit,q_auto,h_150/lykfaaparyev1jubxbmm/zingavita-multivitamins-men-with-41-vitamins-omega-3-herbs-tablet.jpg",
+                name: "Zingavita Multivitamins Men with 41 Vitamins, Omega 3 & Herbs Tablet",
+              quantity : "120",
+              rating : "3.8",
+              number_rating : "5",
+              strikedoffprice: "899",
+              disscount_percent : "40",
+              price: "536",
+            },
+            {
+              image_url:
+                "https://onemg.gumlet.io/images/w_150,f_auto,c_fit,q_auto,h_150/h2iqtxntjccduiofubnk/zingavita-multivitamins-women-with-45-vitamins-calcium-herbal-extracts-tablet.jpg",
+                name: "Zingavita Multivitamins Women with 45 Vitamins, Calcium & Herbal Extracts Tablet",
+              quantity : "120",
+              rating : "4.7",
+              number_rating : "141",
+              strikedoffprice: "899",
+              disscount_percent : "37",
+              price: "560",
+            },
+            {
+              image_url:
+                "https://onemg.gumlet.io/images/w_150,f_auto,c_fit,q_auto,h_150/qcrqxg1brst1k8w3uz0p/zingavita-combo-pack-of-strong-immunity-gummies-mango-mighty-vitamins-gummies-strawberry-lemon-sharp-eye-gummies-strawberry-mix-30-each.jpg",
+                name: "Zingavita Combo Pack of Strong Immunity Gummies Mango, Mighty Vitamins Gummies Strawberry Lemon & Sharp Eye Gummies Strawberry Mix (30 Each)",
+              quantity : "3",
+              rating : "4.5",
+              number_rating : "241",
+              strikedoffprice: "1197",
+              disscount_percent : "47",
+              price: "633",
+            },
+            {
+              image_url:
+                "https://onemg.gumlet.io/images/w_150,f_auto,c_fit,q_auto,h_150/vysdzjqrxocnadkzs0cx/zingavita-happy-multivitamins-effervescent-tablet-orange.jpg",
+                name: "Zingavita Happy Multivitamins Effervescent Tablet Orange",
+              quantity : "20",
+              rating : "178",
+              number_rating : "91",
+              strikedoffprice: "349",
+              disscount_percent : "28",
+              price: "250",
+            },
+            {
+              image_url:
+                "https://onemg.gumlet.io/images/w_150,f_auto,c_fit,q_auto,h_150/f5pbqdlbnn4jdrfymzsr/zingavita-combo-pack-of-multi-vitamins-with-probiotics-prebiotics-120-tablet-vitamin-c-amla-extract-1000mg-60-tablet.jpg",
+                name: "Zingavita Combo Pack of Multi Vitamins with Probiotics & Prebiotics 120 Tablet & Vitamin C Amla Extract 1000mg 60 Tablet",
+              quantity : "2",
+              rating : "49.",
+              number_rating : "12",
+              strikedoffprice: "998",
+              disscount_percent : "40",
+              price: "599",
+            },
+            {
+              image_url:
+                "https://onemg.gumlet.io/images/w_150,f_auto,c_fit,q_auto,h_150/pxxaclipalw2vongp01u/zingavita-women-daily-multivitamins-effervescent-tablet-orange.jpg",
+                name: "Zingavita Women Daily Multivitamins Effervescent Tablet Orange",
+              quantity : "30",
+              rating : "4.5",
+              number_rating : "75",
+              strikedoffprice: "399",
+              disscount_percent : "25",
+              price: "299",
+            },
+            {
+              image_url:
+                "https://onemg.gumlet.io/images/w_150,f_auto,c_fit,q_auto,h_150/eynmxuiykodsnn7wc24c/zingavita-women-perfect-multivitamins-gummies-berry.jpg",
+                name: "Zingavita Women Perfect Multivitamins Gummies Berry",
+              quantity : "30",
+              rating : "3.4",
+              number_rating : "214",
+              strikedoffprice: "499",
+              disscount_percent : "38",
+              price: "309",
+            },
+    ];
+
+    let healthvit = [
+          {
+              image_url:
+                "https://onemg.gumlet.io/images/f_auto,q_auto,c_fit,h_150,w_150/a7xr3jsvuophvvsn7yua/healthvit-cenvitan-men-multivitamin-multimineral-tablet.jpg",
+                name: "HealthVit Cenvitan Men Multivitamin & Multimineral Tablet",
+              quantity : "60",
+              rating : "4.3",
+              number_rating : "195",
+              strikedoffprice: "500",
+              disscount_percent : "30",
+              price: "350",
+            },
+            {
+              image_url:
+                "https://onemg.gumlet.io/images/f_auto,q_auto,c_fit,h_150,w_150/xfiayqtoofqahefnpfoq/healthvit-cenvitan-women-multivitamin-multimineral-tablet.jpg",
+                name: "HealthVit Cenvitan WoMen Multivitamin & Multimineral Tablet",
+              quantity : "60",
+              rating : "4.3",
+              number_rating : "99",
+              strikedoffprice: "550",
+              disscount_percent : "22",
+              price: "426",
+            },
+            {
+              image_url:
+                "https://onemg.gumlet.io/images/f_auto,q_auto,c_fit,h_150,w_150/cropped/mds2bggqebaou6kb5mi9/healthvit-cenvitan-adults-50-multivitamin-and-multimineral-tablet.jpg",
+                name: "HealthVit Cenvitan Adults 50+ Multivitamin and Multimineral Tablet",
+              quantity : "60",
+              rating : "4.4",
+              number_rating : "42",
+              strikedoffprice: "425",
+              disscount_percent : "17",
+              price: "350",
+            },
+            {
+              image_url:
+                "https://onemg.gumlet.io/images/f_auto,q_auto,c_fit,h_150,w_150/cropped/zdk2dahmdbuazzgf8di6/healthvit-cenvitan-women-50-multivitamin-multimineral-tablet.jpg",
+                name: "HealthVit Cenvitan Women 50+ Multivitamin & Multimineral Tablet",
+              quantity : "60",
+              rating : "4.6",
+              number_rating : "20",
+              strikedoffprice: "575",
+              disscount_percent : "30",
+              price: "403",
+            },
+            {
+              image_url:
+                "https://onemg.gumlet.io/images/f_auto,q_auto,c_fit,h_150,w_150/oeijes7fgkzbraanug2r/healthvit-cenvitan-adults-multivitamin-multimineral-tablet.jpg",
+                name: "HealthVit Cenvitan Adults Multivitamin & Multimineral Tablet",
+              quantity : "60",
+              rating : "4.2",
+              number_rating : "32",
+              strikedoffprice: "700",
+              disscount_percent : "14",
+              price: "600",
+            },
+            {
+              image_url:
+                "https://onemg.gumlet.io/images/f_auto,q_auto,c_fit,h_150,w_150/cropped/baifswerx176fr98htej/healthvit-mulvit-multivitamins-minerals-tablet.jpg",
+                name: "HealthVit Mulvit Multivitamins & Minerals Tablet",
+              quantity : "60",
+              rating : "3.9",
+              number_rating : "211",
+              strikedoffprice: "400",
+              disscount_percent : "29",
+              price: "282",
+            },
+            {
+              image_url:
+                "https://onemg.gumlet.io/images/f_auto,q_auto,c_fit,h_150,w_150/cropped/blfetr1vbrjyraq4opvh/healthvit-femyvit-women-multivitamins-tablet.png",
+                name: "HealthVit Femyvit Women Multivitamins Tablet",
+              quantity : "60",
+              rating : "4.3",
+              number_rating : "18",
+              strikedoffprice: "300",
+              disscount_percent : "29",
+              price: "213",
+            },
+            {
+              image_url:
+                "https://onemg.gumlet.io/images/f_auto,q_auto,c_fit,h_150,w_150/o3h7dndgouqytcbxilov/healthvit-cenvitan-whole-food-multivitamin-men-tablet.jpg",
+                name: "HealthVit Cenvitan Whole Food Multivitamin Men Tablet",
+              quantity : "60",
+              rating : "4.1",
+              number_rating : "54",
+              strikedoffprice: "750",
+              disscount_percent : "17",
+              price: "622",
+            },
+            {
+              image_url:
+                "https://onemg.gumlet.io/images/f_auto,q_auto,c_fit,h_150,w_150/cropped/vxgdsc9u04divlhoxpjm/healthvit-multivitamin-supplements-orange-sugar-free-effervescent-tablet.jpg",
+                name: "HealthVit Multivitamin Supplements Orange Sugar Free Effervescent Tablet",
+              quantity : "20",
+              rating : "85",
+              number_rating : "41",
+              strikedoffprice: "400",
+              disscount_percent : "15",
+              price: "339",
+            },
+    ];
+
+
+    // array by me
 
     //8
     let gnc = [
@@ -771,6 +1214,444 @@
     
     
     let sallpdt1 = [
+        {
+            image_url:
+              "https://onemg.gumlet.io/images/q_auto,h_150,f_auto,c_fit,w_150/qh1au45w8u7cfvf3lg3i/tata-1mg-women-s-multivitamin-zinc-vitamin-c-calcium-vitamin-d-and-iron-immunity-booster-tablet.jpg",
+              name: "Tata 1mg Women's Multivitamin, Zinc, Vitamin C, Calcium, Vitamin D, and Iron Immunity Booster Tablet",
+            quantity : 60,
+            rating : 4.3,
+            number_rating : 667,
+            strikedoffprice: 1170,
+            disscount_percent : 60,
+            price: 995,
+          },
+          {
+            image_url:
+              "https://onemg.gumlet.io/images/q_auto,h_150,f_auto,c_fit,w_150/klpj2khvaphkvpqmchui/tata-1mg-senior-50-multivitamin-multimineral-immunity-booster-zinc-vitamin-c-calcium-and-vitamin-d-veg-tablet.jpg",
+            name: "Tata 1mg Senior 50+ Multivitamin & Multimineral Immunity Booster Zinc, Vitamin C, Calcium, and Vitamin D Veg Tablet",
+            quantity : 60,
+            rating : "4.3",
+            number_rating : "457",
+            strikedoffprice: "895",
+            disscount_percent: "55",
+            price: "398",
+          },
+          {
+            image_url:
+              "https://onemg.gumlet.io/images/q_auto,h_150,f_auto,c_fit,w_150/iktvzbqwmj6xca8eitig/tata-1mg-myo-inositol-tablet.jpg",
+            name: "Tata 1mg Myo-Inositol Tablet",
+            quantity : "30",
+            rating : "4.2",
+            number_rating : "102",
+            strikedoffprice: "595",
+            disscount_percent : "50",
+            price: "298",
+          },
+          {
+            image_url:
+              "https://onemg.gumlet.io/images/q_auto,h_150,f_auto,c_fit,w_150/gmkrpf1imjj9djwvq4gq/tata-1mg-multivitamin-supreme-zinc-calcium-and-vitamin-d-immunity-booster-capsule.jpg",
+            name: "Tata 1mg Multivitamin Supreme, Zinc, Calcium and Vitamin D Immunity Booster Capsule",
+            quantity : "60",
+            rating : "4.1",
+            number_rating : "972",
+            strikedoffprice: "995",
+            disscount_percent : "50",
+            price: "498",
+          },
+          {
+            image_url:
+              "https://onemg.gumlet.io/images/q_auto,h_150,f_auto,c_fit,w_150/jv4fjubstbcvlqyimatv/tata-1mg-women-s-multivitamin-zinc-vitamin-c-calcium-vitamin-d-and-iron-immunity-booster-tablet.jpg",
+            name: "Tata 1mg Women's Multivitamin, Zinc, Vitamin C, Calcium, Vitamin D, and Iron Immunity Booster Tablet",
+            quantity : "30",
+            rating : "4.3",
+            number_rating : "647",
+            strikedoffprice: "510",
+            disscount_percent : "56",
+            price: "225",
+          },
+          {
+            image_url:
+              "https://onemg.gumlet.io/images/q_auto,h_150,f_auto,c_fit,w_150/sbafi3nw8ndlrnvaj0qm/tata-1mg-multivitamin-multimineral-supplement-tablet.jpg",
+            name: "Tata 1mg Multivitamin & Multimineral Supplement Tablet",
+            quantity : "15",
+            rating : "4.3",
+            number_rating : "174",
+            strikedoffprice: "99",
+            disscount_percent : "9",
+            price: "90",
+          },
+          {
+            image_url:
+              "https://onemg.gumlet.io/images/q_auto,h_150,f_auto,c_fit,w_150/olumjmbboursowikpgh9/tata-1mg-vitamin-b-complex-capsules.jpg",
+            name: "Tata 1mg Vitamin B Complex Capsules",
+            quantity : "60",
+            rating : "4.4",
+            number_rating : "40",
+            strikedoffprice: "595",
+            disscount_percent : "24",
+            price: "448",
+          },
+          {
+            image_url:
+              "https://onemg.gumlet.io/images/q_auto,h_150,f_auto,c_fit,w_150/mhhdtmwpr4ige7yrjo1v/tata-1mg-calcium-vitamin-d-supplement-tablet.jpg",
+            name: "Tata 1mg Calcium & Vitamin D Supplement Tablet",
+            quantity : "15",
+            rating : "4.4",
+            number_rating : "95",
+            strikedoffprice: "99",
+            disscount_percent : "9",
+            price: "90",
+          },
+          {
+            image_url:
+              "https://onemg.gumlet.io/images/q_auto,h_150,f_auto,c_fit,w_150/bd82ty04xq3dl3ajmgwh/tata-1mg-multivitamin-supreme-zinc-calcium-and-vitamin-d-immunity-booster-capsule.jpg",
+            name: "Tata 1mg Multivitamin Supreme, Zinc, Calcium and Vitamin D Immunity Booster Capsule",
+            quantity : "10",
+            rating : "3.9",
+            number_rating : "36",
+            strikedoffprice: "175",
+            disscount_percent : "43",
+            price: "99",
+          },
+          {
+            image_url:
+              "https://onemg.gumlet.io/images/q_auto,h_150,f_auto,c_fit,w_150/cropped/vjqcbttlwfq8np41ag3c/1mg-sports-multivitamin-energy-immunity-booster-zinc-vitamin-c-vitamin-d-calcium-and-iron-tablet.png",
+            name: "1mg Sports Multivitamin Energy & Immunity Booster Zinc, Vitamin C, Vitamin D, Calcium and Iron Tablet",
+            quantity : "60",
+            rating : "4",
+            number_rating : "92",
+            strikedoffprice: "1195",
+            disscount_percent : "58",
+            price: "497",
+          },
+
+
+        {
+            image_url:
+              "https://onemg.gumlet.io/images/h_150,f_auto,q_auto,c_fit,w_150/q58rjxdaynvly9s1xfj7/carbamide-forte-multivitamins-with-probiotics-for-women-vegetarian-tablet.jpg",
+              name: "Carbamide Forte Multivitamins with Probiotics for Women Vegetarian Tablet",
+            quantity : "100",
+            rating : "4.2",
+            number_rating : "42",
+            strikedoffprice: "795",
+            disscount_percent : "37",
+            price: "499",
+          },
+          {
+            image_url:
+              "https://onemg.gumlet.io/images/h_150,f_auto,q_auto,c_fit,w_150/xbhkkhnpj6gsv3xldvwq/carbamide-forte-multivitamin-sports-vegetarian-tablet.jpg",
+              name: "Carbamide Forte Multivitamin Sports Vegetarian Tablet",
+            quantity : "60",
+            rating : "4.4",
+            number_rating : "10",
+            strikedoffprice: "875",
+            disscount_percent : "43",
+            price: "499",
+          },
+          {
+            image_url:
+              "https://onemg.gumlet.io/images/h_150,f_auto,q_auto,c_fit,w_150/ic9bq5aiqabc0pooipek/carbamide-forte-multivitamins-with-probiotics-vegetarian-tablet.jpg",
+              name: "Carbamide Forte Multivitamins with Probiotics Vegetarian Tablet",
+            quantity : "60",
+            rating : "3.8",
+            number_rating : "72",
+            strikedoffprice: "375",
+            disscount_percent : "20",
+            price: "299",
+          },
+          {
+            image_url:
+              "https://onemg.gumlet.io/images/h_150,f_auto,q_auto,c_fit,w_150/qdfevbbc3ltsho6ihrwa/carbamide-forte-multivitamins-with-probiotics-for-women-vegetarian-tablet.jpg",
+              name: "Carbamide Forte Multivitamins with Probiotics for Women Vegetarian Tablet",
+            quantity : "60",
+            rating : "4.2",
+            number_rating : "42",
+            strikedoffprice: "575",
+            disscount_percent : "39",
+            price: "349",
+          },
+          {
+            image_url:
+              "https://onemg.gumlet.io/images/h_150,f_auto,q_auto,c_fit,w_150/advppsbemtgolsefnfu9/carbamide-forte-plant-based-multivitamin-with-superfoods-greens.jpg",
+              name: "Carbamide Forte Plant Based Multivitamin with Superfoods & Greens",
+            quantity : "60",
+            rating : "4.6",
+            number_rating : "8",
+            strikedoffprice: "675",
+            disscount_percent : "26",
+            price: "499",
+          },
+          {
+            image_url:
+              "https://onemg.gumlet.io/images/h_150,f_auto,q_auto,c_fit,w_150/omtavbrcwcbc38evubkt/carbamide-forte-multivitamin-for-men-vegetarian-tablet.jpg",
+              name: "Carbamide Forte Multivitamin for Men Vegetarian Tablet",
+            quantity : "60",
+            rating : "2.9",
+            number_rating : "112",
+            strikedoffprice: "675",
+            disscount_percent : "26",
+            price: "499",
+          },
+          {
+            image_url:
+              "https://onemg.gumlet.io/images/h_150,f_auto,q_auto,c_fit,w_150/ba72noylxk35qgj2eg5x/carbamide-forte-multivitamin-with-probiotics-ashwagandha-tablet.jpg",
+              name: "Carbamide Forte Multivitamin with Probiotics & Ashwagandha Tablet",
+            quantity : "180",
+            rating : "4.2",
+            number_rating : "19",
+            strikedoffprice: "850",
+            disscount_percent : "29",
+            price: "599",
+          },
+          {
+            image_url:
+              "https://onemg.gumlet.io/images/h_150,f_auto,q_auto,c_fit,w_150/atz76r3nf9j4e0903o3w/carbamide-forte-multivitamins-gummies-for-women-mixed-fruit.jpg",
+              name: "Carbamide Forte Multivitamins Gummies for Women Mixed Fruit",
+            quantity : "60",
+            rating : "4.8",
+            number_rating : "84",
+            strikedoffprice: "675",
+            disscount_percent : "19",
+            price: "543",
+          },
+          {
+            image_url:
+              "https://onemg.gumlet.io/images/h_150,f_auto,q_auto,c_fit,w_150/mugxvexo7ajq07inarbv/carbamide-forte-veg-prenatal-multivitamin-dha-300mg-l-methylfolate-calcium-iron-vegetarian-tablet.jpg",
+              name: "Carbamide Forte Veg Prenatal Multivitamin + DHA 300mg + L-Methylfolate + Calcium + Iron Vegetarian Tablet",
+            quantity : "60",
+            rating : "3.3",
+            number_rating : "127",
+            strikedoffprice: "995",
+            disscount_percent : "19",
+            price: "799",
+          },
+          {
+            image_url:
+              "https://onemg.gumlet.io/images/h_150,f_auto,q_auto,c_fit,w_150/gkjqjywuxgnurmx808l5/carbamide-forte-cf-kids-multivitamin-jellies-for-immunity-mixed-fruit.jpg",
+              name: "Carbamide Forte CF Kids Multivitamin Jellies for Immunity Mixed Fruit",
+            quantity : "60",
+            rating : "3.5",
+            number_rating : "18",
+            strikedoffprice: "1152",
+            disscount_percent : "53",
+            price: "550",
+          },
+
+
+        {
+            image_url:
+              "https://onemg.gumlet.io/images/w_150,f_auto,c_fit,q_auto,h_150/mvisrgufol3alhhmvlmm/zingavita-strong-immunity-multivitamin-gummies-for-kids-with-blueberry-elderberry-tangy-mango.jpg",
+              name: "Zingavita Strong Immunity Multivitamin Gummies for kids (with Blueberry & Elderberry) Tangy Mango",
+            quantity : "30",
+            rating : "3.2",
+            number_rating : "13",
+            strikedoffprice: "399",
+            disscount_percent : "31",
+            price: "275",
+          },
+          {
+            image_url:
+              "https://onemg.gumlet.io/images/w_150,f_auto,c_fit,q_auto,h_150/lnp1of3i2xo1c8tmwfyk/zingavita-multi-vitamins-with-probiotics-prebiotics-tablet.jpg",
+              name: "Zingavita Multi Vitamins with Probiotics & Prebiotics Tablet",
+            quantity : "120",
+            rating : "4.3",
+            number_rating : "13",
+            strikedoffprice: "499",
+            disscount_percent : "28",
+            price: "360",
+          },
+          {
+            image_url:
+              "https://onemg.gumlet.io/images/w_150,f_auto,c_fit,q_auto,h_150/pyqirnkp3cli4d0paccs/zingavita-mighty-vitamins-gummies-for-kids-strawberry-and-lemon.jpg",
+              name: "Zingavita Mighty Vitamins Gummies for Kids Strawberry and Lemon",
+            quantity : "30",
+            rating : "4.3",
+            number_rating : "14",
+            strikedoffprice: "399",
+            disscount_percent : "31",
+            price: "276",
+          },
+          {
+            image_url:
+              "https://onemg.gumlet.io/images/w_150,f_auto,c_fit,q_auto,h_150/lykfaaparyev1jubxbmm/zingavita-multivitamins-men-with-41-vitamins-omega-3-herbs-tablet.jpg",
+              name: "Zingavita Multivitamins Men with 41 Vitamins, Omega 3 & Herbs Tablet",
+            quantity : "120",
+            rating : "3.8",
+            number_rating : "5",
+            strikedoffprice: "899",
+            disscount_percent : "40",
+            price: "536",
+          },
+          {
+            image_url:
+              "https://onemg.gumlet.io/images/w_150,f_auto,c_fit,q_auto,h_150/h2iqtxntjccduiofubnk/zingavita-multivitamins-women-with-45-vitamins-calcium-herbal-extracts-tablet.jpg",
+              name: "Zingavita Multivitamins Women with 45 Vitamins, Calcium & Herbal Extracts Tablet",
+            quantity : "120",
+            rating : "4.7",
+            number_rating : "141",
+            strikedoffprice: "899",
+            disscount_percent : "37",
+            price: "560",
+          },
+          {
+            image_url:
+              "https://onemg.gumlet.io/images/w_150,f_auto,c_fit,q_auto,h_150/qcrqxg1brst1k8w3uz0p/zingavita-combo-pack-of-strong-immunity-gummies-mango-mighty-vitamins-gummies-strawberry-lemon-sharp-eye-gummies-strawberry-mix-30-each.jpg",
+              name: "Zingavita Combo Pack of Strong Immunity Gummies Mango, Mighty Vitamins Gummies Strawberry Lemon & Sharp Eye Gummies Strawberry Mix (30 Each)",
+            quantity : "3",
+            rating : "4.5",
+            number_rating : "241",
+            strikedoffprice: "1197",
+            disscount_percent : "47",
+            price: "633",
+          },
+          {
+            image_url:
+              "https://onemg.gumlet.io/images/w_150,f_auto,c_fit,q_auto,h_150/vysdzjqrxocnadkzs0cx/zingavita-happy-multivitamins-effervescent-tablet-orange.jpg",
+              name: "Zingavita Happy Multivitamins Effervescent Tablet Orange",
+            quantity : "20",
+            rating : "2.8",
+            number_rating : "91",
+            strikedoffprice: "349",
+            disscount_percent : "28",
+            price: "250",
+          },
+          {
+            image_url:
+              "https://onemg.gumlet.io/images/w_150,f_auto,c_fit,q_auto,h_150/f5pbqdlbnn4jdrfymzsr/zingavita-combo-pack-of-multi-vitamins-with-probiotics-prebiotics-120-tablet-vitamin-c-amla-extract-1000mg-60-tablet.jpg",
+              name: "Zingavita Combo Pack of Multi Vitamins with Probiotics & Prebiotics 120 Tablet & Vitamin C Amla Extract 1000mg 60 Tablet",
+            quantity : "2",
+            rating : "4.1",
+            number_rating : "12",
+            strikedoffprice: "998",
+            disscount_percent : "40",
+            price: "599",
+          },
+          {
+            image_url:
+              "https://onemg.gumlet.io/images/w_150,f_auto,c_fit,q_auto,h_150/pxxaclipalw2vongp01u/zingavita-women-daily-multivitamins-effervescent-tablet-orange.jpg",
+              name: "Zingavita Women Daily Multivitamins Effervescent Tablet Orange",
+            quantity : "30",
+            rating : "4.5",
+            number_rating : "75",
+            strikedoffprice: "399",
+            disscount_percent : "25",
+            price: "299",
+          },
+          {
+            image_url:
+              "https://onemg.gumlet.io/images/w_150,f_auto,c_fit,q_auto,h_150/eynmxuiykodsnn7wc24c/zingavita-women-perfect-multivitamins-gummies-berry.jpg",
+              name: "Zingavita Women Perfect Multivitamins Gummies Berry",
+            quantity : "30",
+            rating : "3.4",
+            number_rating : "214",
+            strikedoffprice: "499",
+            disscount_percent : "38",
+            price: "309",
+          },
+
+
+        {
+            image_url:
+              "https://onemg.gumlet.io/images/f_auto,q_auto,c_fit,h_150,w_150/a7xr3jsvuophvvsn7yua/healthvit-cenvitan-men-multivitamin-multimineral-tablet.jpg",
+              name: "HealthVit Cenvitan Men Multivitamin & Multimineral Tablet",
+            quantity : "60",
+            rating : "4.3",
+            number_rating : "195",
+            strikedoffprice: "500",
+            disscount_percent : "30",
+            price: "350",
+          },
+          {
+            image_url:
+              "https://onemg.gumlet.io/images/f_auto,q_auto,c_fit,h_150,w_150/xfiayqtoofqahefnpfoq/healthvit-cenvitan-women-multivitamin-multimineral-tablet.jpg",
+              name: "HealthVit Cenvitan WoMen Multivitamin & Multimineral Tablet",
+            quantity : "60",
+            rating : "4.3",
+            number_rating : "99",
+            strikedoffprice: "550",
+            disscount_percent : "22",
+            price: "426",
+          },
+          {
+            image_url:
+              "https://onemg.gumlet.io/images/f_auto,q_auto,c_fit,h_150,w_150/cropped/mds2bggqebaou6kb5mi9/healthvit-cenvitan-adults-50-multivitamin-and-multimineral-tablet.jpg",
+              name: "HealthVit Cenvitan Adults 50+ Multivitamin and Multimineral Tablet",
+            quantity : "60",
+            rating : "4.4",
+            number_rating : "42",
+            strikedoffprice: "425",
+            disscount_percent : "17",
+            price: "350",
+          },
+          {
+            image_url:
+              "https://onemg.gumlet.io/images/f_auto,q_auto,c_fit,h_150,w_150/cropped/zdk2dahmdbuazzgf8di6/healthvit-cenvitan-women-50-multivitamin-multimineral-tablet.jpg",
+              name: "HealthVit Cenvitan Women 50+ Multivitamin & Multimineral Tablet",
+            quantity : "60",
+            rating : "4.6",
+            number_rating : "20",
+            strikedoffprice: "575",
+            disscount_percent : "30",
+            price: "403",
+          },
+          {
+            image_url:
+              "https://onemg.gumlet.io/images/f_auto,q_auto,c_fit,h_150,w_150/oeijes7fgkzbraanug2r/healthvit-cenvitan-adults-multivitamin-multimineral-tablet.jpg",
+              name: "HealthVit Cenvitan Adults Multivitamin & Multimineral Tablet",
+            quantity : "60",
+            rating : "4.2",
+            number_rating : "32",
+            strikedoffprice: "700",
+            disscount_percent : "14",
+            price: "600",
+          },
+          {
+            image_url:
+              "https://onemg.gumlet.io/images/f_auto,q_auto,c_fit,h_150,w_150/cropped/baifswerx176fr98htej/healthvit-mulvit-multivitamins-minerals-tablet.jpg",
+              name: "HealthVit Mulvit Multivitamins & Minerals Tablet",
+            quantity : "60",
+            rating : "3.9",
+            number_rating : "211",
+            strikedoffprice: "400",
+            disscount_percent : "29",
+            price: "282",
+          },
+          {
+            image_url:
+              "https://onemg.gumlet.io/images/f_auto,q_auto,c_fit,h_150,w_150/cropped/blfetr1vbrjyraq4opvh/healthvit-femyvit-women-multivitamins-tablet.png",
+              name: "HealthVit Femyvit Women Multivitamins Tablet",
+            quantity : "60",
+            rating : "4.3",
+            number_rating : "18",
+            strikedoffprice: "300",
+            disscount_percent : "29",
+            price: "213",
+          },
+          {
+            image_url:
+              "https://onemg.gumlet.io/images/f_auto,q_auto,c_fit,h_150,w_150/o3h7dndgouqytcbxilov/healthvit-cenvitan-whole-food-multivitamin-men-tablet.jpg",
+              name: "HealthVit Cenvitan Whole Food Multivitamin Men Tablet",
+            quantity : "60",
+            rating : "4.1",
+            number_rating : "54",
+            strikedoffprice: "750",
+            disscount_percent : "17",
+            price: "622",
+          },
+          {
+            image_url:
+              "https://onemg.gumlet.io/images/f_auto,q_auto,c_fit,h_150,w_150/cropped/vxgdsc9u04divlhoxpjm/healthvit-multivitamin-supplements-orange-sugar-free-effervescent-tablet.jpg",
+              name: "HealthVit Multivitamin Supplements Orange Sugar Free Effervescent Tablet",
+            quantity : "20",
+            rating : "4.8",
+            number_rating : "41",
+            strikedoffprice: "400",
+            disscount_percent : "15",
+            price: "339",
+          },
+
+
+        //   below by me  ihusdc uhasbcusxuasbx sabxasuxbusahxcccccccccccccccccccccccccccccccccccccccccccccccccccc
     
         {
             image_url: "https://onemg.gumlet.io/images/f_auto,h_150,q_auto,w_150,c_fit/my1scryvvmp8purgjgpz/gnc-women-s-one-daily-multivitamin-tablet.jpg",
@@ -886,7 +1767,7 @@
             image_url: "https://onemg.gumlet.io/images/w_150,f_auto,c_fit,q_auto,h_150/dya6z45qd9usszdo1w0s/himalayan-organics-organic-multivitamin-vegetarian-capsule.jpg",
             name: "Himalayan Organics Organic Multivitamin",
             quantity : 60,
-            rating : 7.7,
+            rating : 4.1,
             number_rating : 7,
             strikedoffprice: 1125,
             disscount_percent : 46,
@@ -1171,8 +2052,6 @@
     
     scardDisplay1(sallpdt1);
     
-
-
     
     function scardDisplay1(array){
     array.map(function(obj, index, array){
@@ -1260,6 +2139,10 @@
         p4.setAttribute("id", "sky10");
         p4.innerText = "ADD";
         div6.append(p3, p4);
+
+        //----------- for add to cart
+        p4.addEventListener("click", function(){saddtocart1(obj, index, array)});
+        //----------- for add to cart
     
     
         div1.append(div2, div3, div3i, div4, div5, div6);
@@ -1270,46 +2153,229 @@
 
 
 
-    // SORT BT HTL
 
-    function salarySort(){
-        let salarySt = document.getElementById("sortSalary").value;
-        
-        if(salarySt == "htl"){
-          document.querySelector("tbody").innerText = "";
-          jobList.sort(function(a,b){
-            if(a.ExpectedSalary < b.ExpectedSalary){
-              return 1;
-            }
-            else if(a.ExpectedSalary > b.ExpectedSalary){
-              return -1;
-            }
-            return 0;
-          });
-          display(jobList);
-        }
-        
-        else if(salarySt == "lth"){
-          document.querySelector("tbody").innerText = "";
-          jobList.sort(function(a,b){
-            if(a.ExpectedSalary > b.ExpectedSalary){
-              return 1;
-            }
-            else if(a.ExpectedSalary < b.ExpectedSalary){
-              return -1;
-            }
-            return 0;
-          });
-          display(jobList);
-        }
-  
-      };
+    let cartArrayS1 = JSON.parse(localStorage.getItem("cartArrayS1")) || [];
+
+    //-------------------add to cart function
+    function saddtocart1(obj, index, array){
+        let addedItemDetails = {
+            image_url: obj.image_url,
+            name: obj.name,
+            quantity : obj.quantity,
+            rating : obj.rating,
+            number_rating : obj.number_rating,
+            strikedoffprice: obj.strikedoffprice,
+            disscount_percent : obj.disscount_percent,
+            price: obj.price,
+        };
+
+        cartArrayS1.push(addedItemDetails);
+        localStorage.setItem("cartArrayS1", JSON.stringify(cartArrayS1));
+        location.reload();
+    }
+
+
+
+    // function to pop the nubmer of items into the cart
+    //# id = "cartItembox"  line 88
+    if(cartArrayS1.length == 0){
+            (document.querySelector("#cartItembox")).style.display = "none";
+    }
+    else{
+        (document.querySelector("#cartItembox")).style.display = "block";
+        (document.querySelector("#cartItembox")).innerText = cartArrayS1.length;
+    }
     
 
+    //-------XXXXXXXXX------add to cart function
 
 
 
 
+
+    // close the box as we click
+    document.getElementById("sLater1").addEventListener("click", caretchange);
+
+    
+    // SORT By rating
+    document.getElementById("srating").addEventListener("click", sortByRating);
+    function sortByRating(){
+            document.querySelector("#sfinalcard1id").innerText = "";
+            sallpdt1.sort(function(a,b){
+            if(Number(a.rating) <   Number(b.rating)){
+                return 1;
+            }
+            else if(Number(a.rating) > Number(b.rating)){
+                return -1;
+            }
+            return 0;
+        });
+        scardDisplay1(sallpdt1);
+    };
+
+
+
+    // SORT By LTH
+    document.getElementById("slth").addEventListener("click", priceSortlth);
+    function priceSortlth(){
+            document.querySelector("#sfinalcard1id").innerText = "";
+            sallpdt1.sort(function(a,b){
+            if(Number(a.price) > Number(b.price)){
+                return 1;
+            }
+            else if(Number(a.price) < Number(b.price)){
+                return -1;
+            }
+            return 0;
+        });
+        scardDisplay1(sallpdt1);
+    };
+        
+
+
+    // SORT By HTL
+    document.getElementById("shtl").addEventListener("click", priceSorthtl);
+    function priceSorthtl(){
+            document.querySelector("#sfinalcard1id").innerText = "";
+            sallpdt1.sort(function(a,b){
+            if(Number(a.price) < Number(b.price)){
+                return 1;
+            }
+            else if(Number(a.price) > Number(b.price)){
+                return -1;
+            }
+            return 0;
+        });
+        scardDisplay1(sallpdt1);
+    };
+
+
+
+    // SORT By discont
+    document.getElementById("sdiscount").addEventListener("click", sortByDiscount);
+    function sortByDiscount(){
+            document.querySelector("#sfinalcard1id").innerText = "";
+            sallpdt1.sort(function(a,b){
+            if(Number(a.disscount_percent) < Number(b.disscount_percent)){
+                return 1;
+            }
+            else if(Number(a.disscount_percent) > Number(b.disscount_percent)){
+                return -1;
+            }
+            return 0;
+        });
+        scardDisplay1(sallpdt1);
+    };
+
+
+
+    // sort by brand CHECKBOX
+
+    // document.getElementById("Tata 1mg").addEventListener("click", soBybrant1);
+    const checkbox1 = document.getElementById("Tata 1mg");
+    checkbox1.addEventListener('change', (event) => {
+        document.querySelector("#sfinalcard1id").innerText = "";
+        if(event.currentTarget.checked) {
+            
+            scardDisplay1(tata1mg);
+        }
+        else {
+            scardDisplay1(sallpdt1);
+        }
+    });
+    
+
+    const checkbox2 = document.getElementById("Carbamide Forte");
+    checkbox2.addEventListener('change', (event) => {
+        document.querySelector("#sfinalcard1id").innerText = "";
+        if(event.currentTarget.checked) {
+            
+            scardDisplay1(carbamide);
+        }
+        else {
+            scardDisplay1(sallpdt1);
+        }
+    });
+
+    const checkbox3 = document.getElementById("Zingavita");
+    checkbox3.addEventListener('change', (event) => {
+        document.querySelector("#sfinalcard1id").innerText = "";
+        if(event.currentTarget.checked) {
+            
+            scardDisplay1(zingavita);
+        }
+        else {
+            scardDisplay1(sallpdt1);
+        }
+    });
+
+    const checkbox4 = document.getElementById("HealthVit");
+    checkbox4.addEventListener('change', (event) => {
+        document.querySelector("#sfinalcard1id").innerText = "";
+        if(event.currentTarget.checked) {
+            
+            scardDisplay1(healthvit);
+        }
+        else {
+            scardDisplay1(sallpdt1);
+        }
+    });
+
+    const checkbox5 = document.getElementById("GNC");
+    checkbox5.addEventListener('change', (event) => {
+        document.querySelector("#sfinalcard1id").innerText = "";
+        if(event.currentTarget.checked) {
+            
+            scardDisplay1(gnc);
+        }
+        else {
+            scardDisplay1(sallpdt1);
+        }
+    });
+
+    const checkbox6 = document.getElementById("HealthKart");
+    checkbox6.addEventListener('change', (event) => {
+        document.querySelector("#sfinalcard1id").innerText = "";
+        if(event.currentTarget.checked) {
+            
+            scardDisplay1(healthKart);
+        }
+        else {
+            scardDisplay1(sallpdt1);
+        }
+    });
+
+    const checkbox7 = document.getElementById("Adorreal");
+    checkbox7.addEventListener('change', (event) => {
+        document.querySelector("#sfinalcard1id").innerText = "";
+        if(event.currentTarget.checked) {
+            
+            scardDisplay1(adorreal);
+        }
+        else {
+            scardDisplay1(sallpdt1);
+        }
+    });
+
+    const checkbox8 = document.getElementById("Redivit");
+    checkbox8.addEventListener('change', (event) => {
+        document.querySelector("#sfinalcard1id").innerText = "";
+        if(event.currentTarget.checked) {
+            
+            scardDisplay1(redivit);
+        }
+        else{
+            scardDisplay1(sallpdt1);
+        }
+    });
+
+
+
+
+
+
+
+    
 
 
 
