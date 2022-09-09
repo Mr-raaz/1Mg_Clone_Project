@@ -64,6 +64,31 @@ var swiper = new Swiper(".A-Swiper", {
 },
 });
 
+
+
+
+
+var swiper = new Swiper(".pop-Swiper", {
+  slidesPerView: 6,
+  spaceBetween: 0,
+ 
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints:{
+  0: {
+      slidesPerView: 1,
+  },
+  520: {
+      slidesPerView: 3,
+  },
+  950: {
+      slidesPerView: 6,
+  },
+},
+});
+
 // Name Section.....
 
 let val = localStorage.getItem("mobile_number");

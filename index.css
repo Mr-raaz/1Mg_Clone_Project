@@ -1006,13 +1006,7 @@
   }
  .swiper-button-next , .swiper-button-prev{
     /* color:#22542f; */
-    height:50px;
-    width: 50px;
-   
-    background-color:white;
-    border-radius: 20px;
-    border:0.5ch solid white;
-    color : red;
+    
   }
   .body{
     height: 70px;
@@ -1112,11 +1106,12 @@
 
   .swiper-button-next , .swiper-button-prev{
     /* color:#22542f; */
-    height:50px;
-    width: 50px;
    
-    background-color:white;
-    border-radius: 20px;
-    border:0.5ch solid white;
     color : RGB(255, 111, 97) !important;
+  }
+  .swiper-slide img{
+    border-radius: 10px !important;
+  }
+  .swiper-slide p{
+    text-align: center !important;
   }
