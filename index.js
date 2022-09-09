@@ -63,3 +63,23 @@ var swiper = new Swiper(".A-Swiper", {
   },
 },
 });
+
+// Name Section.....
+
+let val = localStorage.getItem("mobile_number");
+
+if(val.length >= 5){
+  document.getElementById("login_text_js").innerHTML = `<i class="fa-solid fa-user"></i>`;
+  document.getElementById("login_text_js1").innerText = "My Profile";
+  document.getElementById("login_text_js2").innerText = " ";
+  document.getElementById("signup").innerHTML = `<b>PROFILE</b>`;
+
+  document.getElementById("signup").addEventListener("click" , function(){
+    window.location.href = "index.html";
+  });
+
+  
+}
+
+
+// let val = document.getElementById("login_text_js")
