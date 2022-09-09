@@ -154,10 +154,16 @@
             margin-left: 69%;
             color: RGB(255, 111, 97);
         }
+        #showmore:hover {
+              cursor: pointer;
+        }
         #showless{
             color: RGB(255, 111, 97);
             font-size: 18px;
             margin-left: 69%;
+        }
+        #showless:hover {
+              cursor: pointer;
         }
         .listofoffer{
             display: flex;
@@ -306,7 +312,108 @@
            margin-left: 8px;
            height: 2px;
            width: 2px;
-
+        }
+        @media only screen and (min-width: 481px) and (max-width: 768px){
+        #box{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-left: 10px; 
+            margin-right: 00px;
+            justify-content: center;
+        }
+        #box > div{
+            padding: auto;
+            width: 95%;
+            /* margin-right: 10%; */
+            /* border: 3px solid red; */
+        }
+        #image_div img{
+            width: 40%;
+            margin-left: 30%;
+        }
+        #div_offer{
+            border-radius: 10px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            margin-left: 0%;
+            padding-bottom: 10px;
+            width: 100%;
+            height: 85%;
+        }
+        #offer{
+            border: 1px dashed gray;
+            width: 95%;
+            margin-left: 1%;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+        }
+        #showmore{
+            font-size: 18px;
+            margin-left: 79%;
+            color: RGB(255, 111, 97);
+        }
+        #bottdiv{
+            width: 95%;
+            margin-left: 0%;
+            margin-right: 0%;
+            padding-top: 20px;
+            display: flex;
+            flex-direction: column; 
+        }
+        }
+        @media only screen and (max-width : 480px){
+            #box{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-left: 10px; 
+            margin-right: 00px;
+            justify-content: center;
+        }
+        #box > div{
+            padding: auto;
+            width: 95%;
+            /* margin-right: 10%; */
+            /* border: 3px solid red; */
+        }
+        #image_div img{
+            width: 40%;
+            margin-left: 30%;
+        }
+        #div_offer{
+            border-radius: 10px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            margin-left: 0%;
+            padding-bottom: 10px;
+            width: 100%;
+            height: 85%;
+        }
+        #offer{
+            border: 1px dashed gray;
+            width: 95%;
+            margin-left: 1%;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+        }
+        #showmore{
+            font-size: 18px;
+            margin-left: 79%;
+            color: RGB(255, 111, 97);
+        }
+        #bottdiv{
+            width: 95%;
+            margin-left: 0%;
+            margin-right: 0%;
+            padding-top: 20px;
+            display: flex;
+            flex-direction: column; 
+        }
+        #content{
+            /* 596 */
+            /* bottom: 50px; */
+        }
         }
     </style>
 </head>
@@ -333,7 +440,7 @@
                     </div>
                     <p id="inctx">Inclusive off all taxes</p>
                     <div id="qt">
-                        <select>
+                        <select id="qt_select">
                             <option value="1">1 bottle</option>
                             <option value="2">2 bottle</option>
                             <option value="3">3 bottle</option>
@@ -388,6 +495,7 @@
                     <li>These products are not intended to diagnose, cure, treat or prevent any disease</li>
                     <li>If you are pregnant or lactating or taking any prescriptive medication, or have strong allergies, please consult your healthcare professional before using these products</li>
                     <li>These statements are not evaluated by the FDA</li>
+                    <li><span id="p_rice"></span> <span id="q_uantity_of_single"></span></li>
                     <li>Read the label carefully before use</li>
                     <li>Store in a cool dry place away from direct sunlight</li>
                     <li>Keep out of reach of the children</li>
@@ -448,13 +556,15 @@
 
 <script>
     var crt = JSON.parse(localStorage.getItem("productdetail")) || [];
-
     crt.map(function(elem) {
+            document.getElementById("p_rice").innerText = elem.price;
+            document.getElementById("q_uantity_of_single").innerText = elem.quantity;
             var img = document.createElement("img");
             img.setAttribute("src",elem.image_url);
             document.getElementById("image_div").append(img);
             var heading = document.createElement("h1");
             heading.innerText = elem.name;
+            heading.setAttribute("id","n_ame");
             var company_name = document.createElement("p");
             company_name.innerText = "Tata pvt limited";
             company_name.setAttribute("id","company_name");
@@ -524,13 +634,42 @@
             h2.setAttribute("id","showless");
             box.append(di1,di2);
             box.append(h2);
+            document.getElementById("showless").addEventListener("click",showingless);
+            function showingless(){
+            document.getElementById("toemptyonshowless1_p2").innerText= null;
+            document.getElementById("toemptyonshowless1_p1").innerText= null;
+            document.getElementById("toemptyonshowless1_img1").setAttribute("src","");
+            document.getElementById("toemptyonshowless1_img2").setAttribute("src","");
+            document.getElementById("toemptyonshowless1_img1").style.margin = 0;
+            document.getElementById("toemptyonshowless1_img2").style.margin = 0;
+            document.getElementById("toemptyonshowless1_img2").style.height = 0;
+            document.getElementById("toemptyonshowless1_img1").style.height = 0;
+            document.getElementById("showless").innerText = "";
+            var b = document.getElementById("offer");
+            b.style.height = 50;
+            var h = document.createElement("h2");
+            h.innerText = "Show more"
+            h.setAttribute("id","showmore");
+            b.append(h);   
         }
-        document.getElementById("showless").addEventListener("click",showingless);
-        function showingless(){
-            document.getElementById("toemptyonshowless1_p2").innerText="";
-            document.getElementById("toemptyonshowless1_p1").innerText="";
-            var box1 = document.getElementById("toemptyonshowless1");
+        }
+        var qq = document.getElementById("qt_select").value;
+        document.getElementById("addtocart").addEventListener("click",addingtocart);
+        var list = JSON.parse(localStorage.getItem("ItemInCart")) || [];
+        function addingtocart(){
+            var n_ame = document.getElementById("n_ame").innerText;
+            var p_rice = document.getElementById("p_rice").innerText;
+            var q_uantity_of_single = document.getElementById("q_uantity_of_single").innerText;
+            var m_rp = document.getElementById("strike").innerText;
+            var nod = {
+                name : n_ame,
+                quantity_of_single : q_uantity_of_single,
+                mrp : m_rp,
+                price : p_rice,
+                quantity : qq,
+            }
+            list.push(nod);
+            localStorage.setItem("ItemInCart", JSON.stringify(list));
         }
 </script>
 <script src="https://kit.fontawesome.com/e68ecfb53d.js" crossorigin="anonymous"></script>
-
