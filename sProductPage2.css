@@ -2,6 +2,8 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: sans-serif;
+
 }
 
 .details{
@@ -220,7 +222,7 @@
 
 .mainSection{
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     background-color: #f6f6f6;
 }
 
@@ -233,6 +235,7 @@
     display: flex;
     padding: 8px;
     font-family: sans-serif;
+    border-bottom: 0.1px solid rgb(210, 208, 208);
 }
 
 .inner1  ul li{
@@ -343,12 +346,16 @@
  /* search section */
    
 .searchOuter{
-    width: 92%;
+    width: 100%;
+    /* padding-right: 40%; */
+    /* padding-left: 4%; */
     margin: auto;
     display: flex;
     justify-content: space-between;
     font-family: sans-serif;
-    padding: 5px;
+    padding: 5px 4% 5px 4%;
+    border-bottom: 0.1px solid rgb(210, 208, 208);
+    border-width: 100%;
 }
 
 .searchInner1{
@@ -413,7 +420,7 @@
 
 /* Drop Down Section Starts From here */
 .dropdown{
-    padding: 10px 15px;
+    padding: 10px 5px;
     font-family: sans-serif;
 }
 .dropdown > ul {
@@ -427,6 +434,10 @@
     font-weight: 400;
 }
 
+#last_dropdown{
+    grid-column-start: 3/5;
+    grid-column-end: 5/5;
+}
 .dropdown div{
     margin:auto;
 }
@@ -478,7 +489,10 @@
     padding-bottom: 10px;
 }
 .testingGap{
-   right :30px;
+   left: 30px;
+}
+.testingGap2{
+    right: 20px;
 }
 
 
@@ -493,123 +507,7 @@
 
 
 
-/* Doctors Page Section starts from here..... */
-.d_firstSection{
-    font-family: sans-serif;
-    width: 100%;
-    height: 95vh;
-    display: grid;
-    grid-template-columns: repeat(1,1.3fr) repeat(1,1fr);
-    padding: 20px 40px;
-}
-.d_firstRight{
-    width: 100%;
-    height: 100%;
-    padding: 20px;
-}
-.d_first_left{
-    width: 100%;
-    height: 100%;
-    padding: 45px 60px;
-}
 
-.d_first_left > h1{
-      line-height: 40px;
-      font-size: 26px;
-      font-weight: 600;
-      color: #212121;
-}
-.d_first_left > h2 {
-    margin-top: 20px;
-    color: #adacac;
-    font-size: 19px;
-}
-
-.d_first_left > input {
-    width: 100%;
-    padding: 10px;
-    margin-top: 60px;
-    outline: none;
-    border: none;
-    border-bottom: 1px solid grey;
-}
-.d_first_left > button{
-    padding: 15px 80px;
-    margin-top: 40px;
-    border-radius: 25px;
-    border: none;
-    background-color: #FF6F61;
-    font-weight: 800;
-    color: white;
-    cursor: pointer;
-}
-
-.d_first_left > button:hover{
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-
-.d_banner{
-    margin-top: 40px;
-}
-.d_banner > img {
-    width: 100%;
-    height: 100%;
-}
-
-
-/* Slider Section  */
-.knowMoreBanner >img {
-    width: 100%; 
-    padding: 40px;
-}
-
-.sliderSection{
-    width: 100%;
-    height: 200px;
-    display: flex;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-}
-
-.mainSlider{
-    width: 65%;
-    border-right: 1px solid grey;
-}
-.banner{
-    width: 35%;
-    border-left: 1px solid grey;
-}
-.banner > img {
-    width: 100%;
-    height: 100%;
-}
-
-.mainSlider > img {
-    width: 100%;
-    height: 100%;
-}
-
-
-.textSection{
-    background-color: white;
-    border-bottom: 1.5px solid rgb(207, 205, 205);
-}
-
-.textSection > h1{
-    color: rgb(102, 102, 102);
-    line-height: 32px;
-    font-weight: 400;
-    font-size: 22px;
-    text-align: center;
-    padding: 30px;
-    font-family: sans-serif;
-}
-
-
-
-
-/* Slider Section */
-
-/* Doctors Page Section ends here... */
 
 /* Media query below */
 @media only screen and (max-width : 480px){
@@ -743,7 +641,59 @@
         padding-top: 10px;
     }
     
+    .banner{
+        display: none;
+    }
+    .mainSlider{
+        width: 100%;
+        height: 120px;
+    }
 
+    .textSection{
+        background-color: white;
+        border-bottom: 1.5px solid rgb(207, 205, 205);
+        margin-top: -100px;
+    }
+    
+    .textSection > h1{
+        color: rgb(102, 102, 102);
+        line-height: 20px;
+        font-weight: 600;
+        font-size: 18px;
+        text-align: center;
+        padding:30px;
+        font-family: sans-serif;
+        margin-top: 25PX;
+        /* padding-top: 40px; */
+    }
+    
+    .dropdown li {
+        list-style: none;
+        font-size: 12px;
+        line-height: 25px;
+    }
+
+    .dropdown > ul {
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(120px,1fr));
+    }
+
+    .knowMoreBanner >img {
+        width: 100%; 
+        height: 90px;
+        padding: 10px;
+    }
+
+
+
+    
+      .slider-brand>div>p{
+      margin-left: -50px;
+      
+      }
+      #see-all{
+        margin-right: -40px;
+      }
     /* Search Section ends here............ */
 }
 	
@@ -855,3 +805,195 @@
     
 }
 
+
+/* slider-Section.............. */
+
+
+  
+  .swiper {
+    width: 100%;
+   
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  #parent{
+   margin-top:30px;
+   padding: 0px 50px;
+  }
+  .swiper-slide{
+    padding:10px;
+  }
+  .swiper-slide:hover{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+    border-radius: 10px;
+    
+   
+    
+  }
+  
+  .slider-brand{
+    
+    display:flex;
+    justify-content: space-between;
+    margin-left: 70px;
+    margin-right: 70px;
+    padding-bottom: 10px;
+    padding-top: 30px;
+   
+    
+  }
+  .slider-brand>div>p{
+  font-size: 20px
+  }
+  #see{
+    color: white;
+    background-color: RGB(255, 111, 97);
+    font-size: 12px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    /* font-size: 8px; */
+    padding: 7px 10px;
+    cursor: pointer;
+  }
+ .swiper-button-next , .swiper-button-prev{
+    /* color:#22542f; */
+    height:50px;
+    width: 50px;
+   
+    background-color:white;
+    border-radius: 20px;
+    border:0.5ch solid white;
+    color : red;
+  }
+  .body{
+    height: 70px;
+    /* width: 100%; */
+    background-color:rgb(242, 238, 238)
+    
+  }
+
+  .swiper-slide > a{
+    text-decoration: none;
+    color: black;
+  }
+  #img-v{
+   width:150px;
+   height: 150px;
+  }
+  .swiper-slide p{
+    font-size: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+ .swiper-slide span{
+    font-size: 12px
+ }
+ .swiper-slide h5{
+    font-size: 15px;
+
+ }
+ .price>p>span:nth-child(2){
+    text-decoration: line-through;
+    
+ }
+ .price>p>span:nth-child(3){
+    color:green
+ }
+ .swiper-slide  p+span{
+ 
+ margin-left: -40px;
+ }
+ .swiper-slide p{
+    text-align: start;
+    
+    }
+ 
+    
+   
+   .mgpic{
+    
+   display: flex;
+    width: 70px;
+    height: 50px;
+    justify-content:space-between;
+   }
+  .rat-pro{
+   padding: 5px;
+    background-color: #18d14a;
+    color: #fff
+  
+  
+  }
+  .txt-rat{
+   
+    margin-top:13px;
+   
+   
+    
+  }
+  .mglogo{
+    border:1px solid rgb(216, 212, 212);
+    margin-right: 30px;
+  }
+  .sicon> span span{
+   
+    display: inline-block;
+    background-color:#ffe3c2;
+   margin-left:10px
+
+  }
+  .price >p >span:first-child{
+   
+    font-size:15px;
+  }
+  .price >p >span:last-child{
+    
+    border:1px dashed rgb(36, 207, 53);
+    margin-left: 15px;
+    background-color:#ebf5ee
+   
+
+  }
+  .tests{
+    margin-right: 70px;
+   
+  
+   
+  }
+
+  .swiper-button-next , .swiper-button-prev{
+    /* color:#22542f; */
+    height:50px;
+    width: 50px;
+   
+    background-color:white;
+    border-radius: 20px;
+    border:0.5ch solid white;
+    color : RGB(255, 111, 97) !important;
+  }

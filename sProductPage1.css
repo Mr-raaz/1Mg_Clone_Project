@@ -24,17 +24,17 @@
 #cartItembox{
     position:absolute;
     top: 1px;
-    right: 20%;
+    right: 10.6%;
     /* display: none; */
     font-size: 14px;
     font-weight: 600;
     background-color:RGB(255, 111, 97) ;
     color: #FFFFFF;
     line-height: 18px;
-    width: 15px;
-    height: 15px;
+    width: 18px;
+    height: 18px;
     text-align: center;
-    padding: 1.5px;
+    padding: 1px;
     border-radius: 4px;
     
 }
@@ -257,7 +257,7 @@
     margin-left: -15px;
     margin-right: 20px;
     cursor: pointer;
-    height: 15px;
+    height: 31px;
 }
 
 #sheadmiltivitamit{
@@ -266,6 +266,7 @@
     line-height: 10px;
     color:#212121;
     padding: 2px;
+    margin-top: 15px;
 }
 
 /* on click pop up - sort by relevence */
@@ -274,7 +275,7 @@
     width: 210px;
     background-color: #FFFFFF;
     float: right;
-    margin-right: -280px;
+    margin-right: -265px;
     margin-top: 32px;
     font-weight: 400;
     color: #6b7575;
@@ -287,10 +288,14 @@
     z-index: 1;
 }
 
+#sLater1 > p{
+    margin: 13px 0px;
+}
+
 
 .smedcard1cl{
     width: 99.5%;
-    height: fit-content;
+    /* height: fit-content; */
     /* border: 2px solid greenyellow; */
     margin-top: 56px;
 }
@@ -300,15 +305,19 @@
     font-weight: 400;
     color:#212121;
     line-height: 26px;
+    margin-bottom: 10px;
 }
+
+
 
 .sfinalcard1cl{
 width: 100%;
 display: grid;
 grid-template-columns: repeat(4,22.65%);
 justify-content:space-around;
-gap: 20px 0px;
+gap: 17px 0px;
 overflow: hidden;
+/* border: 1px solid orange; */
 }
 
 #sfinalcard1id{
@@ -356,12 +365,12 @@ overflow: hidden;
     font-weight: 500;
     color:#757575;
     line-height: 17px;
-    margin-top: -12px;
+    /* margin-top: -12px; */
     
 }
 
 #skym5iii{
-margin-top: -4px;
+margin-top: 4px;
 margin-bottom: 2px;
 }
 
@@ -422,7 +431,7 @@ margin-bottom: 2px;
 .sky9m{
     display: flex;
     justify-content:space-between;
-    margin-top: -9px;
+    /* margin-top: -9px; */
 }
 
 #sky9{
@@ -446,7 +455,7 @@ margin-bottom: 2px;
 
 .spgtioncl{
     width: 100%;
-    height: 20px;
+    height: 50px;
     background-color: #FFFFFF;
     text-align: center;
     margin-top: 20px;
