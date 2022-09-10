@@ -25,7 +25,7 @@ Our objective is to replicate the original site with all the functionalities and
   
  # ⭐Team_Members:⭐
   🔘 <a href = "https://github.com/Rajatsinha05" > Rajat Sinha </a> <br>
-  🔘 <a href = "https://github.com/sonukryadav" > Sonu Yadav </a>
-  🔘 <a href = "https://github.com/PrinceMittal1" > Prince Mittal </a>
-  🔘 <a href = "https://github.com/Akhil0425" > Akhil Kumar </a>
+  🔘 <a href = "https://github.com/sonukryadav" > Sonu Yadav </a> <br>
+  🔘 <a href = "https://github.com/PrinceMittal1" > Prince Mittal </a> <br>
+  🔘 <a href = "https://github.com/Akhil0425" > Akhil Kumar </a> <br>
   🔘 <a href = "https://github.com/Mr-raaz/" > Anshu Raj </a>
