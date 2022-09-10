@@ -10,7 +10,6 @@ Link to the original site: "https://www.1mg.com/"
 Our objective is to replicate the original site with all the functionalities and design elements. We aim to create the best clone of the website using the skills we have learnt through Masai School.
 
 # Functionality:
-
   🔘 User can sign up and login.
   🔘 User can add product to cart and checkout.
   🔘 User can maake Payment With different Modes.
@@ -22,9 +21,26 @@ Our objective is to replicate the original site with all the functionalities and
     🔘 JAVASCRIPT
     🔘 LOCALSTORAGE
     
-## This is a collaborative project. We have worked on this project and submitted it for our UNIT-3 Evaluation in Masai School. 
+# This is a collaborative project. We have worked on this project and submitted it for our UNIT-3 Evaluation in Masai School. 
   
-  🔸🔸🔸▫️▪️
-  
-  
-  🔴🟡🟢🔲🔶🔸🔸🔹
+ # ⭐Team_Members:⭐
+
+  1. Rajat Sinha
+    e-Mail: 
+    GitHub:
+   
+  2. Sonu
+    e-Mail: 
+    GitHub:
+      
+  3. Kushagra Kamal
+    e-Mail: 
+    GitHub:
+    
+  4. Niranjan Kumar
+    e-Mail: 
+    GitHub: 
+    
+  5.Rohan Ravindra Gaikwad
+    e-Mail:
+    GitHub: 
