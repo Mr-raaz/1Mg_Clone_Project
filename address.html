@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address</title>
+    <!-- <link rel="stylesheet" href="address.css"> -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+    <style>
+      *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+nav{
+    
+    padding: 0px 40px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    
+    font-family: sans-serif;
+}
+
+
+.second{
+    
+    width: 70%;
+    margin: auto;
+
+}
+
+.third{
+
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: auto;
+
+}
+.check{
+   
+    display: flex;
+    width: 60%;
+    
+}
+.second > ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 5px solid  RGB(255, 111, 97);
+    /* border-width: 50%; */
+    margin-left: 40px;
+    margin-top: 15px;
+    padding-right: 0px;
+    
+}
+.second > ul li {
+
+    color: #212121;
+    margin-bottom: 10px;
+    font-weight:600;
+    font-size: 14px;
+}
+
+.third > p{
+
+    font-size: 14px;
+}
+
+.steps{
+background-color:  RGB(255, 111, 97);
+padding: 0.5px 5px;
+border-radius: 50%;
+color: white;
+font-weight: 600;
+}
+
+.container{
+    background-color: #f9f9f9;
+    width: 100%;
+    height: 100vh;
+    font-family: sans-serif;
+    margin-top: -25px;
+}
+h5{
+    padding: 20px;
+    margin-left: 160px;
+    margin-top: 30px;
+    font-weight: 600;
+    color: #363636;
+}
+
+.main{
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    margin-top: -10px;
+    width: 45%;
+    padding: 20px;
+    margin-left: 160px;
+    border-radius: 5px;
+}
+
+form input{
+    width: 100%;
+    padding:6px;
+    border-radius: 5px;
+    border: 0.1px solid rgb(192, 190, 190);
+    outline: none;
+    margin-top: 15px;
+    /* padding-top: 0px; */
+    /* color: RGB(158, 158, 158); */
+    padding-left: 12px;
+}
+form input:first-child{
+    padding-bottom: 60px;
+    margin-top: -5px;
+}
+
+/* .radioButtonSection{
+    display: flex;
+    font-size: 10px;
+} */
+
+.radio-inline{
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid blue; */
+    justify-content: center;
+    text-align: center;
+    padding: 4px;
+    justify-content: space-between;
+    /* color: red; */
+    /* border: 2px solid red; */
+    /* background-color: red; */
+  /* border: 2px solid red; */
+}
+.radioButtonSection{
+    display: flex;
+    font-size: 12px;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    padding: 10px;
+    margin-top: 10px;
+    width: 60%;
+
+    /* background-color: red; */
+  /* border: 2px solid red; */
+}
+.test{
+    margin-left: 10px;
+    margin-top: -3px;
+    font-weight: 600;
+    color: #666565;
+}
+
+#options{
+    accent-color:rgb(241, 97, 53);
+
+    /* color:white; */
+}
+
+#submit_button{
+    width: 30%;
+    margin-left: 70%;
+    margin-top: -10px;
+    background-color:  RGB(255, 111, 97);
+    color: white;
+    font-weight: 600;
+    padding: 10px 20px;
+    /* float: right; */
+    cursor: pointer;
+}
+#submit_button:hover{
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+input[type=number] {
+    appearance: textfield;
+  }
+
+  .error {
+    position: relative;
+    animation: shake .1s linear;
+    animation-iteration-count: 3;
+}
+
+@keyframes shake {
+    0% { left: -5px; }
+    100% { right: -5px; }
+}
+
+@media only screen and (max-width : 480px){  
+  nav{
+    padding: 0px 10px;
+    padding-top: 10px;
+}
+
+.first img {
+  width: 80%;
+  margin-top: 5px;
+}
+
+.second{
+    width: 60%;
+   margin-left: -20px;
+}
+
+.third{
+    width: 20%;
+}
+.check{
+    width: 90%;
+}
+.second > ul{
+    margin-left: 10px;
+}
+
+
+h5{
+    padding: 20px 0px;
+    margin-left: 20px;
+}
+
+.main{
+    margin-top: -10px;
+    width: 90%;
+    margin-left: 20px;
+}
+
+
+
+}
+
+
+@media only screen and (min-width: 481px) and (max-width: 768px){   
+
+  nav{
+    padding: 0px 10px;
+    padding-top: 10px;
+}
+
+.first img {
+  width: 80%;
+  margin-top: 5px;
+}
+
+.second{
+    width: 60%;
+   margin-left: -20px;
+}
+
+.third{
+    width: 20%;
+}
+.check{
+    width: 90%;
+}
+.second > ul{
+    margin-left: 10px;
+}
+
+
+h5{
+    padding: 20px 0px;
+    margin-left: 20px;
+}
+
+.main{
+    margin-top: -10px;
+    width: 90%;
+    margin-left: 20px;
+}
+
+
+}
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="check">
+         <div class="first">
+             <img src="https://www.1mg.com/images/tata_1mg_logo.svg" alt="Not found" />
+                   </div>
+                   <div class="second">
+                        <ul>
+                         <li> <span class="steps">1</span>  My Cart</li>
+                         <li> <span class="steps">2</span> Order Summary</li>
+                        <!-- <div id="testinh"><li class="last"> <span class="steps step3">3</span>  Payment</li></div>  -->
+                        </ul>
+                   </div>
+        </div>
+ 
+        <div class="third">
+               <p>Need Help ?</p>
+        </div>
+ 
+ 
+ 
+ 
+     </nav>
+
+         <div class="container">
+            <h5>Add a New Address</h5>
+            <div class="main">
+                <form action="">
+                     <input type="text"  id="locality" placeholder="Flat Number, Building Name, Stret/Locality"/>
+                     <input type="text" placeholder="Landmark (optional)"/>
+                     <input type="text" id="pincode" placeholder="Pincode"/>
+                     <input type="text" placeholder="Locality"/>
+                     <input type="text" id="city" placeholder="City"/>
+                     <input type="text" id="state" placeholder="State"/>
+                     <input type="text" id="form_name" placeholder="Customer Name"/>
+                     <input type="number" name="" id="form_number" placeholder="10 Digit Mobile Number" />
+                     <div class="radioButtonSection">
+                        <label class="radio-inline">
+                            <input type="radio" name="optradio" id="options" checked> <p class="test">HOME</p>
+                          </label>
+                          <label class="radio-inline">
+                            <input type="radio" name="optradio" id="options"><p class="test">OFFICE</p>
+                          </label>
+                          <label class="radio-inline">
+                            <input type="radio" name="optradio" id="options"><p class="test">OFFICE</p>
+                          </label>
+                     </div>
+
+
+                     <input type="submit" value="submit" id="submit_button"/>
+                </form>
+            </div>
+         </div>
+    </body>
+</html>
+
+<script>
+
+document.querySelector("form").addEventListener("submit" , getDAta);
+
+function getDAta(){
+  event.preventDefault();
+
+  let locality = document.getElementById("locality");
+  let pincode = document.getElementById("pincode");
+  let form_number = document.getElementById("form_number");
+  let form_name = document.getElementById("form_name");
+  let state = document.getElementById("state");
+  let city = document.getElementById("city");
+
+
+  if(locality.value.length == 0){
+    locality.classList.add('error');
+            locality.style.borderColor = '#ff4c4c';
+
+        setTimeout(function() {
+            locality.classList.remove('error');
+            locality.style.borderColor = '#acabab';
+            }, 300);
+  } else if(pincode.value.length == 0) {
+    pincode.classList.add('error');
+            pincode.style.borderColor = '#ff4c4c';
+
+        setTimeout(function() {
+            pincode.classList.remove('error');
+            pincode.style.borderColor = '#acabab';
+            }, 300);
+  } 
+  else if(city.value.length == 0) {
+    city.classList.add('error');
+            city.style.borderColor = '#ff4c4c';
+
+        setTimeout(function() {
+            city.classList.remove('error');
+            city.style.borderColor = '#acabab';
+            }, 300);
+  }else if(state.value.length == 0) {
+    state.classList.add('error');
+            state.style.borderColor = '#ff4c4c';
+
+        setTimeout(function() {
+            state.classList.remove('error');
+            state.style.borderColor = '#acabab';
+            }, 300);
+  }else if(form_name.value.length == 0) {
+    form_name.classList.add('error');
+            form_name.style.borderColor = '#ff4c4c';
+
+        setTimeout(function() {
+            form_name.classList.remove('error');
+            form_name.style.borderColor = '#acabab';
+            }, 300);
+  }else if(form_number.value.length == 0){
+    form_number.classList.add('error');
+            form_number.style.borderColor = '#ff4c4c';
+
+        setTimeout(function() {
+            form_number.classList.remove('error');
+            form_number.style.borderColor = '#acabab';
+            }, 300);
+  }  else {
+    window.location.href = "payment.html";
+  }
+
+  
+}
+</script>

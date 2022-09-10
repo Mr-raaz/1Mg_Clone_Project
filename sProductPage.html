@@ -23,10 +23,10 @@
           <nav>
               <div class="outer">
                   <div class="inner1">
-                    <div><a href="Landing_Page.html"><img src="https://www.1mg.com/images/tata_1mg_logo.svg" alt="Not found"></a></div>
+                    <div><a href="index.html"><img src="https://www.1mg.com/images/tata_1mg_logo.svg" alt="Not found"></a></div>
                      <div>
                       <ul>
-                          <li><a href="#">Medicines</a></li>
+                          <li><a href="sProductPage.html">Medicines</a></li>
                           <li><a href="#">Lab Tests</a></li>
                           <li><a href="doctors.html">Consult Doctors</a></li>
                           <li><a href="#">covid 19</a></li>
@@ -37,9 +37,9 @@
                   </div>
                   <div class="inner2">
                       <div>
-                          <p>Login</p>
-                          <p>|</p>
-                          <p>Signup</p>
+                        <p id="login_text_js"><a href="" class="before_login_style">Login</a></p>
+                        <p id="login_text_js1">|</p>
+                        <p id="login_text_js2"><a href="signup.html" class="before_login_style">Signup</a></p>
                           <P></P>
                           <P></P>
                           <p>Offers</p>
@@ -530,7 +530,14 @@
                     <span id="sangle"><i class="fa-solid fa-angle-right"></i></span>
                     <span id="slastrefer">Multivitamins</span>
                 </div>
+
+
+
                 <div id="cartItembox">0</div>
+
+
+
+                
                 <div class="sCradsmainBox">
                     <p id="sheadmiltivitamit">Multivitamins</p>
                     <div id="srightTopFilter">
@@ -766,6 +773,28 @@
     
 </body>
 </html>
+<script>
+  // document.getElementById("red-cart").addEventListener("click" , di);
+
+function di(){
+  window.location.href = "cart.html";
+}
+
+let val = localStorage.getItem("mobile_number") || 2;
+
+if(val.length >= 5){
+  document.getElementById("login_text_js").innerHTML = `<i class="fa-solid fa-user"></i>`;
+  document.getElementById("login_text_js1").innerText = "My Profile";
+  document.getElementById("login_text_js2").innerText = " ";
+  document.getElementById("signup").innerHTML = `<b>PROFILE</b>`;
+
+  document.getElementById("signup").addEventListener("click" , function(){
+    window.location.href = "index.html";
+  });
+
+  
+}
+</script>
 <script src="sProductPage1.js"></script>
 <script src="https://kit.fontawesome.com/51d4216337.js" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>

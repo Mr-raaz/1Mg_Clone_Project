@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication | OTP</title>
+    <!-- <link rel="stylesheet" href="otp.css"> -->
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+    height: 100vh;
+    background-color: #f4ebeb;
+}
+.main{
+    width: 30%;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    overflow: hidden;
+    
+}
+
+.upper{
+    width: 100%;
+    height: 50px;
+    border: 1px solid red;
+    background-color: RGB(255, 111, 97);
+}
+.upper p{
+    font-weight: 700;
+    line-height: 50px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.container button{
+    background-color: RGB(255, 111, 97);
+    width: 80%;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    color: #fff;
+    font-size: 20px;
+    padding: 12px 0px;
+    border-radius: 5px;
+}
+.container button:hover{
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.detailsSection{
+    height: 60%;
+    padding: 20px;
+}
+.amount{
+    display: flex;
+    justify-content: space-between;
+}
+.resend{
+    color: RGB(255, 111, 97);
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.message{
+    margin-top: 20px;
+    font-size: 12px;
+    background-color: #67e776b1;
+    color: black;
+    padding: 10px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+  }
+
+
+input{
+    padding: 8px;
+    width: 100%;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    border-bottom: 0.1px solid grey;
+}
+.error {
+    position: relative;
+    animation: shake .1s linear;
+    animation-iteration-count: 3;
+}
+
+@keyframes shake {
+    0% { left: -5px; }
+    100% { right: -5px; }
+}
+@media only screen and (max-width : 480px){
+
+.main{
+    width: 90%;
+}
+
+.container{
+    height: 50vh;
+}
+
+
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px){
+
+    .main{
+        width: 90%;
+    }
+    
+    .container{
+        height: 50vh;
+    }
+    
+
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="main">
+            <div class="upper"><p>OTP VERIFICATION</p></div>
+            
+            <div class="detailsSection">
+                <div class="amount">
+                    <p>Amount Payable : </p>
+                    <p>&#x20b9; <span id="total_amount">0</span></p>
+                </div>
+
+                <div class="message">
+                    <p>One Time Password has been send to your Registered Mobile Number. +91<span id="mob"></span>
+                    </p>
+                </div>
+
+                <div><input class="otp_validation" type="number" placeholder="Enter Otp Here....."></div>
+            </div>
+
+            <button class="otp_validation_button">SUBMIT</button>
+            <p class="resend">RESEND OTP </p>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+
+    document.getElementById("total_amount").innerText = localStorage.getItem("final");
+
+    let num = ""
+    let temp = localStorage.getItem("mobile_number");
+
+    for(let i= 0; i<temp.length ; i++){
+        if(i < 3){
+            num += temp.charAt(i);
+        } else if( i>=8){
+            num += temp.charAt(i);
+        } else {
+            num += "X";
+        }
+    }
+    document.getElementById("mob").innerText = num;
+    document.querySelector(".otp_validation_button").addEventListener("click" , check);
+
+    function check(){
+        let otp = document.querySelector(".otp_validation").value;
+         
+        if(otp != "1234") {
+            // alert("done");
+            document.querySelector(".otp_validation").classList.add('error');
+            document.querySelector(".otp_validation").style.borderBottomColor = '#ff4c4c';
+
+        setTimeout(function() {
+            document.querySelector(".otp_validation").classList.remove('error');
+            document.querySelector(".otp_validation").style.borderBottomColor = '#acabab';
+            }, 300);
+        return;
+        } else {
+                //  document.querySelector(".main").innerText = " ";
+                window.location.href = "order_placed.html";
+        }
+    }
+</script>

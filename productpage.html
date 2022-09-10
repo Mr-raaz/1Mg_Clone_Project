@@ -4,21 +4,328 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>product_checkout_page</title>
+    <title>Women's Multivitamin</title>
+    <link rel="shortcut icon" type="image/jpg" href="img/1mg_favicon.jpg"/>
     <script src="https://kit.fontawesome.com/e68ecfb53d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css" />
     <style>
+
+        /* header section */
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        .outer{
+    display: flex;
+    padding: 8px;
+    font-family: sans-serif;
+    border-bottom: 0.1px solid rgb(210, 208, 208);
+}
+#cartItembox{
+    position:absolute;
+    top: 1px;
+    right: 10.6%;
+    /* display: none; */
+    font-size: 14px;
+    font-weight: 600;
+    background-color:RGB(255, 111, 97) ;
+    color: #FFFFFF;
+    line-height: 18px;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    padding: 1px;
+    border-radius: 4px;
+}
+.before_login_style{
+    color: black;
+    text-decoration: none;
+}
+.before_login_style:hover{
+    color: RGB(255, 111, 97);
+}
+
+.inner1  ul li{
+    list-style: none;
+    margin-left: 4%;
+    align-items: center;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.inner1 ul li:first-child{
+    margin-left: 0px;
+}
+.inner1 ul li a:hover{
+    color: RGB(255, 111, 97);
+}
+.inner1 ul {
+    display: flex;
+    justify-content: flex-start;
+}
+.inner1 a {
+    text-decoration: none;
+    color: #1A1A1A;
+}
+.inner1 >div:last-child{
+    width: 80%;
+    margin: auto;
+}
+.inner1{
+    display: flex;
+    width: 70%;
+}
+.inner1 img {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inner2{
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+}
+
+.inner2 > div {
+    display: flex;
+    margin-left: 10px;
+}
+.inner2 > div:first-child{
+    width: 60%;
+}
+.inner2 > div:last-child{
+    width: 40%;
+}
+.cartLogo{
+    width: 30PX;
+    height: 30px;
+    margin: auto;
+}
+
+.inner2 p{
+    margin: auto;
+    font-size: 14px;
+}
+.inner2 p:hover{
+    color: RGB(255, 111, 97);
+    cursor: pointer;
+}
+
+.cartLogo , #cartItembox{  
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+.cartLogo:hover , #cartItembox:hover{
+  cursor: pointer;
+  animation-name: bounce;
+  -moz-animation-name: bounce;
+}
+
+@keyframes bounce {
+	0%, 100%, 20%, 50%, 80% {
+		-webkit-transform: translateY(0);
+		-ms-transform:     translateY(0);
+		transform:         translateY(0)
+	}
+	40% {
+		-webkit-transform: translateY(-30px);
+		-ms-transform:     translateY(-30px);
+		transform:         translateY(-30px)
+	}
+	60% {
+		-webkit-transform: translateY(-15px);
+		-ms-transform:     translateY(-15px);
+		transform:         translateY(-15px)
+	}
+}
+
+
+
+ /* search section */
+   
+.searchOuter{
+    width: 100%;
+    /* padding-right: 40%; */
+    /* padding-left: 4%; */
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    font-family: sans-serif;
+    padding: 5px 4% 5px 4%;
+    border-bottom: 0.1px solid rgb(210, 208, 208);
+    border-width: 100%;
+}
+
+.searchInner1{
+    display: grid;
+    width: 65%;
+    grid-gap:3px;
+    grid-template-columns: auto 180px auto 1fr auto;
+}
+.searchInner1 input{
+   padding: 1px;
+   background-color: RGB(241, 244, 246);
+    outline: none;
+    border: none;
+    border-radius: 1px;
+    padding-left: 15px;
+}
+.searchInner2{
+    display: flex;
+}
+.searchInner2 button{
+    color: white;
+    background-color: RGB(255, 111, 97);
+    padding: 9px 25px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    margin: auto;
+    cursor: pointer;
+}
+
+.quic{
+    font-size: 12px;
+    color: #666666;
+    text-align: end;
+    margin: auto;
+    margin-right: 5px;
+    
+}
+.searchInner2 > p:first-child{
+    font-size: 12px;
+    margin: auto;
+    margin-right: 40px;
+    color: RGB(255, 111, 97);
+    opacity: 80%;
+}
+.searchInner1 i:last-child , .searchInner1 i:first-child , #cross{
+    font-size: 15px;
+    margin: auto;
+    background-color: RGB(241, 244, 246);
+    padding: 12px 10px;
+    margin-left: -3px;
+    color: #666666;
+}
+.searchInner1 i:first-child{
+    font-size: 15px;
+    margin-right: -3px;
+}
+
+
+
+
+
+/* Drop Down Section Starts From here */
+.dropdown{
+    padding: 10px 5px;
+    font-family: sans-serif;
+    border-bottom: 0.1px solid rgb(210, 208, 208);
+}
+.dropdown > ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(160px,1fr));
+}
+
+.dropdown a{
+    color: #212121;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+#last_dropdown{
+    grid-column-start: 3/5;
+    grid-column-end: 5/5;
+}
+.dropdown div{
+    margin:auto;
+}
+.dropdown li {
+    list-style: none;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.hidden-box{
+    position: absolute;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    display: none;
+}
+.hidden-box a{
+    font-weight: 700;
+    font-size: 11px;
+}
+.hidden-box a:hover{
+    color: RGB(255, 111, 97);
+}
+.dropdown > ul > div > li:hover .hidden-box{
+    display: flex;
+    color: red;
+    grid-template-columns: repeat(auto-fill,auto);
+}
+.hidden-box > ul{
+    border-left: 1px solid grey;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.hidden-box>ul:first-child{
+    padding-right: 20px;
+    padding-left: 0px;
+    border-left: none;
+}
+.light > a{
+    color: #666666;
+    font-size: 12px;
+    font-weight: 400;
+}
+.hidden-box >div{
+    border: 1px solid black;
+}
+.inside > li:last-child{
+    padding-bottom: 10px;
+}
+.testingGap{
+   left: 30px;
+}
+.testingGap2{
+    right: 20px;
+}
+
+
+/* Drop Down Section ends here */
+/* Header Section ends here */
+
         body{
             font-family: sans-serif;
+            
         }
         #box{
             display: flex;
             margin-left: 40px;
             margin-right: 40px;
             justify-content: center;
+            margin-top: 40px;
+            /* background-color: red; */
+            
         }
         #box > div{
             padding: auto;
             width: 30%;
+            /* background-color: #f9f9f9; */
             /* border: 3px solid red; */
         }
         #image_div{
@@ -52,10 +359,16 @@
             padding-left: 7px;
         }
         #ul_id > li{
-            margin-top: 5px;
+            margin-top: 10px;
+            color:#434446;
         } 
         #product_highlight{
-            font-size: 20px;
+            font-size: 16px;
+            margin-top: 15px;
+            margin-left: 3px;
+            color: rgb(18, 17, 17);
+            margin-bottom: 20px;
+            font-weight: 500;
         }
         #star_box > p{
             margin: 0px;
@@ -78,9 +391,11 @@
             align-items: center;
         }
         #peoplebought > p{
-            font-size: 15px;
-            margin: 0px;
-            margin-left: 20px;
+            font-size: 12px;
+           
+            color: #212121;
+            
+            width: 100%;
         }
         #strike{
             text-decoration: line-through;
@@ -96,6 +411,11 @@
         #addtocart{
             width: 100%;
             height: 40px;
+            margin-top: 40px;
+            cursor: pointer;
+        }
+        #addtocart:hover{
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
         }
         #todesgin{
             margin-left: 7%;
@@ -105,25 +425,35 @@
             margin-top: 10px;
         }
         #inctx{
-            margin-bottom: 0px;
+            font-size: 15px;
+            color: #434446;
+            margin-top: 20px;
         }
-        #withoutacre_label{
-            font-size: 25px;
+        #withoutacre_label ,#withlabel {
+            font-size: 22px;
+            margin-left: 5px;
+            color: #212121;
         }
-        #withlabel{
-            font-size: 25px;
-        }
+        
+        
         #strike, #ship, #careplan{
-            font-size: 18px;
+            font-size: 15px;
+            color: #434446;
         }
         #careplan{
-            background-color: brown;
-            color: white;
+            /* background-color: brown; */
+            /* color: white; */
+            background-image: url("https://res.cloudinary.com/du8msdgbj/image/upload/v1613645053/marketing/phb2bz61etrdmuurfdoq.png");
+            /* border: 1px solid red; */
+            background-repeat: no-repeat;
+            /* width: 20px; */
         }
         #off{
             font-size: 18px;
             background-color: #ccf3e6;
             color: green;
+            padding: 3px 6px;
+            border-radius: 3px;
         }
         #addtocart{
             background-color: RGB(255, 111, 97);
@@ -131,6 +461,7 @@
             color: white;
             font-weight: 700;
             border: none;
+            margin-top: 30px;
         }
         #in{
             margin-top: 20px;
@@ -148,11 +479,16 @@
         .tohigh{
             font-size: 16px;
             font-weight: bold;
+            
         }
         #showmore{
-            font-size: 18px;
-            margin-left: 69%;
+            font-size: 16px;
+            /* margin-left: 69%; */
+            /* float: right; */
+            display: flex;
+            justify-content: end;
             color: RGB(255, 111, 97);
+            padding: 8px;
         }
         #showmore:hover {
               cursor: pointer;
@@ -167,12 +503,17 @@
         }
         .listofoffer{
             display: flex;
+            /* border: 1px solid red; */
+            padding-top: 10px;
         }
         #bottomdiv{
-            background-color: #f3f7f6;
+            /* background-color: #f3f7f6; */
+            /* background-color: red; */
+            background-color: #f9f9f9;
             width: 101%;
             margin-left: -0.5%;
-            height: 2000px;
+            height: 100%;
+            padding-bottom: 25px;
         }
         #bottdiv{
             width: 80%;
@@ -181,6 +522,7 @@
             padding-top: 40px;
             display: grid;
             grid-template-columns: 2fr 1fr;
+            /* border: 1px solid red; */
         }
         #bottdiv > div{
             margin-left: 20px;
@@ -189,6 +531,7 @@
         #bottdiv label{
             font-size: 18px;
             font-weight: bold;
+            color: #212121;
         }
         #bottdiv_firstdiv_fistdiv{
             padding-top: 20px;
@@ -196,14 +539,20 @@
             background-color: white;
             padding-right: 20px;
             padding-bottom: 30px;
+            border-radius: 5px;
         }
         #bottdiv_firstdiv_fistdiv > p{
             margin-top: 10px;
             padding-left: 20px;
+            color: #666666;
+        }
+        #bottdiv_firstdiv_fistdiv span{
+            color: rgb(86, 85, 85);
         }
         #bottdiv_firstdiv_fistdiv > h3{
             margin-top: 10px;
             padding-left: 20px;
+            color:#1A1A1A;
         }
         #bottdiv_firstdiv_fistdiv > ul{
             margin-top: 10px;
@@ -220,8 +569,9 @@
             padding-top: 1px;
         }
         #bottdiv_firstdiv_secdiv >h3{
-            color: gray;
+            /* color: gray; */
             margin-left: 20px;
+            color:#1A1A1A;
         }
         #bottdiv_firstdiv_thirddiv > h4{
             margin: 15px;
@@ -240,9 +590,10 @@
             background-color: white;
             box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
             display: flex;
+            justify-content: space-between;
         }
         #bottdiv_seconddiv_thirddiv > div{
-            width: 20%;
+            /* width: 20%; */
         }
         #bottdiv_seconddiv_thirddiv{
            padding-top: 20px;
@@ -274,19 +625,24 @@
             width: 70%;
             height: 35px;
             color: RGB(255, 111, 97);
-            border-color: RGB(255, 111, 97);
+            border: 2px solid  RGB(255, 111, 97);
             border-radius: 5px;
             margin-left: 15%;
             margin-bottom: 10%;
+            background: none;
         }
         #bottdiv_seconddiv_firstdiv button{
             width: 70%;
             height: 35px;
             color: RGB(255, 111, 97);
-            border-color: RGB(255, 111, 97);
+            border: 2px solid  RGB(255, 111, 97);
             border-radius: 5px;
             margin-left: 15%;
             margin-bottom: 10%;
+            background: none;
+        }
+        #bottdiv_seconddiv_firstdiv button:hover , #bottdiv_seconddiv_seconddiv button{
+            cursor: pointer;
         }
         #bottdiv_seconddiv > div{
             margin-bottom: 20px;
@@ -310,8 +666,7 @@
         }
         #ibutton{
            margin-left: 8px;
-           height: 2px;
-           width: 2px;
+           font-size: 16px;
         }
         @media only screen and (min-width: 481px) and (max-width: 768px){
         #box{
@@ -341,12 +696,13 @@
             height: 85%;
         }
         #offer{
-            border: 1px dashed gray;
+            /* border: 5px dashed gray; */
             width: 95%;
             margin-left: 1%;
             margin-top: 15px;
             margin-bottom: 15px;
             border-radius: 10px;
+            padding-top: 100px;
         }
         #showmore{
             font-size: 18px;
@@ -414,20 +770,807 @@
             /* 596 */
             /* bottom: 50px; */
         }
+
+
+
+        @media only screen and (max-width : 480px){
+    .details{
+        padding: 8px;
+    }
+    .details > h2 {
+        font-size: 4.5vw;
+    }
+    .content> h3 {
+        font-size: 4vw;
+    }
+    .content > p {
+        font-size: 3.5vw;
+    }
+    .second  h2 {
+        text-align: center;
+        font-size: 18px;
+    }
+    .second h1{
+        font-size: 20px;
+    }
+    .third{
+        padding: 30px;
+        display: block;
+    
+    }
+    .third > div{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .third > div > input{
+        width:50vw;
+        margin-left: -6px;
+    }
+    .third > div > button{
+       font-size: 14px;
+    }
+    .third > h2 {
+         padding-bottom: 10px;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .fourth{
+        padding: 44px 0px;
+    }
+    .fourth  h4{
+        font-size: 11px;
+    }
+    
+    .fourth > div p a {
+        font-size: 11px;
+    }
+    .fourth > div:last-child div{
+        width: 90%;
+    }
+
+    .five{
+        grid-template-columns: repeat(1,1fr);
+        grid-gap:0px;
+        padding: 40px 20px;
+    }
+    
+    .five > div > div:last-child >p{
+        margin-top: 10px;
+        color: RGB(118, 118, 118);
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+     /* Heaser section starts from here */
+     .outer{
+        padding: 2px;
+        display: block;
+    }
+    
+    .inner1  ul li{
+        margin-left: 2%;
+        margin: auto;
+        font-size: 9px;
+        line-height: 10px;
+        border-right: 1px solid grey;
+        padding-right: 10px;
+        padding-left: 10px; 
+    }
+    .inner1 ul li:last-child{
+        border-right: none;
+    }
+    .inner1 >div:last-child{
+        width: 100%;
+    }
+    .inner1{
+        display: block;
+        width: 100%;
+        border-bottom: 1px solid grey;
+        padding-bottom: 10px;
+    }
+    .inner1 img {
+        width: 40%;
+        margin: auto;
+    }
+    .inner2{
+        padding: 10px 10px;
+        width: 100%;
+    }
+    
+    .cartLogo{
+        width: 20PX;
+        height: 20px;
+    }
+    .inner2 p{
+        font-size: 14px;
+    }
+
+    /* Search Section starts here.......... */
+    .searchOuter{
+        width: 99%;
+        display: block;
+    }
+    
+    .searchInner1{
+        width: 100%;
+        grid-template-columns: auto 70px auto 1fr auto;
+    }
+    .searchInner1 input{
+       padding: 1px;
+    }
+    .searchInner2{
+        padding: 5px;
+        padding-top: 10px;
+    }
+    
+    .banner{
+        display: none;
+    }
+    .mainSlider{
+        width: 100%;
+        height: 120px;
+    }
+
+    .textSection{
+        background-color: white;
+        border-bottom: 1.5px solid rgb(207, 205, 205);
+        margin-top: -100px;
+    }
+    
+    .textSection > h1{
+        color: rgb(102, 102, 102);
+        line-height: 20px;
+        font-weight: 600;
+        font-size: 18px;
+        text-align: center;
+        padding:30px;
+        font-family: sans-serif;
+        margin-top: 25PX;
+        /* padding-top: 40px; */
+    }
+    
+    .dropdown li {
+        list-style: none;
+        font-size: 12px;
+        line-height: 25px;
+    }
+
+    .dropdown > ul {
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(120px,1fr));
+    }
+
+    .knowMoreBanner >img {
+        width: 100%; 
+        height: 90px;
+        padding: 10px;
+    }
+
+
+
+    
+      .slider-brand>div>p{
+      margin-left: -50px;
+      
+      }
+      #see-all{
+        margin-right: -40px;
+      }
+    /* Search Section ends here............ */
+}
+	
+@media only screen and (min-width: 481px) and (max-width: 768px){
+    .details{
+        padding: 12px;
+    }
+    .details > h2 {
+        font-size: 2vw;
+    }
+    .content> h3 {
+        font-size: 1.8vw;
+    }
+    .content > p {
+        font-size: 1.9vw;
+    }
+    .second  h2 {
+        text-align: center;
+        padding-bottom: 10px;
+        font-size: 18px;
+    }
+    .third{
+        padding: 30px;
+        display: block;
+    
+    }
+    .third > div{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .third > div > input{
+        width:50vw;
+        margin-left: -6px;
+    }
+    .third > div > button{
+       font-size: 14px;
+       margin-left: -50px;
+    }
+    .third > h2 {
+         padding-bottom: 10px;
+        font-size: 24px;
+        text-align: center;
+    }
+    .five{
+        grid-template-columns: repeat(2,1fr);
+        grid-gap:20px;
+        padding: 40px 10px;
+    }
+
+
+    /* Heaser section starts from here */
+.outer{
+    padding: 2px;
+    display: block;
+}
+
+.inner1  ul li{
+    margin-left: 2%;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 600;
+}
+
+
+.inner1{
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid grey;
+    padding-bottom: 10px;
+}
+.inner1 img {
+    width: 90%;
+}
+.inner2{
+    padding: 10px 10px;
+    display: flex;
+    width: 70%;
+    margin: auto;
+}
+
+.cartLogo{
+    width: 25PX;
+    height: 25px;
+}
+
+
+    /* Search Section starts here.......... */
+    .searchOuter{
+        width: 99%;
+        display: block;
+    }
+    
+    .searchInner1{
+        width: 100%;
+        grid-template-columns: auto 180px auto 1fr auto;
+    }
+    .searchInner1 input{
+       padding: 1px;
+    }
+    .searchInner2{
+        padding: 5px;
+        padding-top: 10px;
+    }
+    
+
+    /* Search Section ends here............ */
+
+    
+    
+}
         }
+
+        #tag_div{
+            /* border: 1px solid red; */
+            color: rgb(31, 31, 31);
+            padding: 10px;
+        }
+
+        #company_name{
+            color: RGB(255, 111, 97);
+            font-size: 12px;
+        }
+        #star_box{
+            margin-top: 5px;
+            border-radius: 1px;
+            width: 50px;
+            height: 25px;
+            border-radius: 3px;
+        }
+        
+        #towhitecolor{
+            font-size: 13px;
+        }
+
+        #towhitecolor{
+            padding: 4px;
+            display: flex;
+            justify-content: space-between;
+            font-weight: 500;
+        }
+        
+        .ratingandreview{
+            color: RGB(255, 111, 97);
+            font-size: 14px;
+            font-weight: bold;
+        }
+        #star{
+            padding: 5px 0px;
+        }
+
+     #high{
+        width: 5%;
+        margin-left: 10px;
+        margin-right: 10px;
+     }
+
+     .offer_text{
+        font-size: 14px;
+        color: #434446;
+        line-height: 16px;
+     }
+
+
+        
     </style>
 </head>
 <body>
+
+    <header>
+        <!-- Nav Bar Section -->
+          <nav>
+              <div class="outer">
+                  <div class="inner1">
+                    <div><a href="index.html"><img src="https://www.1mg.com/images/tata_1mg_logo.svg" alt="Not found"></a></div>
+                     <div>
+                      <ul>
+                          <li><a href="sProductPage.html">Medicines</a></li>
+                          <li><a href="#">Lab Tests</a></li>
+                          <li><a href="doctors.html">Consult Doctors</a></li>
+                          <li><a href="#">covid 19</a></li>
+                          <li><a href="#">Ayurveda</a></li>
+                          <li><a href="#">Care Plan</a></li>
+                      </ul>
+                     </div>
+                  </div>
+                  <div class="inner2">
+                      <div>
+                          <p id="login_text_js"><a href="" class="before_login_style">Login</a></p>
+                          <p id="login_text_js1">|</p>
+                          <p id="login_text_js2"><a href="signup.html" class="before_login_style">Signup</a></p>
+                          <P></P>
+                          <P></P>
+                          <p>Offers</p>
+                      </div>
+                      
+                      <div class="cartLogo"> 
+                          <img src="https://onemg.gumlet.io/cart-icon-rebrand_vp4k0f.svg" alt="not found"  onclick="di()"/>
+                          <div id="cartItembox" onclick="di()">0</div>
+                      </div>
+                      <div>
+                          <p>Need Help ?</p>
+                      </div>
+                  </div>
+              </div>
+              
+          </nav>
+      
+  
+          <!-- Header Search Section -->
+          <section>
+              <div class="searchOuter">
+                  <div class="searchInner1">
+                      <i class="fa-solid fa-location-dot"></i>
+                      <input type="text"  placeholder="Enter Your City..."/>
+                      <i class="fa-solid fa-location-crosshairs" id="cross"></i>
+                      <input type="text" placeholder="Search for Medicines and Health Products "/>
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                  </div>
+                  <div class="searchInner2">
+                      <p><i class="fa-solid fa-bolt"></i></p>
+                      <p class="quic">QUICK BUY! Get 25% off on medicines*
+                      </p>
+                      <button><b>Quick Order</b></button>
+                  </div>
+              </div>
+          </section>
+  
+          
+          
+  <!-- Drop Down Section -->
+          <section>
+              <div class="dropdown">
+                  <ul>
+                      <div><li><a href="#">Health Resource Center <i class="fa-solid fa-angle-down"></i></a>
+                      
+                          <div class="hidden-box">
+                              <ul>
+                                <li><a href="">All Diseases</a></li>
+                                <li><a href="">All Medicines</a></li>
+                                <li><a href="">Medicines by Therapeutic Class</a></li>
+                              </ul>
+                        </div>
+                      </li></div>
+                      
+                        
+                      
+                      <div><li><a href="#">Vitamins and Nutrtion <i class="fa-solid fa-angle-down"></i></a>
+                      
+                          <div class="hidden-box">
+                              <ul>
+                                <li><a href="">Vitamins & Supplements</a>
+                                    <ul class="inside">
+                                      <li class="light"><a href="sProductPage.html">Multivitamins</a></li>
+                                      <li class="light"><a href="">Vitamins A-Z</a></li>
+                                      <li class="light"><a href="">Mineral Supplements</a></li>
+                                      <li class="light"><a href="">Vitamin B12 & B Complex</a></li>
+   
+                                    </ul>
+                              </li>
+                                <li><a href="">Nutritional Drinks</a>
+                                  <ul class="inside">
+                                      <li class="light"><a href="">Adult Daily Nutrition</a></li>
+                                      <li class="light"><a href="">Kids Nutrition (2-15 Yrs)</a></li>
+                                      <li class="light"><a href="">For Women</a></li>
+                                    </ul>
+                              </li>
+                                <li><a href="">Health Food Drinks</a>
+                              
+                                  <ul class="inside">
+                                      <li class="light"><a href="">Green Tea & Herbal Tea</a></li>
+                                      <li class="light"><a href="">Apple Cider Vinegar</a></li>
+                                      <li class="light"><a href="">Healthy Snacks</a></li>
+                                    </ul>
+                              </li>
+                              </ul>
+                               
+                              <!-- testing -->
+                              <ul>
+                                  <li><a href="">Protein Supplements</a>
+                                      <ul class="inside">
+                                        <li class="light"><a href="">Why Protein</a></li>
+                                        <li class="light"><a href="">Amino Acids</a></li>
+                                        <li class="light"><a href="">Mass Gainers</a></li>
+                                        <li class="light"><a href="">Workout Essential</a></li>
+                                        <li class="light"><a href="">Fat Burners</a></li>
+                                      </ul>
+                                </li>
+                                  <li><a href="">Omega & Fish Oil</a>
+                                    <ul class="inside">
+                                        <li class="light"><a href="">Fish Oil</a></li>
+                                        <li class="light"><a href="">Cod Liver Oil</a></li>
+                                        <li class="light"><a href="">Flax Seed Oil</a></li>
+                                      </ul>
+                                </li>
+                                  <li><a href="">Immunity Boosters</a>
+                                
+                                    <ul class="inside">
+                                        <li class="light"><a href="">Chyawanprasha</a></li>
+                                        <li class="light"><a href="">Vitamin C</a></li>
+                                        <li class="light"><a href="">Herbal Teas</a></li>
+                                        <li class="light"><a href="">Antioxidant Supplements</a></li>
+                                        <li class="light"><a href="">Ayurvedic Supplements</a></li>
+                                      </ul>
+                                </li>
+                                </ul>
+                              <!--  -->
+                               <!-- testing -->
+                               <ul>
+                                  <li><a href="">Specialty Supplements</a>
+                                      <ul class="inside">
+                                        <li class="light"><a href="">Plant based Supplements</a></li>
+                                        <li class="light"><a href="">Beauty Supplemets</a></li>
+                                        <li class="light"><a href="">Pre and Probiotics</a></li>
+                                        <li class="light"><a href="">Glucosamine</a></li>
+                                        <li class="light"><a href="">Antioxidants</a></li>
+                                        <li class="light"><a href="">Biotin</a></li>
+                                      </ul> 
+                                </li>
+                                  <li><a href="">Weight Management</a>
+                                    <ul class="inside">
+                                        <li class="light"><a href="">Weight Management Herbs</a></li>
+                                        <li class="light"><a href="">Meal Replacements</a></li>
+                                        <li class="light"><a href="">Weight Gain</a></li>
+                                      </ul>
+                                </li>
+                                  
+                                </ul>
+                              <!--  -->
+                        </div>
+                      </li></div>
+                      <div><li><a href="#">Diabetes  <i class="fa-solid fa-angle-down"></i></a>
+                          <div class="hidden-box">
+                              <ul>
+                                <li><a href="">Devices</a>
+                                    <ul class="inside">
+                                      <li class="light"><a href="">Blood Glucose Monitors</a></li>
+                                      <li class="light"><a href="">Test Strips & Lancets</a></li>
+                                      <li class="light"><a href="">Syringes & Pens</a></li>
+                                    </ul>
+                              </li>
+                                <li><a href="">Diabetic Medicines</a>
+                                  <ul class="inside">
+                                      <li class="light"><a href="">Vitamins, Minerals & Antioxidants</a></li>
+                                      <li class="light"><a href="">Homeopathy Medicines</a></li>
+                                      <li class="light"><a href="">Ayurvedic Medicines</a></li>
+                                    </ul>
+                              </li>
+                              </ul>
+                               
+                              <!-- testing -->
+                              <ul>
+                                  <li><a href="">Sugar Substitutes</a>
+                                      <br>
+                                      
+                                </li>
+                                  <li><a href="">Diabetic Diet</a>
+                                    <ul class="inside">
+                                        <li class="light"><a href="">Juices & Vinegars</a></li>
+                                        <li class="light"><a href="">Superfoods</a></li>
+                                      </ul>
+                                </li>
+                                  <li><a href="">Diabetic Foot Health</a>
+                                    
+                                </li>
+                                </ul>
+                              <!--  -->
+                               <!-- testing -->
+                              
+                              <!--  -->
+                        </div>
+                      
+                      </li></div>
+                      <div><li><a href="#">Healthcare Devices <i class="fa-solid fa-angle-down"></i></a>
+                      
+                          <div class="hidden-box">
+                              <ul>
+                                <li><a href="">Top brands in Healthcare Devices</a>
+                                    <ul class="inside">
+                                      <li class="light"><a href="">Omron</a></li>
+                                      <li class="light"><a href="">Accu-check</a></li>
+                                      <li class="light"><a href="">Dr. Morepen Devices</a></li>
+                                      <li class="light"><a href="">Dr Trust</a></li>
+                                      <li class="light"><a href="">OneTouch</a></li>
+                                      <li class="light"><a href="">Contour</a></li>
+                                    </ul>
+                              </li>
+                                <li><a href="">Masks (N95, Surgical and more)</a>
+                                  <ul class="inside">
+                                      <li class="light"><a href="">Face Shield</a></li>
+                                      <li class="light"><a href="">Surgical Masks</a></li>
+                                      <li class="light"><a href="">N95 Masks</a></li>
+                                    </ul>
+                              </li>
+                              <li><a href="">Oxygen Concentrators & Cans</a></li>
+                              <li><a href="">BP Monitors</a></li>
+                              <li><a href="">Nebulizers & Vaporizers</a></li>
+                              </ul>
+                               
+                              <!-- testing -->
+                              <ul>
+                                  <li><a href="">Oximeters & Pedometers</a></li>
+                                  <li><a href="">Vital Signs Monitors & Wearables</a></li>
+                                  <li><a href="">Weighing Scales</a></li>
+                                  <li><a href="">Thermometers</a>
+                                    <ul class="inside">
+                                        <li class="light"><a href="">IR Thermometers</a></li>
+                                        
+                                      </ul>
+                                </li>
+                                  <li><a href="">Body Massager</a></li>
+                                  <li><a href="">Diabetes Monitors</a></li>
+                                  <li><a href="">Mobility Equipments</a></li>
+                                  <li><a href="">Exercise Equipments</a></li>
+                                  <li><a href="">Doctor's Corner</a>
+                                      <ul class="inside">
+                                          <li class="light"><a href="">Stethoscopes</a></li>
+                                          <li class="light"><a href="">Tapes & Bandages</a></li>
+                                          <li class="light"><a href="">Clinical Diagonstic Equipments</a></li>
+                                          <li class="light"><a href="">Dressings & Wound Care</a></li>
+                                        </ul>
+                                  </li>
+                                </ul>
+                              <!--  -->
+                               <!-- testing -->
+                               <ul>
+                                  <li><a href="">Supports & Braces</a>
+                                      <ul class="inside">
+                                        <li class="light"><a href="">Neck & Shoulder Support</a></li>
+                                        <li class="light"><a href="">Knee & Leg Support</a></li>
+                                        <li class="light"><a href="">Back & Abdomen Support</a></li>
+                                        <li class="light"><a href="">Ankle & Foot Support</a></li>
+                                        <li class="light"><a href="">Hand & Wrist Braces</a></li>
+                                        <li class="light"><a href="">Arm & Elbow Support</a></li>
+                                        <li class="light"><a href="">Cervical Pillows</a></li>
+                                        <li class="light"><a href="">Compression support & sleeves</a></li>
+                                        <li class="light"><a href="">heel support</a></li>
+                                        <li class="light"><a href="">Crepe Bandage</a></li>
+                                      </ul> 
+                                </li>
+                                  
+                                  
+                                </ul>
+                              <!--  -->
+                        </div>
+                      
+                      </li></div>
+             <div>         <li><a href="#">Personal Care <i class="fa-solid fa-angle-down"></i></a>
+          
+              <div class="hidden-box">
+                  <ul>
+                    <li><a href="">Sexual Wellness</a>
+                        <ul class="inside">
+                          <li class="light"><a href="">Condoms</a></li>
+                          <li class="light"><a href="">Lubricants & Massage Gels</a></li>
+                          <li class="light"><a href="">Personal body massagers</a></li>
+                          <li class="light"><a href="">Men Performance Enhancer</a></li>
+                          <li class="light"><a href="">Sexual Health Supplements</a></li>
+                        </ul>
+                  </li>
+                    <li><a href="">Skin Care</a>
+                      <ul class="inside">
+                          <li class="light"><a href="">Shampoo</a></li>
+                          <li class="light"><a href="">Hair Conditioners</a></li>
+                          <li class="light"><a href="">Hair Growth Supplements</a></li>
+                          <li class="light"><a href="">Hair Oils</a></li>
+                          <li class="light"><a href="">Hair Growth Products</a></li>
+                        </ul>
+                  </li>
+                  </ul>
+                   
+                  <!-- testing -->
+                  <ul>
+                      <li><a href="">Elderly Care</a>
+                          <ul class="inside">
+                              <li class="light"><a href="">Adult Diapers</a></li>
+                              <li class="light"><a href="">Bone & Joint Health</a></li>
+                              <li class="light"><a href="">Living & Safety Aids</a></li>
+                              <li class="light"><a href="">Othopaedic Supports</a></li>
+                            </ul>
+                    </li>
+                      <li><a href="">Women Care</a>
+                        <ul class="inside">
+                            <li class="light"><a href="">Feminine Hygiene</a></li>
+                            <li class="light"><a href="">Women Care Supplements</a></li>
+                            <li class="light"><a href="">Mother Care</a></li>
+                            <li class="light"><a href="">Menopause</a></li>
+                            <li class="light"><a href="">Polycystic Ovary Syndrome</a></li>
+                          </ul>
+                    </li>
+                     
+            </div>
+          
+          </li></div>
+                 <div>     <li><a href="#">Health Conditions <i class="fa-solid fa-angle-down"></i></a>
+              
+                  <div class="hidden-box">
+                      <ul>
+                        <li><a href="">Stomach Care</a></li>
+                        <li><a href="">Heart Care</a></li>
+                        <li><a href="">Bone, Joint & Muscle Care</a></li>
+                        <li><a href="">Pain Relief</a>
+                          <ul class="inside">
+                              <li class="light"><a href="">Heating Acids</a></li>
+                            </ul>
+                      </li>
+                      <li><a href="">Eye Care</a>
+                          <ul class="inside">
+                              <li class="light"><a href="">Eye Lubricants</a></li>
+                            </ul>
+                      </li>
+                      <li><a href="">Eye Care</a>
+                          <ul class="inside">
+                              <li class="light"><a href="">Hearing Aid Device</a></li>
+                            </ul>
+                      </li>
+                      </ul>
+                       
+                      <!-- testing -->
+                      <ul>
+                          <li><a href="">First Aid</a></li>
+                          <li><a href="">Liver Care</a></li>
+                          <li><a href="">Cold & Cough</a></li>
+                          <li><a href="">Fever</a></li>
+                          <li><a href="">Mental Wellness</a></li>
+                          <li><a href="">Kidney Care</a></li>
+                          <li><a href="">Respiratory Care</a></li>
+                          <li><a href="">Piles, Fissures & Fistula</a></li>
+                          <li><a href="">Smoking Cessation</a></li>
+                          <li><a href="">Derma Care</a></li>
+                          </ul>
+                </div>
+              
+              </li></div>
+                 <div>     <li><a href="#">Ayurveda Products <i class="fa-solid fa-angle-down"></i></a>
+              
+                  <div class="hidden-box testingGap2">
+                      <ul>
+  
+                          <li><a href="">Ayurveda Top Brands</a>
+                              <ul class="inside">
+                                  <li class="light"><a href="">Dabur</a></li>
+                                  <li class="light"><a href="">Sri Sri Tattva</a></li>
+                                  <li class="light"><a href="">Kerala Ayurveda</a></li>
+                                  <li class="light"><a href="">Jiva Ayurveda</a></li>
+                                  <li class="light"><a href="">Patanjali</a></li>
+                                </ul>
+                          </li>
+  
+                          <li><a href="">Popular Categories</a>
+                              <ul class="inside">
+                                  <li class="light"><a href="">Herbal Juice</a></li>
+                                  <li class="light"><a href="">Chyawanprash</a></li>
+                                  <li class="light"><a href="">Ayurvedic Immunity Boosters</a></li>
+                                  <li class="light"><a href="">Explore Popular Herbs</a></li>
+                                  <li class="light"><a href="">Herbal Supplements</a></li>
+                                </ul>
+                          </li>
+  
+                        
+                      </ul>
+  
+  
+                      <ul>
+  
+                          <li><a href="">Top Health Concerns</a>
+                              <ul class="inside">
+                                  <li class="light"><a href="">Ayurvedic Respiratory care</a></li>
+                                  <li class="light"><a href="">Cough, Cold & Fever</a></li>
+                                  <li class="light"><a href="">Sexual Wellness</a></li>
+                                  <li class="light"><a href="">Bone, Joint and Muscle Care</a></li>
+                                  <li class="light"><a href="">Stomach Care</a></li>
+                                  <li class="light"><a href="">Diabetes Care</a></li>
+                                  <li class="light"><a href="">Liver Care</a></li>
+                                  <li class="light"><a href="">Mind Care</a></li>
+                                  <li class="light"><a href="">Cardiac Care</a></li>
+                                </ul>
+                          </li>
+  
+                          <li><a href="">Unani Medicines</a>
+                              <ul class="inside">
+                                  <li class="light"><a href="">Hamdard Unani</a></li>
+                                  <li class="light"><a href="">AMU Dawakhana</a></li>
+                                  <li class="light"><a href="">Rex Remedies</a></li>
+                                  <li class="light"><a href="">Dehlvi Remedies</a></li>
+                                </ul>
+                          </li>
+  
+                        
+                      </ul>
+                       
+                      
+                </div>
+              
+              </li></div>
+                      
+                  </ul>
+              </div>
+          </section>
+      </header>
+
+
+
+
     <div id="box">
         <div id="image_div">
             
         </div>
         <div id="tag_div">
+
         </div>
         <div id="offer_div">
             <div id="div_offer">
                 <div id="peoplebought">
-                    <p> <span id="people"></span> people bought this recently</p>
+                    <p> <img id="high" src="https://www.1mg.com/images/social_cue.svg" alt=""><span id="people"></span>  &nbsp;people bought this recently</p>
                 </div>
                 <div id="todesgin">
                     <div id="in">
@@ -457,12 +1600,12 @@
     <div id="offer">
         <div class="listofoffer">
             <img src="https://onemg.gumlet.io/vibatg4xwiuep6bhonzs.svg" alt="" class="offer_tag_img">
-            <p><span class="tohigh">Airtel Payments Bank: </span>Pay with Airtel Money and get 10% cashback upto ₹200 on a minimum transaction of ₹1000. Valid only for first-time users of Airtel Payments Bank till 30th September 2022.</p>
+            <p class="offer_text"><span class="tohigh">Airtel Payments Bank: </span>Pay with Airtel Money and get 10% cashback upto ₹200 on a minimum transaction of ₹1000. Valid only for first-time users of Airtel Payments Bank till 30th September 2022.</p>
         </div>
         <!-- <ul id="listofoffer">
             <li><span class="tohigh">Airtel Payments Bank: </span>Pay with Airtel Money and get 10% cashback upto ₹200 on a minimum transaction of ₹1000. Valid only for first-time users of Airtel Payments Bank till 30th September 2022.</li>
         </ul> -->
-        <h2 id="showmore">Show more</h2>
+        <h2 id="showmore">Show more &nbsp;<i class="fa-solid fa-angle-down"></i></h2>
     </div>
     <div id="bottomdiv">
         <div id="bottdiv">
@@ -501,29 +1644,8 @@
                     <li>Keep out of reach of the children</li>
                 </ul>
                 </div>
-                <div id="bottdiv_firstdiv_secdiv">
-                    <h3>Want to share the information?</h3>
-                </div>
-                <div id="bottdiv_firstdiv_thirddiv">
-                    <h4>Other Information</h4>
-                    <ul>
-                        <li>Cash on delivery available</li>
-                    </ul>
-                    <h4>Manufacturer/Marketer address</h4>
-                    <p>Novus Life Sciences Pvt. Ltd., 114 & 115, B wing, Morya House, Off-Oshiwara Link Road, Andheri West, Mumbai-400053</p>
-                    <div>
-                        <p>Country of origin: India</p>
-                        <p><span class="tohigh">Expires on or after:</span> August, 2023</p>
-                    </div>
-                    <div>
-                        <p>A licensed vendor partner from your nearest location will deliver Carbamide Forte Multivitamin with Probiotics & Ashwagandha Tablet. Once the pharmacy accepts your order, the details of the pharmacy will be shared with you.</p>
-                    </div>
-                    <div>
-                        <h4>In case of any issues, contact us</h4>
-                        <p><span class="tohigh">Email ID:</span> care@1mg.com</p>
-                        <p><span class="tohigh">Address:</span> 5th Floor Tower - B of the Presidency Building, 46/4 Mehrauli Gurgaon Road, Sector 14, Gurugram, Haryana-122001, India</p>
-                    </div>
-                </div>
+                
+                
             </div>
             <div id="bottdiv_seconddiv">
                 <div id="bottdiv_seconddiv_firstdiv">
@@ -551,6 +1673,151 @@
             </div>
         </div>
     </div>
+
+
+    <div class="container">
+    
+    
+       
+
+
+        <div class="second">
+            <div>
+                <h2>INDIA’S LARGEST HEALTHCARE PLATFORM</h2>
+            </div>
+            <div>
+                <center>
+                <div>
+                    <h1>260m+</h1>
+                    <p>Visitors</p>
+                </div>
+            </center>
+            <center>
+                <div>
+                    <h1>31m+</h1>
+                    <p>Orders Delivered</p>
+                </div>
+            </center>
+            <center>
+                <div>
+                    <h1>1800+</h1>
+                    <p>Cities</p>
+                </div>
+            </center>
+            
+            </div>
+        </div>
+        
+    <div class="third">
+        <h2>Get the link to download App</h2>
+        <div>
+            <input type="text" placeholder="Enter Phone Number"/>
+            <button>Send Link</button>
+        </div>
+    </div>
+    
+
+   <div class="fourth">
+
+    <div>
+     <h4>Know Us</h4>
+     <p><a href="#">About Us</a></p>
+     <p><a href="#">Contact Us</a></p>
+     <p><a href="#">Press Coverage</a></p>
+     <p><a href="#">Careers</a></p>
+     <p><a href="#">Business Partnership</a></p>
+     <p><a href="#">Become a Health Partner</a></p>
+     <p><a href="#">Corporate Governance</a></p>
+    </div>
+
+    <div>
+        <h4>Our Policies</h4>
+        <p><a href="#">Privacy Policy</a></p>
+     <p><a href="#">Terms and Conditions</a></p>
+     <p><a href="#">Editorial Policy</a></p>
+     <p><a href="#">Return Policy</a></p>
+     <p><a href="#">IP Policy</a></p>
+     <p><a href="#">Grievance Redressal Policy</a></p>
+    </div>
+
+    <div>
+        <h4>Our Services</h4>
+        <p><a href="#">Order Medicines</a></p>
+     <p><a href="#">Book Lab Tests</a></p>
+     <p><a href="#">Consult a Doctor</a></p>
+     <p><a href="#">Ayurveda Articles</a></p>
+     <p><a href="#">Hindi Articles</a></p>
+     <p><a href="#">Care Plan</a></p>
+    </div>
+    
+    <div>
+
+        <h4>Connect</h4>
+        <p><a href="#" style="font-size: 16px;">Social Links</a></p>
+        <div class="logo">
+            <div><a href="https://www.facebook.com/1mgOfficial"><i class="fa-brands fa-facebook-f"></i></a></div>
+            <div><a href="https://twitter.com/1mgOfficial"><i class="fa-brands fa-twitter"></i></a></div>
+            <div><a href="https://www.youtube.com/c/1mgofficial"><i class="fa-brands fa-youtube"></i></a></div>
+            <div><a href="https://www.linkedin.com/uas/login-submit"><i class="fa-brands fa-linkedin-in"></i></a></div>
+            <div><a href="https://medium.com/1mgofficial"><b>M</b></a></div>
+        </div>
+        <p><a href="#" style="font-size: 16px;">Want daily dose of health?</a></p>
+        <button id="signup"><b>Sign Up</b></button>
+    </div>
+
+    
+    <div>
+        <h4>Download App</h4>
+        <div><a href="https://play.google.com/store/apps/details?id=com.aranoah.healthkart.plus"><img src="img/playsotre.png" alt="Google Play Store"></a></div>
+        <div><a href="https://apps.apple.com/in/app/1mg/id554578419"><img src="img/applestore.png" alt="Apple Store"></a></div>
+    </div>
+
+
+   </div>
+
+   <div class="five">
+      <div>
+          <div><img src="https://onemg.gumlet.io/secure-rebrand_x6f8yq.svg" alt="not found"></div>
+          <div>
+            <h3>Reliable</h3>
+            <p>All products displayed on Tata 1mg are procured from verified and licensed pharmacies. All labs listed on the platform are accredited</p>
+        </div>
+      </div>
+
+
+      <div>
+        <div><img src="https://onemg.gumlet.io/reliable-rebrand_rcpof3.svg" alt="not found"></div>
+        <div>
+          <h3>
+            Secure</h3>
+          <p>Tata 1mg uses Secure Sockets Layer (SSL) 128-bit encryption and is Payment Card Industry Data Security Standard (PCI DSS) compliant</p>
+      </div>
+
+      </div>
+
+
+      <div>
+        <div><img src="https://onemg.gumlet.io/affordable-rebrand_ivgidq.svg" alt="not found"></div>
+        <div>
+          <h3>Affordable</h3>
+          <p>Find affordable medicine substitutes, save up to 50% on health products, up to 80% off on lab tests and free doctor consultations.</p>
+      </div>
+      </div>
+   </div>
+
+   
+<div class="six">
+    <img src="https://onemg.gumlet.io/URS_ebgmxc.png" alt="Not found" />
+    <h3>India's only LegitScript and ISO/ IEC 27001 certified online healthcare platform</h3>
+</div>
+
+
+<div class="seven">
+    <p>© 2022 Tata 1mg. All rights reserved. In compliance with Drugs and Cosmetics Act, 1940 and Drugs and Cosmetics Rules, 1945, we don't process requests for Schedule X and other habit forming drugs.</p>
+    <img src="img/payments-removebg-preview.png" alt="not found">
+</div>
+
+</div>
 </body>
 </html>
 
@@ -577,27 +1844,52 @@
             document.getElementById("image_div").append(img);
             var heading = document.createElement("h1");
             heading.innerText = elem.name;
+
+// Heading Section style
+            heading.style.color = "color: rgb(31, 31, 31);";
+            heading.style.fontSize= "20px";
+            heading.style.paddingBottom = "10px";
+
             heading.setAttribute("id","n_ame");
             var company_name = document.createElement("p");
-            company_name.innerText = "Tata pvt limited";
+            company_name.innerText = "Tata 1mg Healthcare Solutions Private Limited";
             company_name.setAttribute("id","company_name");
+
+// 
             var star = document.createElement("div");
+
             var star_box = document.createElement("div");
+
             star_box.setAttribute("id","star_box");
+
             var rating_box = document.createElement("div");
             rating_box.setAttribute("id","rating_box");
             var star_rate = document.createElement("p");
             star_rate.setAttribute("id","towhitecolor")
             star_rate.innerHTML = `${elem.rating}`+`<i class="fa-regular fa-star"></i>`;
             star_box.append(star_rate);
+
+
+
+// review
+
             star.setAttribute("id","star");
             var rev = document.createElement("p");
+            rev.setAttribute("class" , "ratingandreview");
             rev.innerText = elem.number_rating + " rating & "+ Math.floor(elem.number_rating/8) +" review" ;
+            rev.style.marginTop = "9px";
             rating_box.append(rev);
             star.append(star_box, rating_box);
+
+
+
+// 
             var product_highlight = document.createElement("p");
             product_highlight.innerText= "Product highlights";
             product_highlight.setAttribute("id","product_highlight")
+
+
+
             var ul = document.createElement("ul");
             ul.setAttribute("id","ul_id")
             var li1 = document.createElement("li");
@@ -606,14 +1898,25 @@
             li2.innerText = "Immunity boost with pre and probiotics";
             var li3 = document.createElement("li");
             li3.innerText = "Multivitamins for hair, skin and nails";
-            ul.append(li1,li2,li3);
+            var li4 = document.createElement("li");
+            li4.innerText = "Prevents hormonal imbalance ";
+            var li5 = document.createElement("li");
+            li5.innerText = "A concoction of multi-vitamins, essential minerals, a women-centric health blend, and pre and pro-biotics complex ";
+            ul.append(li1,li2,li3,li4,li5);
+
+
+
             document.getElementById("tag_div").append(heading,company_name,star, product_highlight, ul);
+
+
             var div_offer = document.createElement("div");
             people.innerText = parseInt(elem.number_rating)*5;
+
+
             document.getElementById("withoutacre_label").innerHTML =`₹`+ `${elem.price} `+`<span id="strike">${elem.strikedoffprice}</span> `+ `<span id="off"> 29% off</span>`;
             document.getElementById("withoutcare").value = elem.price;
             document.getElementById("withcare").value = elem.price;
-            document.getElementById("withlabel").innerHTML =`₹`+ `${elem.price} `+` <span id="ship"> +free shipping and 5% extra cashback with </span> `+`<span id="careplan">Care Plan</span>`+`<i class="fa-regular fa-circle-question" id="ibutton"></i>` ;
+            document.getElementById("withlabel").innerHTML =`₹`+ `${elem.price} `+` <span id="ship"> +free shipping and 5% extra &nbsp;cashback with </span> `+`<span id="careplan">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; </span>`+`<i class="fa-regular fa-circle-question" id="ibutton"></i>` ;
         });
         document.getElementById("showmore").addEventListener("click",showingmore);
         function showingmore(){
@@ -634,10 +1937,12 @@
             img2.setAttribute("class","offer_tag_img");
             var p2 = document.createElement("p");
             p2.setAttribute("id","toemptyonshowless1_p2");
+            p2.setAttribute("class" , "offer_text");
+            p1.setAttribute("class" , "offer_text");
             img1.setAttribute("src","https://onemg.gumlet.io/vibatg4xwiuep6bhonzs.svg");
             img2.setAttribute("src","https://onemg.gumlet.io/vibatg4xwiuep6bhonzs.svg");
             p1.innerHTML=`<span class="tohigh">Special Offer:</span>`+`Pay online (Wallet, Debit/Credit Card & Net Banking) and get extra 5% 1mgCash (up to ₹25)`;
-            p2.innerHTML=`<span class="tohigh">ICICI:</span>`+` Get instant 10% off (up to ₹250) on medicines and health products with ICICI Netbanking. Valid on a minimum cart value of ₹1200. Offer ends 11th September 2022.`;
+            p2.innerHTML=`<span class="tohigh">ICICI:</span>`+` Get instant 10% off (up to ₹250) on medicines and health products with ICICI Netbanking. Valid on a minimum cart value of ₹1200. Offer ends 11th September 2022. <br> <br>`;
             di1.append(img1,p1);
             di2.append(img2,p2);
             // document.getElementById("offer").append(di1,di2);
@@ -660,10 +1965,11 @@
             document.getElementById("showless").innerText = "";
             var b = document.getElementById("offer");
             b.style.height = 50;
+
             var h = document.createElement("h2");
             h.innerText = "Show more"
             h.setAttribute("id","showmore");
-            b.append(h);   
+            b.append(h); 
         }
         }
         var qq = document.getElementById("qt_select").value;
@@ -683,6 +1989,59 @@
             }
             list.push(nod);
             localStorage.setItem("ItemInCart", JSON.stringify(list));
+            let bt = document.createElement("button");
+
+            document.getElementById("addtocart").style.display = "none";
+            bt.innerText= "Go To Cart"
+            bt.style.backgroundColor = "green";
+            bt.style.border  = "1px solid green";
+            bt.style.color = "white";
+            bt.style.width ="100%";
+            bt.style.height = "40px";
+            bt.style.marginTop = "30px";
+            bt.style.cursor = "pointer";
+            bt.style.borderRadius = "5px";
+            bt.style.fontWeight = "600";
+            
+            document.getElementById("todesgin").append(bt);
+
+            bt.addEventListener("click" , redirect);
+
+            function redirect(){
+                window.location.href = "cart.html";
+            }
+
+            let cartArrayS1 = JSON.parse(localStorage.getItem("cartArrayS1")) || [];
+
+            //  console.log(cartArrayS1.length);
+
+  if(cartArrayS1.length == 0){
+    (document.querySelector("#cartItembox")).style.display = "none";
+  }
+  else{
+  (document.querySelector("#cartItembox")).style.display = "block";
+  (document.querySelector("#cartItembox")).innerText = cartArrayS1.length;
+  }
         }
+
+//   document.getElementById("red-cart").addEventListener("click" , di);
+
+  function di(){
+    window.location.href = "cart.html";
+  }
+  let val = localStorage.getItem("mobile_number") || 2;
+
+if(val.length >= 5){
+  document.getElementById("login_text_js").innerHTML = `<i class="fa-solid fa-user"></i>`;
+  document.getElementById("login_text_js1").innerText = "My Profile";
+  document.getElementById("login_text_js2").innerText = " ";
+  document.getElementById("signup").innerHTML = `<b>PROFILE</b>`;
+
+  document.getElementById("signup").addEventListener("click" , function(){
+    window.location.href = "index.html";
+  });
+
+  
+}
 </script>
 <script src="https://kit.fontawesome.com/e68ecfb53d.js" crossorigin="anonymous"></script>
