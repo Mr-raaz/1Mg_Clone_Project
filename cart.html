@@ -19,6 +19,11 @@
     font-family: sans-serif;
     border-bottom: 0.1px solid rgb(210, 208, 208);
 }
+
+.to_apart_on_corner_left{
+    /* border: 1px solid red; */
+    padding: 5px;
+}
 #cartItembox{
     position:absolute;
     top: 1px;
@@ -307,16 +312,24 @@
         #outer_for_color{
             /* background-color: #f3f7f6; */
             width: 100%;
-            height: 1500px;
+            /* height: 15px; */
             padding-top: 20px;
+            /* border: 1px solid green; */
         }
         #inner_for_grid{
             /* border: 2px solid red; */
-            margin-left: 13%;
-            margin-right: 13%;
+            /* margin-left: 13%; */
+            /* margin-right: 13%; */
             /* height: 1500px; */
+            padding: 10px 6%;
             display: grid;
             grid-template-columns: 3fr 2fr;
+            /* border: 1px solid red; */
+        }
+        #left_side_side{
+            /* border: 1px solid red; */
+            /* border-radius: 50px; */
+            padding: 10px;
         }
         #down_footer{
             /* border: 2px solid black; */
@@ -324,13 +337,17 @@
             grid-template-columns: 3fr 2fr;
             margin-left: 13%;
             margin-right: 13%;
+            /* border: 1px solid red; */
+            margin-top: -100px;
+            color: #666666;
         }
         #down_footer p{
             font-size: 11px;
         }
         #down_footer_first{
-            margin-right: 20px;
+            margin-right: 50px;
             padding: 10px;
+            
         }
         #down_footer_second{
             padding: 10px;
@@ -339,12 +356,18 @@
             margin-right: 20px;
         }
         #left_side > h2{
-            margin: 0;
+            /* margin: 0; */
+            /* font-size: 200px; */
+            /* margin-left: 20px; */
+            font-size: 16px;
+            line-height: 22px;
+            color: RGB(51, 51, 51);
         }
         #box_of_product{
             background-color: white;
             padding: 10px;
             box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+            border-radius: 3px;
         }
         .to_apart_on_corner{
             display: flex;
@@ -356,19 +379,32 @@
         }
         #right_side_first{
             background-color: white;
+            /* border: 1px solid green; */
+            padding: 5px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+            border-radius: 3px;
         }
         #button_div button{
-            width: 40%;
-            margin-left: 25px;
-            height: 30px;
+            width: 48%;
             cursor: pointer;
+            padding: 10px 20px;
+            outline: none;
+            margin-top: 10px;
+        }
+        #button_div{
+            padding: 10px 0px;
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+            /* justify-content: center; */
         }
         #right_side_first_second{
             display: flex;
             justify-content: space-between;
+            padding: 0px 10px;
         }
         #know_more{
-            border-color: RGB(255, 111, 97);
+            border:1.5px solid RGB(255, 111, 97);
             background-color: white;
             color: RGB(255, 111, 97);
             border-radius: 4px;
@@ -376,7 +412,7 @@
         #add_to_cart{
             background-color: RGB(255, 111, 97);
             color: white;
-            border-color: RGB(255, 111, 97);
+            border:1.5px solid RGB(255, 111, 97);
             border-radius: 4px;
         }
         #right_side_first_first{
@@ -385,52 +421,64 @@
             padding-right: 20px;
         }
         #right_side_first_first_h1{
-            font-size: 17px;
-            color: white;
             width: 95px;
-            background-color: brown;
         }
         #right_side_first_first_h2{
-            font-size: 17px;
-            color: rgb(45, 146, 146);
+            font-size: 16px;
+            line-height: 22px;
+           color:  RGB(32, 131, 118);
         }
         #right_side_first_first_p1{
-            font-size: 14px;
-            color: gray;
+            font-size: 12px;
+            line-height: 19px;
+            color: RGB(91, 83, 83);
+            font-weight: 600;
+        }
+        #right_side_first_second{
+            /* border: 1px solid red; */
+            cursor: pointer;
         }
         #right_side_first_first_p2{
-            font-size: 14px;
+            font-size: 12px;
+            line-height: 19px;
+            color: RGB(91, 83, 83);
         }
-        #right_side_first_second_second{
-            margin-right: 10px;
-            width: 20px;
-            border-radius: 50%;
-            background-color: rgb(238, 231, 231);
-            /* margin-top: 10px; */
-            height: 30px;
+        
+        .arrow{
+            margin-top: 10px;
+            font-size: 20px;
+
         }
         #right_side_first_second_first > h3{
-            margin: 2px;
-            font-size: 16px;
-            margin-left: 10px;
-            margin-bottom: 15px;
+            margin: 9px;
+            font-size: 14px;
+            line-height: 17px;
+            color: rgb(68, 67, 67);
+            display: flex;
+            width: 130px;
+            justify-content: space-between;
+            align-items: center;
+            
         }
         #right_side_first_second_second > p{
             margin-top: 5px;
             margin-left: 5px;
         }
         #light_green{
-            color: rgb(59, 247, 59);
+            color: green;
+            margin-top: 10px;
         }
         #right_side_second{
             background-color: white;
             margin-top: 10px;
+            /* border: 1px solid violet; */
         }
         #right_side_second_first{
             background-color: rgb(250, 246, 242);
-            margin-top: 15px;
+            /* margin-top: 15px; */
             align-items: center;
-            height: 40px;
+            /* height: 40px; */
+            padding: 10px;
         }
         .right_side_fourth_child{
             display: flex;
@@ -439,26 +487,37 @@
         }
         #right_side_fourth{
             background-color: white;
-            padding-left: 13px;
-            padding-right: 13px;
+            /* padding-left: 13px; */
+            /* padding-right: 13px; */
+            /* border: 1px solid red; */
+            padding: 15px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+            border-radius: 3px;
         }
         .right_side_fourth_child > div{
             font-size: 12px;
+            /* border: 1px solid red; */
+            margin-top: 10px;
         }
         #right_side_fourth p{
             font-size: 12px;
         }
         #right_side_fourth_fourth > div, #right_side_fourth_fourth p{
-            font-size: 20px;
-            color: gray;
+            font-size: 22px;
+            color: rgb(77, 75, 75);
+            margin-top: 10px;
+            font-weight: 600;
         }
         #right_side_fourth_fifth{
             background-color: rgb(231, 229, 229);
-            padding-left: 10px;
+            /* padding-left: 10px; */
             height: 45px;
-            padding-right: 10px;
+            /* padding-right: 10px; */
             width: 100%;
-            margin-left: -3%;
+            /* margin-left: -3%; */
+            padding-left: 5px;
+            padding-right:5px ;
+            margin-top: 10px;
         }
         #right_side_fifth_first{
             display: flex;
@@ -466,19 +525,22 @@
             font-size: 15px;
         }
         #right_side_fifth{
-            padding-left: 10px;
-            margin-top: 20px;
+            padding-left: 15px;
+            margin-top: 25px;
             padding-right: 10px;
             background-color: white;
-            padding-bottom: 15px;
+            padding-bottom: 150px;
         }
         #right_side_fifth > button{
             width: 100%;
             height: 45px;
             background-color: RGB(255, 111, 97);
             color: white;
-            border: 0;
             cursor: pointer;
+            margin-top: 10px;
+            border: none;
+            border-radius: 2px;
+            font-weight: 600
         }
         #right_side_fifth_first_second > p{
             color: RGB(255, 111, 97);
@@ -488,30 +550,49 @@
             font-size: 16px;
             font-weight: 1000;
         }
+        
         #right_side_third_first_first_first{
             display: flex;
+            justify-content: center;
+            align-items: center;
         }
         #right_side_third_first_first{
             display: flex;
             align-items: center;
-            margin-bottom: -5px;
+            /* margin-bottom: -5px; */
             justify-content: space-between;
+            /* border: 1px solid red; */
+            border-bottom: 1px solid grey;
         }
         #right_side_third{
             background-color: white;
             margin-top: 15px;
             padding: 10px;
             margin-bottom: 15px;
+            /* border: 1px solid red; */
+            padding: 15px 15px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+            border-radius: 3px;
+
         }
         #right_side_third_first_first_second p{
             font-size: 12px;
             font-weight: 100;
+            /* border: 1px solid green; */
+        }
+        #right_side_third_second{
+            /* border: 1px solid red; */
+            padding: 10px 5px;
         }
         #right_side_third_second_p1{
             font-size: 12px;
+            /* border: 1px solid red; */
+            line-height: 18px;
+            /* color: RGB(255, 224, 204) */
+            /* border: 1px solid red; */
         }
         #right_side_third_second_p2{
-            font-size: 12px;
+            font-size: 10px;
             /* background-color: RGB(255, 111, 97); */
             margin-right: 8px;
         }
@@ -520,27 +601,44 @@
         }
         #right_side_third_second_span1{
             font-size: 18px;
-            font-weight: 800;
+            font-weight: 700;
+            color: RGB(51, 51, 51);
         }
         #right_side_third_second_span2{
-            font-size: 18px;
+            font-size: 16px;
         }
         #right_side_third_second_div{
             display: flex;
+            /* border: 1px solid green; */
+            margin-top: 5px;
+            width: 65%;
         }
         #right_side_third_second_div_first{
-            background-color: RGB(255, 111, 97);
-            height: 35px;
+            background-color: RGB(255, 224, 204);
+            /* height: 35px; */
+            /* border: 1px solid red; */
+            padding: 4px;
+            border-radius: 1px;
+            color: #8a2422;
+            font-weight: 700;
         }
         #right_side_third_second_div_p2{
-            margin-left: 12px;
+            margin-left: 8px;
         }
         #right_side_third_second_p2_span{
             margin-right: 10px;
         }
         #right_side_third_second_p3{
             color: RGB(255, 111, 97);
-            font-weight: 800;
+            font-weight: 700;
+            margin-top: 20px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        #right_side_second{
+            /* border: 1px solid red; */
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+            border-radius: 3px;
         }
         #right_side_second_first_first{
             display: flex;
@@ -548,9 +646,13 @@
             padding-right: 10px;
             align-items: center;
             justify-content: space-between;
+            font-size: 15px;
+            color: rgb(33, 33, 33);
         }
         #right_side_second_second{
             padding: 10px;
+            /* border: 1px solid red; */
+            padding: 20px;
         }
         #right_side_second_second_second p{
             font-size: 12px;
@@ -620,6 +722,7 @@
             padding-right: 10px;
             width: 100%;
             margin-left: -1.5%;
+            border: 1px solid red;
         }
         #down_footer_first{
             display: none;
@@ -636,6 +739,7 @@
         }
         #checking_out{
             cursor: pointer;
+            width: 100%;
         }
         }
         @media only screen and (min-width: 769px){
@@ -679,6 +783,9 @@
             width: 400px;
             margin-left: -10%;
         }
+        /* #right_side_second_second_checkbox{
+            margin-right: 500px;
+        } */
         }
     </style>
 </head>
@@ -1121,13 +1228,14 @@
             <div id="left_side">
                 <h2>Items NOT Requiring Prescription(<span id="item_num"></span>)</h2>
                 <div id="left_side_side">
-
+                                
                 </div>
             </div>
             <div id="right_side">
                 <div id="right_side_first">
                     <div id="right_side_first_first">
-                        <h1 id="right_side_first_first_h1">Care Plan</h1>
+                        <!-- <h1 id="right_side_first_first_h1">Care Plan</h1> -->
+                        <img id="right_side_first_first_h1" src="https://onemg.gumlet.io/image/upload/v1625657833/ekjkxafxcqqg0oinr3fu.png" alt="Care Plan">
                         <h2 id="right_side_first_first_h2">You can save extra ₹34 on this order</h2>
                         <p id="right_side_first_first_p1">Become a member</p>
                         <p id="right_side_first_first_p2">Care plan membership ₹165 <span id="linetroughonmrp">₹549</span> / 3 months</p>
@@ -1139,10 +1247,10 @@
                     <hr>
                     <div id="right_side_first_second">
                         <div id="right_side_first_second_first">
-                            <h3><span></span> Apply Coupon</h3>
+                            <h3><span><img src="https://res.cloudinary.com/du8msdgbj/image/upload/v1607414999/marketing/cvtnx1zh5we6atn3m7i0.svg" alt="not found"></span> Apply Coupon</h3>
                         </div>
                         <div id="right_side_first_second_second">
-                            <p><i class="fa-solid fa-angle-right"></i></p>
+                            <p><i class="fa-solid fa-angle-right arrow"></i></p>
                         </div>
                     </div>
                 </div>
@@ -1159,9 +1267,9 @@
                              <label>Book Good Health Silver Package for just ₹649</label>
                         </div>
                         <div id="right_side_second_second_second">
-                            <p id="right_side_second_second_second_p1">Get the tests done easily from your home. This</p>
-                            <p id="right_side_second_second_second_p2">package will help you in identifying potential</p>
-                            <p id="right_side_second_second_second_p3">disorders and deficiencies at an early stage.</p>
+                            <p id="right_side_second_second_second_p1" style="color: #666666;">Get the tests done easily from your home. This</p>
+                            <p id="right_side_second_second_second_p2" style="color: #666666;">package will help you in identifying potential</p>
+                            <p id="right_side_second_second_second_p3" style="color: #666666;">disorders and deficiencies at an early stage.</p>
                             <p id="light_green">Pay later on home sample collection</p>
                         </div>
                     </div>
@@ -1182,8 +1290,8 @@
                     <div id="right_side_third_second">
                         <p id="right_side_third_second_p1"><span id="right_side_third_second_span1">0.89 </span><span id="right_side_third_second_span2">NeuCoin</span> to be earned on this order*</p>
                         <div id="right_side_third_second_div">
-                           <div id="right_side_third_second_div_first"><p id="right_side_third_second_p2"><span id="right_side_third_second_p2_span"><i class="fa-solid fa-lock"></i></span>Extra 4.45 NeuCoins for care Plan members</p></div>
-                           <div><p id="right_side_third_second_div_p2"><i class="fa-solid fa-exclamation"></i></p></div>
+                           <div id="right_side_third_second_div_first"><p id="right_side_third_second_p2"><span id="right_side_third_second_p2_span"><i class="fa-solid fa-lock"></i></span>Extra 4.45 NeuCoins for care Plan members !</p></div>
+                           <div><p id="right_side_third_second_div_p2"></p></div>
                         </div>
                         <p id="right_side_third_second_p3">Add care plan to cart</p>
                     </div>
@@ -1266,6 +1374,7 @@
         tota_price += parseInt(elem.price) ;
         var name = document.createElement("p");
         name = elem.name;
+        // name.style.fontSize = "14px";
         // name.setAttribute("id","headingname");
         var price = document.createElement("p");
         price = elem.price;
@@ -1295,11 +1404,14 @@
         var di3_1_lel = document.createElement("div");
         var di3_1_le_le = document.createElement("p");
         var di3_1_lel_le = document.createElement("p");
+        di3_1_lel_le.style.marginTop = "20px";
         di3_1_le_le.innerHTML = `<p id = "remove"><i class="fa-regular fa-trash-can"></i></p>`;
         di3_1_lel_le.addEventListener("click", function(){
             removing(index);
         });
         di3_1_lel_le.innerHTML= `<p>Remove</p>`;
+
+        di3_1_le_le.style.marginTop = "20px";
         di3_1_le.append(di3_1_le_le);
         di3_1_lel.append(di3_1_lel_le);
         di3_1.append(di3_1_le,di3_1_lel);
@@ -1318,6 +1430,7 @@
         di3_2_2_p.innerHTML = `<p>1</p>`;
         di3_2_2_p.setAttribute("id","plusminusbutton");
         di3_2_3_p.innerHTML = `<p><i class="fa-solid fa-plus"></i></p>`;
+
         di3_2_1.append(di3_2_1_p);
         di3_2_2.append(di3_2_2_p);
         di3_2_3.append(di3_2_3_p);
@@ -1330,6 +1443,9 @@
         div.append(di1,di2,di3);
         div.setAttribute("id","box_of_product");
         document.getElementById("left_side_side").append(div);
+        let br = document.createElement("br");
+
+        document.getElementById("left_side_side").append(br);
         // var tota_mrp1 = tota_mrp + parseInt(document.getElementById("total_mrp").innerText);
         // var tota_price1 = tota_price + parseInt(document.getElementById("total_price").innerText);
         // document.getElementById("total_mrp").innerHTML =`₹ `+`${tota_mrp1}`;
