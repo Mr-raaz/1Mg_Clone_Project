@@ -24,7 +24,6 @@ Our objective is to replicate the original site with all the functionalities and
 # This is a collaborative project. We have worked on this project and submitted it for our UNIT-3 Evaluation in Masai School. 
   
  # ⭐Team_Members:⭐
-
   🔘 <a href = "https://github.com/Rajatsinha05" > Rajat Sinha </a>
   🔘 <a href = "https://github.com/sonukryadav" > Sonu Yadav </a>
   🔘 <a href = "https://github.com/PrinceMittal1" > Prince Mittal </a>
