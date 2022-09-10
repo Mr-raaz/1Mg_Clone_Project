@@ -20,8 +20,10 @@ Our objective is to replicate the original site with all the functionalities and
 # Functionality:
   🔘 SignIn and SignUp functionality. <br>
          <span> Createted by  <a href = "https://github.com/Akhil0425" > Akhil Kumar </a> </span><br>
+         
   🔘 Navbar for easy navigation between pages.<br>
-        <span> Createted by  <a href = "https://github.com/Mr-raaz/" > Anshu Raj </a> and <a href = "https://github.com/Rajatsinha05" > Rajat Sinha </a>             </span><br>
+     <span> Createted by  <a href = "https://github.com/Mr-raaz/" > Anshu Raj </a> and <a href = "https://github.com/Rajatsinha05" > Rajat Sinha </a>             </span><br>
+        
   🔘Landing page <br>
          <span> Createted byand <a href = "https://github.com/Rajatsinha05" > Rajat Sinha </a>  </span><br>
   
@@ -32,7 +34,7 @@ Our objective is to replicate the original site with all the functionalities and
   <span> Createted by  <a href = "https://github.com/PrinceMittal1" > Prince Mittal </a>  </span><br>
      
   🔘 Checkout page calculates the shipping prices dynamically and the Payment page with many payment options.<br>
-  <span> Createted by <a href = "https://github.com/Mr-raaz/" > Anshu Raj </a> </span><br>
+  Createted by <a href = "https://github.com/Mr-raaz/" > Anshu Raj </a> <br>
   
 
   
