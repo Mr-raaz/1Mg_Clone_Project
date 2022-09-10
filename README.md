@@ -25,22 +25,4 @@ Our objective is to replicate the original site with all the functionalities and
   
  # ⭐Team_Members:⭐
 
-  1. Rajat Sinha
-    e-Mail: 
-    GitHub:
-   
-  2. Sonu
-    e-Mail: 
-    GitHub:
-      
-  3. Kushagra Kamal
-    e-Mail: 
-    GitHub:
-    
-  4. Niranjan Kumar
-    e-Mail: 
-    GitHub: 
-    
-  5.Rohan Ravindra Gaikwad
-    e-Mail:
-    GitHub: 
+  🔘 <a href = "https://github.com/Mr-raaz/" > Anshu Raj </a>
