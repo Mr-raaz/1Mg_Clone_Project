@@ -457,18 +457,8 @@
           strikedoffprice: "175",
           disscount_percent : "43",
           price: "99",
-        },
-        {
-          image_url:
-            "https://onemg.gumlet.io/images/c_fit,w_150,f_auto,q_auto,h_150/dpr2tomgk41bdt7wqysj/organic-india-lkc-liver-kidney-care-capsule.jpg",
-          name: "1mg Sports Multivitamin Energy & Immunity Booster Zinc, Vitamin C, Vitamin D, Calcium and Iron Tablet",
-          quantity : "60",
-          rating : "4",
-          number_rating : "92",
-          strikedoffprice: "1195",
-          disscount_percent : "58",
-          price: "497",
-        },
+        }
+       
         ];
     
     

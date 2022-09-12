@@ -40,22 +40,22 @@ Our objective is to replicate the original site with all the functionalities and
   
   
   # Landing page
-  will be shown here
+   <img src="https://miro.medium.com/max/1400/1*GIm3xGXsdyM7B0r2SkrpxQ.png">
   
   # Sign up page
-  will be shown here
+  <img src="https://miro.medium.com/max/1400/1*wMH3wYwZsl2PYmFewK9Trg.png">
   
   # Product page
-  will be shown here
+   <img src="https://miro.medium.com/max/1400/0*KdKkjUBLEhVvCeVp.png">
   
   # Cart page
   will be shown here
   
   # Address page
-  will be shown here
+   <img src="https://miro.medium.com/max/1400/0*tpkzCS951khJeXpu.png">
   
   # Payment page
-  will be shown here
+   <img src="https://miro.medium.com/max/1400/0*8-CNb8YcF3Dzi9y6.png">
  
 
 
