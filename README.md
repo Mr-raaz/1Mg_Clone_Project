@@ -71,7 +71,12 @@ Our objective is to replicate the original site with all the functionalities and
   🔘 <a href = "https://github.com/Mr-raaz/" > Anshu Raj </a>
 
 
-
+  
+  
+  <hr />
+  
   # Demo. <br>
  
 https://celebrated-brioche-bea6c1.netlify.app/index.html
+<hr />
+
